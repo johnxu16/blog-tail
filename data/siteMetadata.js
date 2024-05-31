@@ -6,7 +6,7 @@ const siteMetadata = {
   description: 'Explore the world of technology with a professional senior software engineer. Find technical passages, instructional videos, and innovative software projects.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://www.jxdev.com',
+  siteUrl: 'https://www.jxdev.me',
   siteRepo: 'https://github.com/johnxu16/blog-tail',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
