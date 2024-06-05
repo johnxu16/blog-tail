@@ -46,20 +46,20 @@ LV(Logical Volume)
 
 当我们创建PV时，存储空间会被自动划分成PE
 
-基本上，PV是物理磁盘，VG是PV的集合，LV是VG的集合。
+xxxxxxxxxx netsh int ipv4 set dynamic tcp start=49152 num=16384netsh int ipv6 set dynamic tcp start=49152 num=16384bash
 
 当然，一个VG也可以只有一个PV，一个LV也可以只有一个VG。
 
 逻辑卷(LV)可以像普通磁盘分区一样使用，但是它的大小和位置都是可以动态调整的。
 
-![](https://s2.loli.net/2023/06/13/wmoDO2KXBR8hasI.png)
+![lvm](https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/lvm.png)
 
 ## 那真的泰裤辣，试试看
 
 正好在之前的PVE里，一台ubuntu18.04的虚拟机需要从20G扩容到40G
 
 ### 1. 首先在PVE管理界面扩大虚拟机的磁盘大小
-![](https://s2.loli.net/2023/06/13/zlPZBOyGT2CdVMW.png)
+![pve-resize-disk](https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/pve-resize-disk.png)
 
 ### 2. 修改虚拟机配置
 ```bash
@@ -110,7 +110,7 @@ Fix/Ignore? Fix
 ```
 
 #### 修复了GPT PMBR size, 就可以使用fdisk扩大分区了
-![](https://s2.loli.net/2023/06/13/VHDvtkWbNAJRlhT.png)
+![fdisk](https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/fdisk.png)
 
 ---
 
