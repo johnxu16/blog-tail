@@ -3,7 +3,7 @@ import { CoreContent } from 'pliny/utils/contentlayer'
 
 const isProduction = process.env.NODE_ENV === 'production'
 
-export function getBlogByLang<T extends Blog>(allBlogs: T[], lang: string = 'zh') {
+export function getBlogByLang<T extends Blog>(allBlogs: T[], lang: string = 'cn') {
   return allBlogs.filter((blog) => blog.lang === lang)
 }
 

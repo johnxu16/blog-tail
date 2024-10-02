@@ -92,7 +92,7 @@ function createSearchIndex(allBlogs) {
 export const Blog = defineDocumentType(() => ({
   name: 'Blog',
   filePathPattern: 'blog/**/*.md',
-  contentType: 'markdown',
+  contentType: 'mdx',
   fields: {
     title: { type: 'string', required: true },
     date: { type: 'date', required: true },
@@ -115,7 +115,7 @@ export const Blog = defineDocumentType(() => ({
         if (restPath.includes('en/')) {
           return 'en'
         }
-        return 'zh'
+        return 'cn'
       },
     },
     structuredData: {
