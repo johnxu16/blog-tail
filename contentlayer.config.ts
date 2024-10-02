@@ -91,8 +91,8 @@ function createSearchIndex(allBlogs) {
 
 export const Blog = defineDocumentType(() => ({
   name: 'Blog',
-  filePathPattern: 'blog/**/*.mdx',
-  contentType: 'mdx',
+  filePathPattern: 'blog/**/*.md',
+  contentType: 'markdown',
   fields: {
     title: { type: 'string', required: true },
     date: { type: 'date', required: true },
@@ -108,6 +108,16 @@ export const Blog = defineDocumentType(() => ({
   },
   computedFields: {
     ...computedFields,
+    lang: {
+      type: 'string',
+      resolve: (doc) => {
+        const restPath = doc._raw.flattenedPath.replace(/^.+?(\/)/, '')
+        if (restPath.includes('en/')) {
+          return 'en'
+        }
+        return 'zh'
+      },
+    },
     structuredData: {
       type: 'json',
       resolve: (doc) => ({
