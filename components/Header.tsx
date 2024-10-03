@@ -5,6 +5,7 @@ import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import SearchButton from './SearchButton'
 import Image from 'next/image'
+import LanguageToggleDropdown from './LanguageToggleDropdown'
 
 const Header = () => {
   return (
@@ -42,6 +43,7 @@ const Header = () => {
           ))}
         <SearchButton />
         <ThemeSwitch />
+        <LanguageToggleDropdown />
         <MobileNav />
       </div>
     </header>
