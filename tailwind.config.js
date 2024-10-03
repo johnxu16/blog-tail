@@ -25,11 +25,12 @@ module.exports = {
 				sans: ['var(--font-space-grotesk)', ...fontFamily.sans]
 			},
 			colors: {
-				primary: colors.pink,
-				// primary: {
-				// 	DEFAULT: 'hsl(var(--primary))',
-				// 	foreground: 'hsl(var(--primary-foreground))'
-				// },
+				primary: {
+					DEFAULT: 'hsl(var(--primary))',
+					foreground: 'hsl(var(--primary-foreground))',
+					...colors.pink,
+				},
+				pink: colors.pink,
 				gray: colors.gray,
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
@@ -73,9 +74,9 @@ module.exports = {
 					DEFAULT: {
 						css: {
 							a: {
-								color: theme('colors.primary.500'),
-								'&:hover': { color: `${theme('colors.primary.600')}`, },
-								code: { color: theme('colors.primary.400') },
+								color: theme('colors.pink.500'),
+								'&:hover': { color: `${theme('colors.pink.600')}`, },
+								code: { color: theme('colors.pink.400') },
 							},
 							'h1,h2': {
 								fontWeight: '700',
@@ -88,9 +89,9 @@ module.exports = {
 					invert: {
 						css: {
 							a: {
-								color: theme('colors.primary.500'),
-								'&:hover': { color: `${theme('colors.primary.400')}`, },
-								code: { color: theme('colors.primary.400') },
+								color: theme('colors.pink.500'),
+								'&:hover': { color: `${theme('colors.pink.400')}`, },
+								code: { color: theme('colors.pink.400') },
 							},
 							'h1,h2,h3,h4,h5,h6': { color: theme('colors.gray.100'), },
 						},
