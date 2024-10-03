@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Check, ChevronDown } from 'lucide-react'
+import { Check } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
 import {
@@ -25,14 +25,15 @@ export default function LanguageToggleDropdown() {
   const [selectedLanguage, setSelectedLanguage] = useState(languages[0])
 
   return (
-    <DropdownMenu>
+    <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" className="w-40 justify-between p-0 font-normal">
-          <span className="flex items-center">
-            {selectedLanguage.flag}
-            <span className="ml-2">{selectedLanguage.name}</span>
+        <Button
+          variant="ghost"
+          className="h-8 w-24 justify-between border-none px-2 text-center font-normal"
+        >
+          <span className="flex-1 items-center justify-center text-ellipsis">
+            <span>{selectedLanguage.name}</span>
           </span>
-          <ChevronDown className="h-4 w-4 opacity-50" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-40">
@@ -40,7 +41,7 @@ export default function LanguageToggleDropdown() {
           <DropdownMenuItem
             key={language.code}
             onClick={() => setSelectedLanguage(language)}
-            className="justify-between"
+            className="cursor-pointer justify-between"
           >
             <span className="flex items-center">
               {language.flag}
