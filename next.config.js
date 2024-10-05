@@ -60,12 +60,6 @@ const securityHeaders = [
 module.exports = () => {
   const plugins = [withContentlayer, withBundleAnalyzer]
   return plugins.reduce((acc, next) => next(acc), {
-    // i18n: {
-    //   locales: ['cn', 'en'],
-    //   defaultLocale: 'cn',
-    //   localeDetection: true,
-    // },
-    // trailingSlash: true,
     reactStrictMode: true,
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
     eslint: {

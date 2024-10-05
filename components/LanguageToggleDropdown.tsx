@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from 'react'
 import { Check } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
@@ -10,9 +9,10 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
+import Link from 'next/link'
 
 const languages = [
-  { code: 'zh', name: '简体中文', flag: '🇨🇳' },
+  { code: 'cn', name: '简体中文', flag: '🇨🇳' },
   { code: 'en', name: 'English', flag: '🇬🇧' },
   // { code: 'es', name: 'Español', flag: '🇪🇸' },
   // { code: 'fr', name: 'Français', flag: '🇫🇷' },
@@ -21,9 +21,7 @@ const languages = [
   // { code: 'ja', name: '日本語', flag: '🇯🇵' },
 ]
 
-export default function LanguageToggleDropdown() {
-  const [selectedLanguage, setSelectedLanguage] = useState(languages[0])
-
+export default function LanguageToggleDropdown({ lang }: { lang: string }) {
   return (
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
@@ -32,7 +30,8 @@ export default function LanguageToggleDropdown() {
           className="h-8 w-24 justify-between border-none px-2 text-center font-normal"
         >
           <span className="flex-1 items-center justify-center text-ellipsis">
-            <span>{selectedLanguage.name}</span>
+            {lang}
+            {/* <span>{selectedLanguage.name}</span> */}
           </span>
         </Button>
       </DropdownMenuTrigger>
@@ -40,14 +39,18 @@ export default function LanguageToggleDropdown() {
         {languages.map((language) => (
           <DropdownMenuItem
             key={language.code}
-            onClick={() => setSelectedLanguage(language)}
+            // onClick={() => handleLanguageChange(language)}
             className="cursor-pointer justify-between"
           >
-            <span className="flex items-center">
+            <Link className="flex items-center" href={`/${language.code}`}>
               {language.flag}
               <span className="ml-2">{language.name}</span>
-            </span>
-            {language.code === selectedLanguage.code && <Check className="h-4 w-4" />}
+            </Link>
+            {/* <span className="flex items-center">
+              {language.flag}
+              <span className="ml-2">{language.name}</span>
+            </span> */}
+            {language.code === lang && <Check className="h-4 w-4" />}
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

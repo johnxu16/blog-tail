@@ -10,6 +10,8 @@ import Footer from '@/components/Footer'
 import siteMetadata from '@/data/siteMetadata'
 import { ThemeProviders } from '../theme-providers'
 import { Metadata } from 'next'
+import { dir } from 'i18next'
+import { languages } from 'app/i18n/settings'
 
 const space_grotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -57,10 +59,21 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export async function generateStaticParams() {
+  return languages.map((lang) => ({ lang }))
+}
+
+export default function RootLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode
+  params: { lang: string }
+}) {
   return (
     <html
-      lang={siteMetadata.language}
+      lang={params.lang}
+      dir={dir(params.lang)}
       className={`${space_grotesk.variable} scroll-smooth`}
       suppressHydrationWarning
     >
