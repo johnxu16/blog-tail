@@ -92,7 +92,7 @@ export default function RootLayout({
           <SectionContainer>
             <div className="flex h-screen flex-col justify-between font-sans">
               <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
-                <Header />
+                <Header lang={params.lang} />
                 <main className="mb-auto">{children}</main>
               </SearchProvider>
               <Footer />

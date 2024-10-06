@@ -7,7 +7,7 @@ import SearchButton from './SearchButton'
 import Image from 'next/image'
 import LanguageToggleDropdown from './LanguageToggleDropdown'
 
-const Header = () => {
+const Header = ({ lang }: { lang: string }) => {
   return (
     <header className="flex items-center justify-between py-10">
       <div>
@@ -43,7 +43,7 @@ const Header = () => {
           ))}
         <SearchButton />
         <ThemeSwitch />
-        <LanguageToggleDropdown />
+        <LanguageToggleDropdown lang={lang} />
         <MobileNav />
       </div>
     </header>
