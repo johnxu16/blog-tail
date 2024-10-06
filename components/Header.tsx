@@ -13,8 +13,8 @@ const Header = () => {
       <div>
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">
-            <div className="relative mr-3 size-16 overflow-hidden rounded-full border border-transparent shadow-sm">
-              <Image src="/static/images/avatar.jpg" alt="logo" fill sizes="63px" />
+            <div className="relative mr-3 size-16 shrink-0 overflow-hidden rounded-full border border-transparent shadow-sm">
+              <Image src="/static/images/avatar.jpg" alt="logo" fill sizes="64px" />
             </div>
             <span className="ml-3 hidden text-3xl font-medium text-gray-900 dark:text-gray-100 sm:block">
               John Xu
