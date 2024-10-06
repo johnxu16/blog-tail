@@ -13,8 +13,24 @@ function dateSortDesc(a, b) {
   return -1
 }
 
+function sortByDateAndTitle(a, b) {
+  const dateKey = 'date'
+  const titleKey = 'title'
+  const Sort = (a, b) => {
+    if (a > b) return -1
+    if (a < b) return 1
+    return 0
+  }
+  const dateOrder = Sort(a[dateKey], b[dateKey])
+  if (dateOrder === 0) {
+    return Sort(a[titleKey], b[titleKey])
+  }
+  return dateOrder
+}
+
 export function sortPosts<T extends Blog>(allBlogs: T[], dateKey = 'date'): T[] {
-  return allBlogs.sort((a, b) => dateSortDesc(a[dateKey], b[dateKey]))
+  // return allBlogs.sort((a, b) => dateSortDesc(a[dateKey], b[dateKey]))
+  return allBlogs.sort((a, b) => sortByDateAndTitle(a, b))
 }
 
 function omit(obj, keys) {
