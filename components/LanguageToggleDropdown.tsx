@@ -7,12 +7,12 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
-import { useTranslation } from 'app/i18n'
+import { getTranslation } from 'app/i18n'
 import { languages } from 'app/i18n/settings'
 import Link from 'next/link'
 
 export default async function LanguageToggleDropdown({ lang }: { lang: string }) {
-  const { t } = await useTranslation(lang, 'lang')
+  const { t } = await getTranslation(lang, 'lang')
 
   return (
     <DropdownMenu modal={false}>
