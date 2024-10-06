@@ -24,13 +24,16 @@ export default async function LanguageToggleDropdown({ lang }: { lang: string })
           <span className="flex-1 items-center justify-center text-ellipsis">{t(lang)}</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-40">
+      <DropdownMenuContent className="w-32">
         {languages.map((language) => (
-          <DropdownMenuItem key={language} className="cursor-pointer justify-between">
-            <Link className="flex items-center" href={`/${language}`}>
+          <DropdownMenuItem key={language} className="relative h-10 cursor-pointer justify-between">
+            <Link
+              className="absolute left-0 right-0 flex h-10 items-center justify-between px-2"
+              href={`/${language}`}
+            >
               {t(language)}
+              {language === lang && <Check className="h-4 w-4" />}
             </Link>
-            {language === lang && <Check className="h-4 w-4" />}
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>
