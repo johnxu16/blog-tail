@@ -10,7 +10,7 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
   mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'bringerxu@tom.com',
+  email: 'bringerxu@163.com',
   github: 'https://github.com/johnxu16',
   x: 'https://twitter.com/x',
   facebook: 'https://facebook.com',
