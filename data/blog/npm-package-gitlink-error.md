@@ -20,4 +20,10 @@ git config --global url."https://".insteadOf "git://"
 
 git工具在拉取的时候会把git://替换成https://
 
-🤔所以git协议大概是什么样的呢？报错有什么原因吗？
+---
+
+#### 原因
+
+根据Github在2021年发布的[文章](https://github.blog/security/application-security/improving-git-protocol-security-github/), 出于安全考虑
+
+Github废弃了git协议，因为它没有身份认证, 协议介绍可以在[git手册中找到](https://git-scm.com/book/en/v2/Git-on-the-Server-The-Protocols)
