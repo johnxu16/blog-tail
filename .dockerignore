@@ -1,0 +1,16 @@
+_docs
+.dockerignore
+.devcontainer
+.git
+.github
+# .next
+.vscode
+.vs
+Dockerfile
+node_modules
+README.md
+
+/.yarn/*
+!/.yarn/releases
+!/.yarn/plugins
+!/.yarn/sdks
