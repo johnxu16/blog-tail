@@ -21,6 +21,11 @@ export default function Footer() {
           <div>{siteMetadata.author}</div>
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
+          <div>
+            <a target="_blank" href="https://beian.miit.gov.cn/">
+              浙ICP备2021035971号
+            </a>
+          </div>
           <div>{` • `}</div>
           <Link href="/">{siteMetadata.title}</Link>
         </div>

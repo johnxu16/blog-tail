@@ -100,11 +100,6 @@ export default function RootLayout({
           </SectionContainer>
         </ThemeProviders>
       </body>
-      <footer>
-        <a target="_blank" href="https://beian.miit.gov.cn/">
-          浙ICP备2021035971号
-        </a>
-      </footer>
     </html>
   )
 }
