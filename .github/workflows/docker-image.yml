@@ -26,3 +26,4 @@ jobs:
           push: true
           tags: |
             jx16/blog:${{ github.sha }}
+            jx16/blog:latest
