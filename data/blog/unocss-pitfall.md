@@ -10,7 +10,7 @@ summary:
 作为headless CRM, 使用起来还是相对简单高效的，
 于是就想,干脆把博客也搭在上面,这样就可以用TinaCMS来管理博客了, 耶~~~
 
-自从习惯了utility class以后呢, 我已经被完全惯坏了  
+自从习惯了utility class以后呢, 我已经被完全惯坏了
 
 成为了一个没有utility class就只会在地上打滚的废人
 
@@ -26,7 +26,7 @@ summary:
 
 ### 出现问题的环境
 
-最小复现环境如下, 
+最小复现环境如下,
 
 ```yml
 Operating System:
@@ -50,7 +50,7 @@ Relevant packages:
 
 ```javascript
 // postcss.config.js
-module.exports={
+module.exports = {
   plugins: [
     require('@unocss/postcss')({
       theme: {
@@ -127,20 +127,20 @@ code index.js
 
 谢谢你, 🙏K门
 
-Big胆, 好大的catch, 我们打印下错误信息  
+Big胆, 好大的catch, 我们打印下错误信息
 
-![unocss-print-error](https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/unocss-print-error.png)
+![unocss-print-error](http://web.image.bringerxu.xyz/blog/unocss-print-error.png)
 
 重新启动vscode打开之前使用unocss的项目, 在OUTPUT | UnoCSS中, 看到了如下报错
 
-![unocss-throw](https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/unocss-throw.png)
+![unocss-throw](http://web.image.bringerxu.xyz/blog/unocss-throw.png)
 
 点击Object.match的对应链接, 报错原因是ctx.generator.config.separators是undefined
-![unocss-src](https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/unocss-src.png)
+![unocss-src](http://web.image.bringerxu.xyz/blog/unocss-src.png)
 
 看了下源码和文档
 
-variantImportant是preset-mini定义important样式语法的函数, 
+variantImportant是preset-mini定义important样式语法的函数,
 
 ctx.generator是unocss核心库(core)中的UnoGenerator对象, 负责生成css文件
 
@@ -155,14 +155,12 @@ UnoGenerator中的setConfig函数会合并defaults(默认配置)和用户定义�
 ```typescript
 export default defineConfig({
   // 加上separators配置
-  separators: [":", "-"],
-  presets: [
-    presetUno(),
-  ]
+  separators: [':', '-'],
+  presets: [presetUno()],
 })
 ```
 
-![unocss-worked](https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/unocss-worked.png)
+![unocss-worked](http://web.image.bringerxu.xyz/blog/unocss-worked.png)
 **好了, 他终于可以工作了😭**
 
-***困死了, 虽然解决了问题但还是不明白原因（合并配置的代码有空再看）, 先睡大觉, 有时间我一定提PR🕊️***
+**_困死了, 虽然解决了问题但还是不明白原因（合并配置的代码有空再看）, 先睡大觉, 有时间我一定提PR🕊️_**

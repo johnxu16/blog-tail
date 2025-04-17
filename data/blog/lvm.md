@@ -52,16 +52,18 @@ xxxxxxxxxx netsh int ipv4 set dynamic tcp start=49152 num=16384netsh int ipv6 s
 
 逻辑卷(LV)可以像普通磁盘分区一样使用，但是它的大小和位置都是可以动态调整的。
 
-![lvm](https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/lvm.png)
+![lvm](http://web.image.bringerxu.xyz/blog/lvm.png)
 
 ## 那真的泰裤辣，试试看
 
 正好在之前的PVE里，一台ubuntu18.04的虚拟机需要从20G扩容到40G
 
 ### 1. 首先在PVE管理界面扩大虚拟机的磁盘大小
-![pve-resize-disk](https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/pve-resize-disk.png)
+
+![pve-resize-disk](http://web.image.bringerxu.xyz/blog/pve-resize-disk.png)
 
 ### 2. 修改虚拟机配置
+
 ```bash
 df -h
 # Filesystem                         Size  Used Avail Use% Mounted on
@@ -69,6 +71,7 @@ df -h
 # tmpfs                              395M  984K  394M   1% /run
 # /dev/mapper/ubuntu--vg-ubuntu--lv   19G  8.9G  8.8G  51% /
 ```
+
 ```bash
 fdisk -l
 # GPT PMBR size mismatch (41943039 != 83886079) will be corrected by w(rite).
@@ -84,7 +87,9 @@ fdisk -l
 # /dev/sda2     4096  2101247  2097152   1G Linux filesystem
 # /dev/sda3  2101248 41940991 39839744  19G Linux filesystem
 ```
+
 #### 使用fdisk和df查看后，发现磁盘大小已经变成了40G，但是分区大小还是19G
+
 #### 使用parted修正GPT PMBR size
 
 ```bash
@@ -110,16 +115,17 @@ Fix/Ignore? Fix
 ```
 
 #### 修复了GPT PMBR size, 就可以使用fdisk扩大分区了
-![fdisk](https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/fdisk.png)
+
+![fdisk](http://web.image.bringerxu.xyz/blog/fdisk.png)
 
 ---
 
 > LVM 相关修改
 
-
 #### **更新PV**
+
 ```bash
-pvs  
+pvs
   # PV         VG        Fmt  Attr PSize   PFree
   # /dev/sda3  ubuntu-vg lvm2 a--  <19.00g    0
 
@@ -133,6 +139,7 @@ pvs
 ```
 
 #### **查看VG大小**
+
 ```bash
 vgs
   # VG        #PV #LV #SN Attr   VSize   VFree
@@ -140,6 +147,7 @@ vgs
 ```
 
 #### **扩大LV**
+
 ```bash
 lvs
   # LV        VG        Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
@@ -154,13 +162,14 @@ lvs
   # ubuntu-lv ubuntu-vg -wi-ao---- <39.00g
 ```
 
-#### ***同步到文件系统***
+#### **_同步到文件系统_**
+
 ```bash
 df -h
 # Filesystem                         Size  Used Avail Use% Mounted on
 # udev                               1.9G     0  1.9G   0% /dev
 # tmpfs                              395M 1016K  394M   1% /run
-# /dev/mapper/ubuntu--vg-ubuntu--lv   19G  8.8G  8.9G  50% / 
+# /dev/mapper/ubuntu--vg-ubuntu--lv   19G  8.8G  8.9G  50% /
 
 # 文件系统挂载的lv大小不会自动同步
 resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv

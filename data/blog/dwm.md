@@ -14,7 +14,7 @@ summary:
 
 不行！做人最重要的是开心，我要开心起来！于是就去B站上试图找乐子...
 
-[![dwm](https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/dwm.png)](https://www.bilibili.com/video/BV1Ef4y1Z7kA)
+[![dwm](http://web.image.bringerxu.xyz/blog/dwm.png)](https://www.bilibili.com/video/BV1Ef4y1Z7kA)
 
 哎，这个桌面看起来有点好看啊
 
@@ -29,16 +29,19 @@ summary:
 如果想要修改dwm的配置，是需要修改编译文件的，所以为了扩展性，我们先把dwm的源码下载下来。
 
 1. 下载源码
+
 ```zsh
 git clone https://git.suckless.org/dwm
 ```
 
 2. 安装编译所需依赖
+
 ```zsh
 sudo apt install -y build-essential libdev xorg stterm suckless-tools libx11-dev libxinerama-dev libxft-dev
 ```
 
 3. 编译安装
+
 ```zsh
 sudo make clean install
 ```
@@ -46,9 +49,11 @@ sudo make clean install
 如果不修改安装路径，dwm默认会安装在`/usr/local/bin`
 
 ### 使用
+
 ```zsh
 dwm
 ```
+
 输入dwm后，dwm会在terminal的前台运行
 
 等待几秒后🤔，什么也没有发生（不要慌，一切都在我预料之中）
@@ -61,10 +66,10 @@ dwm
 
 什么？你问这个程序怎么是付费的？那你可以用[VcXsrv](https://sourceforge.net/projects/vcxsrv/)，原理是一样的
 
-参考[配置x410](
-https://x410.dev/cookbook/wsl/enable-systemd-in-wsl2-and-have-the-best-ubuntu-gui-desktop-experience)
+参考[配置x410](https://x410.dev/cookbook/wsl/enable-systemd-in-wsl2-and-have-the-best-ubuntu-gui-desktop-experience)
 
 配置DISPLAY环境变量
+
 ```zsh
 # 使用zsh，发现.zshrc并不会在login的时候被加载
 # 修改/etc/zshenv 可以解决这个问题
@@ -73,11 +78,12 @@ echo export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; e
 
 2. 运行x410，并打开WSL2选项
 3. 编写快速启动脚本
-参考[x410 cookbook | command line switches](https://x410.dev/cookbook/command-line-switches)
+   参考[x410 cookbook | command line switches](https://x410.dev/cookbook/command-line-switches)
+
 ```cmd
 @echo off
 
-REM ### Start X410 in Windowed Apps Mode. If X410 is already running in Desktop Mode, 
+REM ### Start X410 in Windowed Apps Mode. If X410 is already running in Desktop Mode,
 REM ### it'll be terminated first without any warning message box.
 
 REM ### x410的windowed app模式不能使用，因为dwm本身就是窗口管理器
@@ -88,6 +94,7 @@ REM ### Start dwm
 
 ubuntu.exe run "zsh --login -c 'nohup dwm > /dev/null 2>&1 & sleep 1'"
 ```
+
 4. 双击脚本，哇是dwm窗口哎!
 
 你可能会想，这个东西怎么会这么丑，空虚的界面，灰黑色的背景，就好像你的人生一样
