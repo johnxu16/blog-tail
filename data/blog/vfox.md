@@ -181,6 +181,11 @@ vfox作为一个跨平台的管理软件，还是非常优秀的，作为全栈�
 
 不过对于非binary的软件要开发插件，还是需要一番折腾😣
 
+##### 可能的优化
+
+- [ ] 开发者体验优化：提供命令本地link插件
+- [ ] 用户体验：声明式的配置用于新机器的初始化安装
+
 ---
 
 [vfox-logo]: https://vfox.dev/logo.png
@@ -188,8 +193,3 @@ vfox作为一个跨平台的管理软件，还是非常优秀的，作为全栈�
 [vfox-hooks]: http://web.image.bringerxu.xyz/blog/20250417162111.png
 [vfox-list]: http://web.image.bringerxu.xyz/blog/20250417162327.png
 [vfox-installed]: http://web.image.bringerxu.xyz/blog/20250417164835.png
-
-<!--
-- 开发者体验：提供命令本地link plugin
-- 用户体验：可配置的一键初始化安装环境的命令
--->
