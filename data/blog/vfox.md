@@ -120,7 +120,7 @@ local property = "LicenseAccepted=1 INSTALLDIR=..."
 
 再次尝试安装，还是失败了，发现是权限问题，在图形界面下，安装器会请求管理员权限，跳出弹窗
 
-这个时候有两种方法可以解决权限问题，使用提权脚本或者是sudo for windows
+这个时候有两种方法可以解决权限问题，使用[提权脚本](https://stackoverflow.com/questions/25229460/batch-script-to-install-msi)或者是sudo for windows
 
 提权脚本实在是有点长，就暂时选择了sudo for windows的方案
 
