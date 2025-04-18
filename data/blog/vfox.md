@@ -136,7 +136,7 @@ local property = "LicenseAccepted=1 INSTALLDIR=..."
 sudo notepad.exe
 ```
 
-![sudo-popup](http://web.image.bringerxu.xyz/blog/20250417164330.png)  
+![sudo-popup](https://image.assets.bringerxu.xyz/blog/20250417164330.png)  
 **可以看到弹出的UAC确认窗口**
 
 #### 在windows上安装脚本
@@ -189,7 +189,7 @@ vfox作为一个跨平台的管理软件，还是非常优秀的，作为全栈�
 ---
 
 [vfox-logo]: https://vfox.dev/logo.png
-[vfox-search]: http://web.image.bringerxu.xyz/blog/vfox-search.png
-[vfox-hooks]: http://web.image.bringerxu.xyz/blog/20250417162111.png
-[vfox-list]: http://web.image.bringerxu.xyz/blog/20250417162327.png
-[vfox-installed]: http://web.image.bringerxu.xyz/blog/20250417164835.png
+[vfox-search]: https://image.assets.bringerxu.xyz/blog/vfox-search.png
+[vfox-hooks]: https://image.assets.bringerxu.xyz/blog/20250417162111.png
+[vfox-list]: https://image.assets.bringerxu.xyz/blog/20250417162327.png
+[vfox-installed]: https://image.assets.bringerxu.xyz/blog/20250417164835.png

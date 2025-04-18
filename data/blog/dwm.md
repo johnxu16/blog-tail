@@ -14,7 +14,7 @@ summary:
 
 不行！做人最重要的是开心，我要开心起来！于是就去B站上试图找乐子...
 
-[![dwm](http://web.image.bringerxu.xyz/blog/dwm.png)](https://www.bilibili.com/video/BV1Ef4y1Z7kA)
+[![dwm](https://image.assets.bringerxu.xyz/blog/dwm.png)](https://www.bilibili.com/video/BV1Ef4y1Z7kA)
 
 哎，这个桌面看起来有点好看啊
 

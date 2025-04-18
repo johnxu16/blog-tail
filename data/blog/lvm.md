@@ -52,7 +52,7 @@ xxxxxxxxxx netsh int ipv4 set dynamic tcp start=49152 num=16384netsh int ipv6 s
 
 逻辑卷(LV)可以像普通磁盘分区一样使用，但是它的大小和位置都是可以动态调整的。
 
-![lvm](http://web.image.bringerxu.xyz/blog/lvm.png)
+![lvm](https://image.assets.bringerxu.xyz/blog/lvm.png)
 
 ## 那真的泰裤辣，试试看
 
@@ -60,7 +60,7 @@ xxxxxxxxxx netsh int ipv4 set dynamic tcp start=49152 num=16384netsh int ipv6 s
 
 ### 1. 首先在PVE管理界面扩大虚拟机的磁盘大小
 
-![pve-resize-disk](http://web.image.bringerxu.xyz/blog/pve-resize-disk.png)
+![pve-resize-disk](https://image.assets.bringerxu.xyz/blog/pve-resize-disk.png)
 
 ### 2. 修改虚拟机配置
 
@@ -116,7 +116,7 @@ Fix/Ignore? Fix
 
 #### 修复了GPT PMBR size, 就可以使用fdisk扩大分区了
 
-![fdisk](http://web.image.bringerxu.xyz/blog/fdisk.png)
+![fdisk](https://image.assets.bringerxu.xyz/blog/fdisk.png)
 
 ---
 

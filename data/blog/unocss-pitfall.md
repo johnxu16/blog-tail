@@ -129,14 +129,14 @@ code index.js
 
 Big胆, 好大的catch, 我们打印下错误信息
 
-![unocss-print-error](http://web.image.bringerxu.xyz/blog/unocss-print-error.png)
+![unocss-print-error](https://image.assets.bringerxu.xyz/blog/unocss-print-error.png)
 
 重新启动vscode打开之前使用unocss的项目, 在OUTPUT | UnoCSS中, 看到了如下报错
 
-![unocss-throw](http://web.image.bringerxu.xyz/blog/unocss-throw.png)
+![unocss-throw](https://image.assets.bringerxu.xyz/blog/unocss-throw.png)
 
 点击Object.match的对应链接, 报错原因是ctx.generator.config.separators是undefined
-![unocss-src](http://web.image.bringerxu.xyz/blog/unocss-src.png)
+![unocss-src](https://image.assets.bringerxu.xyz/blog/unocss-src.png)
 
 看了下源码和文档
 
@@ -160,7 +160,7 @@ export default defineConfig({
 })
 ```
 
-![unocss-worked](http://web.image.bringerxu.xyz/blog/unocss-worked.png)
+![unocss-worked](https://image.assets.bringerxu.xyz/blog/unocss-worked.png)
 **好了, 他终于可以工作了😭**
 
 **_困死了, 虽然解决了问题但还是不明白原因（合并配置的代码有空再看）, 先睡大觉, 有时间我一定提PR🕊️_**
