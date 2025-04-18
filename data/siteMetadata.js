@@ -3,7 +3,8 @@ const siteMetadata = {
   title: 'Exploring multimodal interaction with AI',
   author: 'John Xu',
   headerTitle: '',
-  description: 'Explore the world of technology with a professional senior software engineer. Find technical passages, instructional videos, and innovative software projects.',
+  description:
+    'Explore the world of technology as a professional senior software engineer. Find technical passages, instructional videos, and innovative software projects.',
   theme: 'system', // system, dark or light
   siteUrl: 'https://www.jxdev.me',
   siteRepo: 'https://github.com/johnxu16/blog-tail',
