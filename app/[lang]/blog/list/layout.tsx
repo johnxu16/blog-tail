@@ -8,11 +8,10 @@ import Header from '@/components/Header'
 import SectionContainer from '@/components/SectionContainer'
 import Footer from '@/components/Footer'
 import siteMetadata from '@/data/siteMetadata'
-import { ThemeProviders } from '../theme-providers'
+import { ThemeProviders } from '../../../theme-providers'
 import { Metadata } from 'next'
 import { dir } from 'i18next'
 import { languages } from 'app/i18n/settings'
-import Revolver from '@/components/Revolver'
 
 const space_grotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -87,13 +86,18 @@ export default function RootLayout({
       <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      <body className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
+      <body className="bg-white pl-[calc(100vw-100%)] text-black antialiased dark:bg-gray-950 dark:text-white">
         <ThemeProviders>
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
-          <div className="relative flex h-screen w-screen flex-1 flex-row">
-            <main className="mb-auto">{children}</main>
-            {/* <Revolver items={[]} /> */}
-          </div>
+          <SectionContainer>
+            <div className="flex h-screen flex-col justify-between font-sans">
+              <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
+                <Header lang={params.lang} />
+                <main className="mb-auto">{children}</main>
+              </SearchProvider>
+              <Footer />
+            </div>
+          </SectionContainer>
         </ThemeProviders>
       </body>
     </html>
