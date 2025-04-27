@@ -1,6 +1,6 @@
 'use client'
 
-import { ReactNode, useState } from 'react'
+import { ReactNode } from 'react'
 
 // Define the available segment types
 export type SegmentType = 'arc' | 'circle' | 'line' | 'rounded-rect' | 'triangle'
@@ -30,7 +30,6 @@ export default function LoadingSpinner({
   segmentType = 'arc',
   segmentSize = 10,
 }: LoadingSpinnerProps) {
-  const [isAnimating, setIsAnimating] = useState(state ?? initiallyAnimating)
   const strokeWidth = size * (segmentSize / 100)
   const radius = (size - strokeWidth) / 2
   const center = size / 2
@@ -229,7 +228,7 @@ export default function LoadingSpinner({
         viewBox={`0 0 ${size} ${size}`}
         style={{
           animation: `spin ${3 / speed}s linear infinite`,
-          animationPlayState: isAnimating ? 'running' : 'paused',
+          animationPlayState: (state ?? initiallyAnimating) ? 'running' : 'paused',
         }}
       >
         {renderSegments()}
