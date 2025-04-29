@@ -90,9 +90,9 @@ export default function RootLayout({
       <body className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
         <ThemeProviders>
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
-          <div className="relative flex h-screen w-screen flex-1 flex-row">
-            <main className="mb-auto">{children}</main>
-            {/* <Revolver items={[]} /> */}
+          <div className="relative flex h-screen w-screen">
+            <div className="radiant absolute inset-0" />
+            <main className="h-screen w-screen">{children}</main>
           </div>
         </ThemeProviders>
       </body>

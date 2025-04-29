@@ -164,6 +164,12 @@ input:-webkit-autofill:focus {
   }
 }
 
+.radiant {
+  opacity: 0.5;
+  background-image: radial-gradient(currentcolor 0.5px, transparent 0.5px);
+  background-size: calc(-1px + 1rem) calc(-1px + 1rem);
+  background-position: -3px -3px;
+}
 
 @keyframes spin {
   from {

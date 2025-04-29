@@ -61,7 +61,7 @@ module.exports = () => {
   const plugins = [withContentlayer, withBundleAnalyzer]
   return plugins.reduce((acc, next) => next(acc), {
     reactStrictMode: true,
-    output: "standalone", // required for Docker support
+    output: 'standalone', // required for Docker support
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
     eslint: {
       dirs: ['app', 'components', 'layouts', 'scripts'],
@@ -86,6 +86,11 @@ module.exports = () => {
       config.module.rules.push({
         test: /\.svg$/,
         use: ['@svgr/webpack'],
+      })
+
+      config.module.rules.push({
+        test: /\.glsl$/,
+        use: 'raw-loader',
       })
 
       return config
