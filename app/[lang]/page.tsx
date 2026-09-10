@@ -1,4 +1,3 @@
-import Revolver from '@/components/Revolver'
 import VimMenu from '@/components/VimMenu'
 import { lazy, Suspense } from 'react'
 
@@ -12,7 +11,7 @@ const DisplacementSphere = lazy(() =>
 
 export default async function Page() {
   return (
-    <>
+    <section className="relative h-screen w-screen overflow-x-hidden">
       <Suspense>
         <DisplacementSphere />
       </Suspense>
@@ -25,8 +24,6 @@ export default async function Page() {
           <VimMenu items={items} />
         </div>
       </div>
-      {/* TODO: add revolver menu */}
-      <Revolver />
-    </>
+    </section>
   )
 }

@@ -87,13 +87,11 @@ export default function RootLayout({
       <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      <body className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
+      {/* <body className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white"> */}
+      <body>
         <ThemeProviders>
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
-          <div className="relative flex h-screen w-screen">
-            <div className="radiant absolute inset-0" />
-            <main className="h-screen w-screen">{children}</main>
-          </div>
+          <main className="mb-auto">{children}</main>
         </ThemeProviders>
       </body>
     </html>

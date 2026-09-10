@@ -10,7 +10,7 @@ interface Props {
   size?: number
 }
 
-export default function Revolver({ holdTime = 30, size = 80 }: Props) {
+export default function Revolver({ holdTime = 1000, size = 80 }: Props) {
   const ref = useRef(null)
   const [isHolding, setIsHolding] = useState(false)
   const [isAnimating, setIsAnimating] = useState(false)
@@ -24,11 +24,13 @@ export default function Revolver({ holdTime = 30, size = 80 }: Props) {
 
     setPosition({ x: e.clientX, y: e.clientY })
     setIsHolding(true)
+    setIsAnimating(true)
 
     setShowSpinner(true)
 
     holdTimer.current = setTimeout(() => {
       setShowOption(true)
+      setIsAnimating(false)
     }, holdTime)
   }
 
@@ -70,7 +72,6 @@ export default function Revolver({ holdTime = 30, size = 80 }: Props) {
       className="relative h-full min-h-full w-full min-w-full cursor-pointer overflow-hidden"
       ref={ref}
     >
-      {position.x},{position.y}
       {showSpinner && (
         <>
           <div
@@ -83,8 +84,7 @@ export default function Revolver({ holdTime = 30, size = 80 }: Props) {
               speed={1}
               segments={8}
               segmentType="arc"
-              initiallyAnimating={false}
-              state={isHolding}
+              state={isAnimating}
             />
           </div>
           {/* <div
