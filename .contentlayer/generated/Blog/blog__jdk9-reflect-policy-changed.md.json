@@ -1,0 +1,43 @@
+{
+  "title": "JDK9反射协议修改",
+  "date": "2024-03-06T00:00:00.000Z",
+  "tags": [
+    "JAVA"
+  ],
+  "draft": false,
+  "summary": null,
+  "body": {
+    "raw": "\njdk9以上使用了新的模块化系统\n\njdk9以上的JVM默认禁止使用对java内部类的reflect\n\n如果要使用需要添加\n\n```bash\nJDK_JAVA_OPTIONS=— add-opens java.base/java.util=ALL-UNNAMED\n```\n",
+    "code": "var Component=(()=>{var m=Object.create;var r=Object.defineProperty;var h=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,j=Object.prototype.hasOwnProperty;var f=(a,e)=>()=>(e||a((e={exports:{}}).exports,e),e.exports),x=(a,e)=>{for(var s in e)r(a,s,{get:e[s],enumerable:!0})},l=(a,e,s,c)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let t of u(e))!j.call(a,t)&&t!==s&&r(a,t,{get:()=>e[t],enumerable:!(c=h(e,t))||c.enumerable});return a};var N=(a,e,s)=>(s=a!=null?m(g(a)):{},l(e||!a||!a.__esModule?r(s,\"default\",{value:a,enumerable:!0}):s,a)),_=a=>l(r({},\"__esModule\",{value:!0}),a);var d=f((J,o)=>{o.exports=_jsx_runtime});var k={};x(k,{default:()=>p,frontmatter:()=>A});var n=N(d()),A={title:\"JDK9\\u53CD\\u5C04\\u534F\\u8BAE\\u4FEE\\u6539\",date:\"2024-03-06\",tags:[\"JAVA\"],draft:!1,summary:null};function i(a){let e={code:\"code\",p:\"p\",pre:\"pre\",span:\"span\",...a.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.p,{children:\"jdk9\\u4EE5\\u4E0A\\u4F7F\\u7528\\u4E86\\u65B0\\u7684\\u6A21\\u5757\\u5316\\u7CFB\\u7EDF\"}),(0,n.jsx)(e.p,{children:\"jdk9\\u4EE5\\u4E0A\\u7684JVM\\u9ED8\\u8BA4\\u7981\\u6B62\\u4F7F\\u7528\\u5BF9java\\u5185\\u90E8\\u7C7B\\u7684reflect\"}),(0,n.jsx)(e.p,{children:\"\\u5982\\u679C\\u8981\\u4F7F\\u7528\\u9700\\u8981\\u6DFB\\u52A0\"}),(0,n.jsx)(e.pre,{className:\"language-bash\",children:(0,n.jsx)(e.code,{className:\"language-bash code-highlight\",children:(0,n.jsxs)(e.span,{className:\"code-line\",children:[(0,n.jsx)(e.span,{className:\"token assign-left variable\",children:\"JDK_JAVA_OPTIONS\"}),(0,n.jsx)(e.span,{className:\"token operator\",children:\"=\"}),\"\\u2014 add-opens java.base/java.util\",(0,n.jsx)(e.span,{className:\"token operator\",children:\"=\"}),`ALL-UNNAMED\n`]})})})]})}function p(a={}){let{wrapper:e}=a.components||{};return e?(0,n.jsx)(e,{...a,children:(0,n.jsx)(i,{...a})}):i(a)}return _(k);})();\n;return Component;"
+  },
+  "_id": "blog/jdk9-reflect-policy-changed.md",
+  "_raw": {
+    "sourceFilePath": "blog/jdk9-reflect-policy-changed.md",
+    "sourceFileName": "jdk9-reflect-policy-changed.md",
+    "sourceFileDir": "blog",
+    "contentType": "markdown",
+    "flattenedPath": "blog/jdk9-reflect-policy-changed"
+  },
+  "type": "Blog",
+  "readingTime": {
+    "text": "1 min read",
+    "minutes": 0.225,
+    "time": 13500,
+    "words": 45
+  },
+  "slug": "jdk9-reflect-policy-changed",
+  "path": "blog/jdk9-reflect-policy-changed",
+  "filePath": "blog/jdk9-reflect-policy-changed.md",
+  "toc": [],
+  "lang": "cn",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "JDK9反射协议修改",
+    "datePublished": "2024-03-06T00:00:00.000Z",
+    "dateModified": "2024-03-06T00:00:00.000Z",
+    "description": null,
+    "image": "/static/images/twitter-card.png",
+    "url": "https://www.jxdev.me/blog/jdk9-reflect-policy-changed"
+  }
+}

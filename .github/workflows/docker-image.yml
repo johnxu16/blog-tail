@@ -2,14 +2,27 @@ name: Docker Image CI
 
 on:
   push:
-    branches: ['main']
+    branches: ['main', 'blog-v2']
   pull_request:
-    branches: ['main']
+    branches: ['main', 'blog-v2']
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: web
+            dockerfile: Dockerfile.web
+            tag: jx16/web
+          - name: cms
+            dockerfile: Dockerfile.cms
+            tag: jx16/cms
+          - name: api
+            dockerfile: Dockerfile.api
+            tag: jx16/api
     steps:
       - uses: actions/checkout@v4
 
@@ -19,11 +32,12 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build and push Docker images
+      - name: Build and push ${{ matrix.name }}
         uses: docker/build-push-action@v6.9.0
         with:
           context: .
+          file: ${{ matrix.dockerfile }}
           push: true
           tags: |
-            jx16/blog:${{ github.sha }}
-            jx16/blog:latest
+            ${{ matrix.tag }}:${{ github.sha }}
+            ${{ matrix.tag }}:latest

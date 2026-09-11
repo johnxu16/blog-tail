@@ -1,0 +1,44 @@
+{
+  "title": "怎么挑选合适的主键",
+  "date": "2022-10-14T00:00:00.000Z",
+  "tags": [
+    "backend",
+    "database"
+  ],
+  "draft": false,
+  "summary": "\r",
+  "body": {
+    "raw": "\r\n设计数据实体时, 挑选合适的主键会影响后续开发和系统升级的难易程度.\r\n\r\n在实际设计之前，我们需要知道\r\n1. 业界常用的设计\r\n2. 设计适用的场景\r\n\r\n第一个问题\r\n\r\n我们应该使用代理键(Surrogate)还是自然键(Natural)?\r\n\r\n代理键由系统生成 并且和业务字段没有联系，例如一个由数据库生成的UUID\r\n\r\n自然键则刚好相反，是基于存在的业务字段生成或直接使用的键，例如用户的身份证ID\r\n\r\n代理键的优点\r\n\r\n\r\n自然键的优点\r\n\r\n\r\n\r\n\r\n数据类型和大小\r\n\r\n\r\n",
+    "code": "var Component=(()=>{var p=Object.create;var c=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var x=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var _=(e,n)=>()=>(n||e((n={exports:{}}).exports,n),n.exports),j=(e,n)=>{for(var r in n)c(e,r,{get:n[r],enumerable:!0})},a=(e,n,r,i)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let l of u(n))!f.call(e,l)&&l!==r&&c(e,l,{get:()=>n[l],enumerable:!(i=m(n,l))||i.enumerable});return e};var g=(e,n,r)=>(r=e!=null?p(x(e)):{},a(n||!e||!e.__esModule?c(r,\"default\",{value:e,enumerable:!0}):r,e)),D=e=>a(c({},\"__esModule\",{value:!0}),e);var d=_((C,o)=>{o.exports=_jsx_runtime});var b={};j(b,{default:()=>h,frontmatter:()=>M});var t=g(d()),M={title:\"\\u600E\\u4E48\\u6311\\u9009\\u5408\\u9002\\u7684\\u4E3B\\u952E\",tags:[\"backend\",\"database\"],date:\"2022-10-14\",draft:!1,summary:null};function s(e){let n={li:\"li\",ol:\"ol\",p:\"p\",...e.components};return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(n.p,{children:\"\\u8BBE\\u8BA1\\u6570\\u636E\\u5B9E\\u4F53\\u65F6, \\u6311\\u9009\\u5408\\u9002\\u7684\\u4E3B\\u952E\\u4F1A\\u5F71\\u54CD\\u540E\\u7EED\\u5F00\\u53D1\\u548C\\u7CFB\\u7EDF\\u5347\\u7EA7\\u7684\\u96BE\\u6613\\u7A0B\\u5EA6.\"}),(0,t.jsx)(n.p,{children:\"\\u5728\\u5B9E\\u9645\\u8BBE\\u8BA1\\u4E4B\\u524D\\uFF0C\\u6211\\u4EEC\\u9700\\u8981\\u77E5\\u9053\"}),(0,t.jsxs)(n.ol,{children:[(0,t.jsx)(n.li,{children:\"\\u4E1A\\u754C\\u5E38\\u7528\\u7684\\u8BBE\\u8BA1\"}),(0,t.jsx)(n.li,{children:\"\\u8BBE\\u8BA1\\u9002\\u7528\\u7684\\u573A\\u666F\"})]}),(0,t.jsx)(n.p,{children:\"\\u7B2C\\u4E00\\u4E2A\\u95EE\\u9898\"}),(0,t.jsx)(n.p,{children:\"\\u6211\\u4EEC\\u5E94\\u8BE5\\u4F7F\\u7528\\u4EE3\\u7406\\u952E(Surrogate)\\u8FD8\\u662F\\u81EA\\u7136\\u952E(Natural)?\"}),(0,t.jsx)(n.p,{children:\"\\u4EE3\\u7406\\u952E\\u7531\\u7CFB\\u7EDF\\u751F\\u6210 \\u5E76\\u4E14\\u548C\\u4E1A\\u52A1\\u5B57\\u6BB5\\u6CA1\\u6709\\u8054\\u7CFB\\uFF0C\\u4F8B\\u5982\\u4E00\\u4E2A\\u7531\\u6570\\u636E\\u5E93\\u751F\\u6210\\u7684UUID\"}),(0,t.jsx)(n.p,{children:\"\\u81EA\\u7136\\u952E\\u5219\\u521A\\u597D\\u76F8\\u53CD\\uFF0C\\u662F\\u57FA\\u4E8E\\u5B58\\u5728\\u7684\\u4E1A\\u52A1\\u5B57\\u6BB5\\u751F\\u6210\\u6216\\u76F4\\u63A5\\u4F7F\\u7528\\u7684\\u952E\\uFF0C\\u4F8B\\u5982\\u7528\\u6237\\u7684\\u8EAB\\u4EFD\\u8BC1ID\"}),(0,t.jsx)(n.p,{children:\"\\u4EE3\\u7406\\u952E\\u7684\\u4F18\\u70B9\"}),(0,t.jsx)(n.p,{children:\"\\u81EA\\u7136\\u952E\\u7684\\u4F18\\u70B9\"}),(0,t.jsx)(n.p,{children:\"\\u6570\\u636E\\u7C7B\\u578B\\u548C\\u5927\\u5C0F\"})]})}function h(e={}){let{wrapper:n}=e.components||{};return n?(0,t.jsx)(n,{...e,children:(0,t.jsx)(s,{...e})}):s(e)}return D(b);})();\n;return Component;"
+  },
+  "_id": "blog/ids-101.md",
+  "_raw": {
+    "sourceFilePath": "blog/ids-101.md",
+    "sourceFileName": "ids-101.md",
+    "sourceFileDir": "blog",
+    "contentType": "markdown",
+    "flattenedPath": "blog/ids-101"
+  },
+  "type": "Blog",
+  "readingTime": {
+    "text": "1 min read",
+    "minutes": 0.835,
+    "time": 50100,
+    "words": 167
+  },
+  "slug": "ids-101",
+  "path": "blog/ids-101",
+  "filePath": "blog/ids-101.md",
+  "toc": [],
+  "lang": "cn",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "怎么挑选合适的主键",
+    "datePublished": "2022-10-14T00:00:00.000Z",
+    "dateModified": "2022-10-14T00:00:00.000Z",
+    "description": "\r",
+    "image": "/static/images/twitter-card.png",
+    "url": "https://www.jxdev.me/blog/ids-101"
+  }
+}

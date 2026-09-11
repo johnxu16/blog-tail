@@ -1,0 +1,34 @@
+FROM node:20-alpine AS base
+RUN corepack enable
+WORKDIR /repo
+
+FROM base AS deps
+COPY package.json yarn.lock* .yarnrc.yml ./
+COPY .yarn ./.yarn
+COPY apps apps
+COPY packages packages
+RUN yarn install --immutable
+
+FROM base AS builder
+COPY --from=deps /repo/node_modules ./node_modules
+COPY --from=deps /repo/apps ./apps
+COPY --from=deps /repo/packages ./packages
+COPY .yarnrc.yml ./
+COPY .yarn ./.yarn
+WORKDIR /repo/apps/web
+ENV NEXT_TELEMETRY_DISABLED=1
+RUN yarn build
+
+FROM node:20-alpine AS runner
+WORKDIR /app
+ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
+ENV HOSTNAME=0.0.0.0
+ENV PORT=3000
+RUN addgroup -S nodejs && adduser -S nextjs -G nodejs
+COPY --from=builder /repo/apps/web/public ./public
+COPY --from=builder --chown=nextjs:nodejs /repo/apps/web/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /repo/apps/web/.next/static ./.next/static
+USER nextjs
+EXPOSE 3000
+CMD ["node", "server.js"]

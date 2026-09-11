@@ -1,0 +1,43 @@
+{
+  "title": "surge",
+  "date": "2025-04-12T00:00:00.000Z",
+  "tags": [
+    "tool"
+  ],
+  "draft": false,
+  "summary": "\r",
+  "body": {
+    "raw": "\r\n\r\n",
+    "code": "var Component=(()=>{var x=Object.create;var a=Object.defineProperty;var i=Object.getOwnPropertyDescriptor;var d=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var j=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),p=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},u=(t,e,n,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of d(e))!g.call(t,o)&&o!==n&&a(t,o,{get:()=>e[o],enumerable:!(s=i(e,o))||s.enumerable});return t};var M=(t,e,n)=>(n=t!=null?x(_(t)):{},u(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),y=t=>u(a({},\"__esModule\",{value:!0}),t);var c=j((X,m)=>{m.exports=_jsx_runtime});var D={};p(D,{default:()=>l,frontmatter:()=>C});var r=M(c()),C={title:\"surge\",tags:[\"tool\"],date:\"2025-04-12\",draft:!1,summary:null};function f(t){return(0,r.jsx)(r.Fragment,{})}function l(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,{...t,children:(0,r.jsx)(f,{...t})}):f(t)}return y(D);})();\n;return Component;"
+  },
+  "_id": "blog/surge.md",
+  "_raw": {
+    "sourceFilePath": "blog/surge.md",
+    "sourceFileName": "surge.md",
+    "sourceFileDir": "blog",
+    "contentType": "markdown",
+    "flattenedPath": "blog/surge"
+  },
+  "type": "Blog",
+  "readingTime": {
+    "text": "0 min read",
+    "minutes": 0,
+    "time": 0,
+    "words": 0
+  },
+  "slug": "surge",
+  "path": "blog/surge",
+  "filePath": "blog/surge.md",
+  "toc": [],
+  "lang": "cn",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "surge",
+    "datePublished": "2025-04-12T00:00:00.000Z",
+    "dateModified": "2025-04-12T00:00:00.000Z",
+    "description": "\r",
+    "image": "/static/images/twitter-card.png",
+    "url": "https://www.jxdev.me/blog/surge"
+  }
+}

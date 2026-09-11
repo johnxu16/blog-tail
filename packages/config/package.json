@@ -1,0 +1,13 @@
+{
+  "name": "@blog/config",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./site": "./src/site.ts",
+    "./biomes": "./src/biomes.ts",
+    "./i18n/cn": "./src/i18n/cn/index.ts"
+  }
+}

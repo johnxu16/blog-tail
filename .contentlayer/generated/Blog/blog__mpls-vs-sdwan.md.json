@@ -1,0 +1,54 @@
+{
+  "title": "MPLS和SD-WAN",
+  "date": "2022-11-14T00:00:00.000Z",
+  "tags": [
+    "network"
+  ],
+  "draft": false,
+  "summary": "\r",
+  "body": {
+    "raw": "\r\n> 不重要的前言，笔者最近在折腾homelab的时候经常接触Zerotier和Tailscale，组网的同时也学到了非常多新鲜的🧀\r\n\r\n### MPLS是什么?\r\n> Multi-protocol Label Switching 多协议标签交换\r\n\r\n1. 使用超过20年\r\n2. 一种网络协议\r\n3. 数据传输路径 基于预定义的标签labels\r\n\r\npacket -> class of service(FEC) -> transfer based on labels\r\n\r\n优点：\r\n1. 流控高效\r\n\r\n缺点：\r\n1. 需要硬件，高昂的开销\r\n2. 修改配置困难\r\n\r\n\r\n### SD-WAN\r\n> software-defined wide area network 软件定义网络\r\n\r\n",
+    "code": "var Component=(()=>{var p=Object.create;var t=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var w=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var x=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),b=(n,e)=>{for(var a in e)t(n,a,{get:e[a],enumerable:!0})},c=(n,e,a,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of w(e))!f.call(n,r)&&r!==a&&t(n,r,{get:()=>e[r],enumerable:!(i=m(e,r))||i.enumerable});return n};var g=(n,e,a)=>(a=n!=null?p(u(n)):{},c(e||!n||!n.__esModule?t(a,\"default\",{value:n,enumerable:!0}):a,n)),k=n=>c(t({},\"__esModule\",{value:!0}),n);var o=x((_,d)=>{d.exports=_jsx_runtime});var v={};b(v,{default:()=>s,frontmatter:()=>M});var l=g(o()),M={title:\"MPLS\\u548CSD-WAN\",date:\"2022-11-14\",tags:[\"network\"],draft:!1,summary:null};function h(n){let e={a:\"a\",blockquote:\"blockquote\",h3:\"h3\",li:\"li\",ol:\"ol\",p:\"p\",path:\"path\",span:\"span\",svg:\"svg\",...n.components};return(0,l.jsxs)(l.Fragment,{children:[(0,l.jsx)(e.blockquote,{children:(0,l.jsx)(e.p,{children:\"\\u4E0D\\u91CD\\u8981\\u7684\\u524D\\u8A00\\uFF0C\\u7B14\\u8005\\u6700\\u8FD1\\u5728\\u6298\\u817Ehomelab\\u7684\\u65F6\\u5019\\u7ECF\\u5E38\\u63A5\\u89E6Zerotier\\u548CTailscale\\uFF0C\\u7EC4\\u7F51\\u7684\\u540C\\u65F6\\u4E5F\\u5B66\\u5230\\u4E86\\u975E\\u5E38\\u591A\\u65B0\\u9C9C\\u7684\\u{1F9C0}\"})}),(0,l.jsxs)(e.h3,{className:\"content-header\",id:\"mpls\\u662F\\u4EC0\\u4E48\",children:[(0,l.jsx)(e.a,{\"aria-hidden\":\"true\",href:\"#mpls\\u662F\\u4EC0\\u4E48\",tabIndex:\"-1\",children:(0,l.jsx)(l.Fragment,{children:(0,l.jsx)(e.span,{className:\"content-header-link\",children:(0,l.jsxs)(e.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,l.jsx)(e.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,l.jsx)(e.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"MPLS\\u662F\\u4EC0\\u4E48?\"]}),(0,l.jsx)(e.blockquote,{children:(0,l.jsx)(e.p,{children:\"Multi-protocol Label Switching \\u591A\\u534F\\u8BAE\\u6807\\u7B7E\\u4EA4\\u6362\"})}),(0,l.jsxs)(e.ol,{children:[(0,l.jsx)(e.li,{children:\"\\u4F7F\\u7528\\u8D85\\u8FC720\\u5E74\"}),(0,l.jsx)(e.li,{children:\"\\u4E00\\u79CD\\u7F51\\u7EDC\\u534F\\u8BAE\"}),(0,l.jsx)(e.li,{children:\"\\u6570\\u636E\\u4F20\\u8F93\\u8DEF\\u5F84 \\u57FA\\u4E8E\\u9884\\u5B9A\\u4E49\\u7684\\u6807\\u7B7Elabels\"})]}),(0,l.jsx)(e.p,{children:\"packet -> class of service(FEC) -> transfer based on labels\"}),(0,l.jsx)(e.p,{children:\"\\u4F18\\u70B9\\uFF1A\"}),(0,l.jsx)(e.ol,{children:(0,l.jsx)(e.li,{children:\"\\u6D41\\u63A7\\u9AD8\\u6548\"})}),(0,l.jsx)(e.p,{children:\"\\u7F3A\\u70B9\\uFF1A\"}),(0,l.jsxs)(e.ol,{children:[(0,l.jsx)(e.li,{children:\"\\u9700\\u8981\\u786C\\u4EF6\\uFF0C\\u9AD8\\u6602\\u7684\\u5F00\\u9500\"}),(0,l.jsx)(e.li,{children:\"\\u4FEE\\u6539\\u914D\\u7F6E\\u56F0\\u96BE\"})]}),(0,l.jsxs)(e.h3,{className:\"content-header\",id:\"sd-wan\",children:[(0,l.jsx)(e.a,{\"aria-hidden\":\"true\",href:\"#sd-wan\",tabIndex:\"-1\",children:(0,l.jsx)(l.Fragment,{children:(0,l.jsx)(e.span,{className:\"content-header-link\",children:(0,l.jsxs)(e.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,l.jsx)(e.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,l.jsx)(e.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"SD-WAN\"]}),(0,l.jsx)(e.blockquote,{children:(0,l.jsx)(e.p,{children:\"software-defined wide area network \\u8F6F\\u4EF6\\u5B9A\\u4E49\\u7F51\\u7EDC\"})})]})}function s(n={}){let{wrapper:e}=n.components||{};return e?(0,l.jsx)(e,{...n,children:(0,l.jsx)(h,{...n})}):h(n)}return k(v);})();\n;return Component;"
+  },
+  "_id": "blog/mpls-vs-sdwan.md",
+  "_raw": {
+    "sourceFilePath": "blog/mpls-vs-sdwan.md",
+    "sourceFileName": "mpls-vs-sdwan.md",
+    "sourceFileDir": "blog",
+    "contentType": "markdown",
+    "flattenedPath": "blog/mpls-vs-sdwan"
+  },
+  "type": "Blog",
+  "readingTime": {
+    "text": "1 min read",
+    "minutes": 0.67,
+    "time": 40200,
+    "words": 134
+  },
+  "slug": "mpls-vs-sdwan",
+  "path": "blog/mpls-vs-sdwan",
+  "filePath": "blog/mpls-vs-sdwan.md",
+  "toc": [
+    {
+      "value": "MPLS是什么?",
+      "url": "#mpls是什么",
+      "depth": 3
+    },
+    {
+      "value": "SD-WAN",
+      "url": "#sd-wan",
+      "depth": 3
+    }
+  ],
+  "lang": "cn",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "MPLS和SD-WAN",
+    "datePublished": "2022-11-14T00:00:00.000Z",
+    "dateModified": "2022-11-14T00:00:00.000Z",
+    "description": "\r",
+    "image": "/static/images/twitter-card.png",
+    "url": "https://www.jxdev.me/blog/mpls-vs-sdwan"
+  }
+}

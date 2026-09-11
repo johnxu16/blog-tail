@@ -1,0 +1,1231 @@
+{
+  "cacheItemsMap": {
+    "authors/default.mdx": {
+      "document": {
+        "name": "John Xu",
+        "avatar": "/static/images/avatar.jpg",
+        "occupation": "Senior Software Engineer",
+        "company": "Self-Employed",
+        "email": "bringerxu@tom.com",
+        "twitter": "https://x.com/john_wreck16",
+        "github": "https://github.com/johnxu16",
+        "body": {
+          "raw": "\nAs a professional senior software engineer based in Hangzhou, I bring over five years of industry experience to the table.\n\nMy expertise lies in **NextJs**, **React**, **Spring**, and **Clean Architecture with .NET**, which I've honed through dedicated practice and real-world projects.\n\nSpecializing in crafting robust, practical, and sustainable software solutions across diverse platforms, I continuously refine my skills to deliver top-tier services adhering to industry best practices.\n\n",
+          "code": "var Component=(()=>{var p=Object.create;var i=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var g=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var x=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),b=(t,e)=>{for(var r in e)i(t,r,{get:e[r],enumerable:!0})},a=(t,e,r,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of g(e))!f.call(t,o)&&o!==r&&i(t,o,{get:()=>e[o],enumerable:!(s=u(e,o))||s.enumerable});return t};var j=(t,e,r)=>(r=t!=null?p(m(t)):{},a(e||!t||!t.__esModule?i(r,\"default\",{value:t,enumerable:!0}):r,t)),w=t=>a(i({},\"__esModule\",{value:!0}),t);var l=x((S,c)=>{c.exports=_jsx_runtime});var v={};b(v,{default:()=>h,frontmatter:()=>y});var n=j(l()),y={name:\"John Xu\",avatar:\"/static/images/avatar.jpg\",occupation:\"Senior Software Engineer\",company:\"Self-Employed\",email:\"bringerxu@tom.com\",twitter:\"https://x.com/john_wreck16\",github:\"https://github.com/johnxu16\"};function d(t){let e={p:\"p\",strong:\"strong\",...t.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.p,{children:\"As a professional senior software engineer based in Hangzhou, I bring over five years of industry experience to the table.\"}),(0,n.jsxs)(e.p,{children:[\"My expertise lies in \",(0,n.jsx)(e.strong,{children:\"NextJs\"}),\", \",(0,n.jsx)(e.strong,{children:\"React\"}),\", \",(0,n.jsx)(e.strong,{children:\"Spring\"}),\", and \",(0,n.jsx)(e.strong,{children:\"Clean Architecture with .NET\"}),\", which I've honed through dedicated practice and real-world projects.\"]}),(0,n.jsx)(e.p,{children:\"Specializing in crafting robust, practical, and sustainable software solutions across diverse platforms, I continuously refine my skills to deliver top-tier services adhering to industry best practices.\"})]})}function h(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,{...t,children:(0,n.jsx)(d,{...t})}):d(t)}return w(v);})();\n;return Component;"
+        },
+        "_id": "authors/default.mdx",
+        "_raw": {
+          "sourceFilePath": "authors/default.mdx",
+          "sourceFileName": "default.mdx",
+          "sourceFileDir": "authors",
+          "contentType": "mdx",
+          "flattenedPath": "authors/default"
+        },
+        "type": "Authors",
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.335,
+          "time": 20100,
+          "words": 67
+        },
+        "slug": "default",
+        "path": "authors/default",
+        "filePath": "authors/default.mdx",
+        "toc": []
+      },
+      "documentHash": "1716882664555",
+      "hasWarnings": false,
+      "documentTypeName": "Authors"
+    },
+    "blog/2023-retro.md": {
+      "document": {
+        "title": "2023 Retro",
+        "date": "2024-03-06T00:00:00.000Z",
+        "tags": [
+          "retro"
+        ],
+        "draft": false,
+        "summary": null,
+        "body": {
+          "raw": "",
+          "html": ""
+        },
+        "_id": "blog/2023-retro.md",
+        "_raw": {
+          "sourceFilePath": "blog/2023-retro.md",
+          "sourceFileName": "2023-retro.md",
+          "sourceFileDir": "blog",
+          "contentType": "markdown",
+          "flattenedPath": "blog/2023-retro"
+        },
+        "type": "Blog",
+        "readingTime": {
+          "text": "0 min read",
+          "minutes": 0,
+          "time": 0,
+          "words": 0
+        },
+        "slug": "2023-retro",
+        "path": "blog/2023-retro",
+        "filePath": "blog/2023-retro.md",
+        "toc": [],
+        "lang": "cn",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "2023 Retro",
+          "datePublished": "2024-03-06T00:00:00.000Z",
+          "dateModified": "2024-03-06T00:00:00.000Z",
+          "description": null,
+          "image": "/static/images/twitter-card.png",
+          "url": "https://www.jxdev.me/blog/2023-retro"
+        }
+      },
+      "documentHash": "1718790581151",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "blog/asdf.md": {
+      "document": {
+        "title": "包管理软件asdf",
+        "date": "2023-06-27T00:00:00.000Z",
+        "tags": [
+          "tool"
+        ],
+        "draft": false,
+        "summary": "\r",
+        "body": {
+          "raw": "\r\n你知道如何使用一个支持多个软件的版本管理器吗？\r\n\r\n管理软件版本可能是一个复杂且耗时的任务，尤其是当你处理多个跨平台应用程序时。\r\n\r\n在当今快节奏的数字环境中，拥有一个支持多个软件包的统一解决方案非常宝贵。想象一下，一个单一的版本管理器可以简化流程，确保您的软件轻松保持最新。\r\n让我们探讨使用能够处理多个软件应用程序的版本管理器的优点和可能性，简化您的工作流程并提高您的软件管理体验。\r\n\r\n每种编程语言或框架都有其自己的版本管理器，例如Node.js的NVM，Ruby的RVM和Python的Pyenv。\r\n\r\n然而，使用不同的版本管理器来管理不同的软件并不是一个好主意。最好使用一个支持多种软件的版本管理器。\r\n\r\n选项A：asdf\r\n\r\nasdf是一个命令行工具\r\n\r\n`youtube: https://www.youtube.com/embed/RTaqWRj-6Lg`  \r\n**Video: Use asdf to manage versions of Python, NodeJS, GoLang and more! (8 min)**\r\n\r\n✅ 易于使用\r\n✅ 轻量级 & 快速\r\n✅ 非侵入性\r\n✅ ~700个注册插件，涵盖大多数用例，包括node，dotnet，dotnet-core\r\n\r\n❌ 仅限Linux/Mac/WSL\r\n\r\n选项B：nix\r\n\r\nnix-shell - 一种使用Nix包管理器和声明性配置文件创建和管理软件项目的孤立、可重复的开发环境的工具。\r\n\r\n`youtube: https://www.youtube.com/embed/5Dd7rQPNDT8`  \r\n**Video: How to use Nix on Ubuntu or any Linux Distro (18 min)**\r\n\r\n✅ 可重复性 - 相同的软件安装过程产生相同的输出\r\n✅ 声明性配置 - Nix使用声明性配置格式描述软件及其依赖关系\r\n✅ 可扩展性 - 开发人员可以通过插件和自定义构建者扩展其功能\r\n\r\n❌ 陡峭的学习曲线\r\n❌ 侵入性\r\n❌ 仅限Linux/Mac/WSL",
+          "html": "<p>你知道如何使用一个支持多个软件的版本管理器吗？</p>\n<p>管理软件版本可能是一个复杂且耗时的任务，尤其是当你处理多个跨平台应用程序时。</p>\n<p>在当今快节奏的数字环境中，拥有一个支持多个软件包的统一解决方案非常宝贵。想象一下，一个单一的版本管理器可以简化流程，确保您的软件轻松保持最新。\r\n让我们探讨使用能够处理多个软件应用程序的版本管理器的优点和可能性，简化您的工作流程并提高您的软件管理体验。</p>\n<p>每种编程语言或框架都有其自己的版本管理器，例如Node.js的NVM，Ruby的RVM和Python的Pyenv。</p>\n<p>然而，使用不同的版本管理器来管理不同的软件并不是一个好主意。最好使用一个支持多种软件的版本管理器。</p>\n<p>选项A：asdf</p>\n<p>asdf是一个命令行工具</p>\n<p><code>youtube: https://www.youtube.com/embed/RTaqWRj-6Lg</code><br>\n<strong>Video: Use asdf to manage versions of Python, NodeJS, GoLang and more! (8 min)</strong></p>\n<p>✅ 易于使用\r\n✅ 轻量级 &#x26; 快速\r\n✅ 非侵入性\r\n✅ ~700个注册插件，涵盖大多数用例，包括node，dotnet，dotnet-core</p>\n<p>❌ 仅限Linux/Mac/WSL</p>\n<p>选项B：nix</p>\n<p>nix-shell - 一种使用Nix包管理器和声明性配置文件创建和管理软件项目的孤立、可重复的开发环境的工具。</p>\n<p><code>youtube: https://www.youtube.com/embed/5Dd7rQPNDT8</code><br>\n<strong>Video: How to use Nix on Ubuntu or any Linux Distro (18 min)</strong></p>\n<p>✅ 可重复性 - 相同的软件安装过程产生相同的输出\r\n✅ 声明性配置 - Nix使用声明性配置格式描述软件及其依赖关系\r\n✅ 可扩展性 - 开发人员可以通过插件和自定义构建者扩展其功能</p>\n<p>❌ 陡峭的学习曲线\r\n❌ 侵入性\r\n❌ 仅限Linux/Mac/WSL</p>"
+        },
+        "_id": "blog/asdf.md",
+        "_raw": {
+          "sourceFilePath": "blog/asdf.md",
+          "sourceFileName": "asdf.md",
+          "sourceFileDir": "blog",
+          "contentType": "markdown",
+          "flattenedPath": "blog/asdf"
+        },
+        "type": "Blog",
+        "readingTime": {
+          "text": "3 min read",
+          "minutes": 2.335,
+          "time": 140100,
+          "words": 467
+        },
+        "slug": "asdf",
+        "path": "blog/asdf",
+        "filePath": "blog/asdf.md",
+        "toc": [],
+        "lang": "cn",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "包管理软件asdf",
+          "datePublished": "2023-06-27T00:00:00.000Z",
+          "dateModified": "2023-06-27T00:00:00.000Z",
+          "description": "\r",
+          "image": "/static/images/twitter-card.png",
+          "url": "https://www.jxdev.me/blog/asdf"
+        }
+      },
+      "documentHash": "1717052909773",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "blog/datax-pitfall.md": {
+      "document": {
+        "title": "DataX踩坑记录",
+        "date": "2024-02-19T00:00:00.000Z",
+        "tags": [
+          "datax",
+          "maven"
+        ],
+        "draft": false,
+        "summary": null,
+        "body": {
+          "raw": "\n在datax二次开发中，发现使用3.9版本的maven会无法打包\n\n执行打包命令\n\n```shell\nmvn clean package -DskipTests assembly:assembly\n```\n\n会报maven-assembly-plugin插件没有assembly:assembly命令，只有assembly:single\n\n使用assembly:single后会报MojoNotFoundException\n\n根目录/pom.xml插件配置如下\n```xml\n            <plugin>\n                <artifactId>maven-assembly-plugin</artifactId>\n                <configuration>\n                    <finalName>datax</finalName>\n                    <descriptors>\n                        <descriptor>package.xml</descriptor>\n                    </descriptors>\n                </configuration>\n                <executions>\n                    <execution>\n                        <id>make-assembly</id>\n                        <phase>package</phase>\n                    </execution>\n                </executions>\n            </plugin>\n```\n\n添加-e -X打印错误和debug日志\n```shell\nmvn clean package -DskipTests assembly:assembly -e -X\n```\n\n发现是读取的package.xml中的id是空的, executions里的id没有覆盖到package.xml中\n\n**package.xml**\n```xml\n<assembly\n        xmlns=\"http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0\"\n        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n        xsi:schemaLocation=\"http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd\">\n    <id></id>\n    <formats>\n        <format>tar.gz</format>\n        <format>dir</format>\n    </formats>\n    <includeBaseDirectory>false</includeBaseDirectory>\n```\n\n切换为maven3.8.8, 成功编译\n\n=== 探究原因 ===\n\n1. maven-assembly-plugin:2.2-beta-5 有assembly:assembly 命令\n2. maven插件版本依赖导致升级到maven3.9时，maven-assembly-plugin自动升级到3.6.0\n\nRef.\n- https://maven.apache.org/guides/plugin/guide-java-plugin-development.html\n- https://stackoverflow.com/questions/21128372/how-does-maven-resolve-plugin-versions\n> Every version of Maven binaries has certain versions of plugin versions hardcoded\n",
+          "html": "<p>在datax二次开发中，发现使用3.9版本的maven会无法打包</p>\n<p>执行打包命令</p>\n<pre><code class=\"language-shell\">mvn clean package -DskipTests assembly:assembly\n</code></pre>\n<p>会报maven-assembly-plugin插件没有assembly:assembly命令，只有assembly:single</p>\n<p>使用assembly:single后会报MojoNotFoundException</p>\n<p>根目录/pom.xml插件配置如下</p>\n<pre><code class=\"language-xml\">            &#x3C;plugin>\n                &#x3C;artifactId>maven-assembly-plugin&#x3C;/artifactId>\n                &#x3C;configuration>\n                    &#x3C;finalName>datax&#x3C;/finalName>\n                    &#x3C;descriptors>\n                        &#x3C;descriptor>package.xml&#x3C;/descriptor>\n                    &#x3C;/descriptors>\n                &#x3C;/configuration>\n                &#x3C;executions>\n                    &#x3C;execution>\n                        &#x3C;id>make-assembly&#x3C;/id>\n                        &#x3C;phase>package&#x3C;/phase>\n                    &#x3C;/execution>\n                &#x3C;/executions>\n            &#x3C;/plugin>\n</code></pre>\n<p>添加-e -X打印错误和debug日志</p>\n<pre><code class=\"language-shell\">mvn clean package -DskipTests assembly:assembly -e -X\n</code></pre>\n<p>发现是读取的package.xml中的id是空的, executions里的id没有覆盖到package.xml中</p>\n<p><strong>package.xml</strong></p>\n<pre><code class=\"language-xml\">&#x3C;assembly\n        xmlns=\"http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0\"\n        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n        xsi:schemaLocation=\"http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd\">\n    &#x3C;id>&#x3C;/id>\n    &#x3C;formats>\n        &#x3C;format>tar.gz&#x3C;/format>\n        &#x3C;format>dir&#x3C;/format>\n    &#x3C;/formats>\n    &#x3C;includeBaseDirectory>false&#x3C;/includeBaseDirectory>\n</code></pre>\n<p>切换为maven3.8.8, 成功编译</p>\n<p>=== 探究原因 ===</p>\n<ol>\n<li>maven-assembly-plugin:2.2-beta-5 有assembly:assembly 命令</li>\n<li>maven插件版本依赖导致升级到maven3.9时，maven-assembly-plugin自动升级到3.6.0</li>\n</ol>\n<p>Ref.</p>\n<ul>\n<li>https://maven.apache.org/guides/plugin/guide-java-plugin-development.html</li>\n<li>https://stackoverflow.com/questions/21128372/how-does-maven-resolve-plugin-versions</li>\n</ul>\n<blockquote>\n<p>Every version of Maven binaries has certain versions of plugin versions hardcoded</p>\n</blockquote>"
+        },
+        "_id": "blog/datax-pitfall.md",
+        "_raw": {
+          "sourceFilePath": "blog/datax-pitfall.md",
+          "sourceFileName": "datax-pitfall.md",
+          "sourceFileDir": "blog",
+          "contentType": "markdown",
+          "flattenedPath": "blog/datax-pitfall"
+        },
+        "type": "Blog",
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.99,
+          "time": 59400,
+          "words": 198
+        },
+        "slug": "datax-pitfall",
+        "path": "blog/datax-pitfall",
+        "filePath": "blog/datax-pitfall.md",
+        "toc": [],
+        "lang": "cn",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "DataX踩坑记录",
+          "datePublished": "2024-02-19T00:00:00.000Z",
+          "dateModified": "2024-02-19T00:00:00.000Z",
+          "description": null,
+          "image": "/static/images/twitter-card.png",
+          "url": "https://www.jxdev.me/blog/datax-pitfall"
+        }
+      },
+      "documentHash": "1717052931346",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "blog/docker-network.md": {
+      "document": {
+        "title": "Docker网络",
+        "date": "2022-10-28T00:00:00.000Z",
+        "tags": [
+          "network",
+          "docker"
+        ],
+        "draft": false,
+        "summary": null,
+        "body": {
+          "raw": "\n在docker中，自带用6中不同的网络，了解下他们的异同和使用场景。\n\n```bash\nsysctl net.ipv4.conf.all.forwarding=1\n\nsudo iptables -P FORWARD ACCEPT\n```\n# daemon.json\n\n```json\n{\n  \"bip\": \"192.168.1.1/24\",\n  \"fixed-cidr\": \"192.168.1.0/25\",\n  \"fixed-cidr-v6\": \"2001:db8::/64\",\n  \"mtu\": 1500,\n  \"default-gateway\": \"192.168.1.254\",\n  \"default-gateway-v6\": \"2001:db8:abcd::89\",\n  \"dns\": [\"10.20.1.2\",\"10.20.1.3\"]\n}\n```\n\n\n### 桥接网络 Bridge network\n\n桥接网络在网络领域中，一般指负责链路层的网络, 功能类似我们日常使用的2层交换机\n\n桥接网络也可以使用软件实现\n\ndocker启动时会自动创建一个默认的桥接网络，运行容器时不指定网络，会默认使用该桥接网络, 用户也可以自定义桥接网络\n\n默认的桥接网络在功能上有缺失:\n\n- 不能通过容器名访问在同一个桥接网络中的容器\n- 隔离性差，默认都在同一个网络中\n- 容器连接或离开默认网络时，需要中止容器\n- 配置太全局 MTU iptables rules, 修改默认网络配置需要重启docker\n\n#### 发生了什么？\n```bash\n# 创建网络\ndocker create network test\n\n```\n\n创建veth pair\n\n```bash\n# 创建容器\ndocker create --name test-nginx --network test --publish 8080:80 nginx:latest\n\n# 链接容器到网络\ndocker network connect test test-nginx\n\n# 断开链接到容器\ndocker network disconnect test test-nginx\n```\n\nip link add p1-name type veth peer name p2-name\n\n**network namespaces**\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "html": "<p>在docker中，自带用6中不同的网络，了解下他们的异同和使用场景。</p>\n<pre><code class=\"language-bash\">sysctl net.ipv4.conf.all.forwarding=1\n\nsudo iptables -P FORWARD ACCEPT\n</code></pre>\n<h1>daemon.json</h1>\n<pre><code class=\"language-json\">{\n  \"bip\": \"192.168.1.1/24\",\n  \"fixed-cidr\": \"192.168.1.0/25\",\n  \"fixed-cidr-v6\": \"2001:db8::/64\",\n  \"mtu\": 1500,\n  \"default-gateway\": \"192.168.1.254\",\n  \"default-gateway-v6\": \"2001:db8:abcd::89\",\n  \"dns\": [\"10.20.1.2\",\"10.20.1.3\"]\n}\n</code></pre>\n<h3>桥接网络 Bridge network</h3>\n<p>桥接网络在网络领域中，一般指负责链路层的网络, 功能类似我们日常使用的2层交换机</p>\n<p>桥接网络也可以使用软件实现</p>\n<p>docker启动时会自动创建一个默认的桥接网络，运行容器时不指定网络，会默认使用该桥接网络, 用户也可以自定义桥接网络</p>\n<p>默认的桥接网络在功能上有缺失:</p>\n<ul>\n<li>不能通过容器名访问在同一个桥接网络中的容器</li>\n<li>隔离性差，默认都在同一个网络中</li>\n<li>容器连接或离开默认网络时，需要中止容器</li>\n<li>配置太全局 MTU iptables rules, 修改默认网络配置需要重启docker</li>\n</ul>\n<h4>发生了什么？</h4>\n<pre><code class=\"language-bash\"># 创建网络\ndocker create network test\n\n</code></pre>\n<p>创建veth pair</p>\n<pre><code class=\"language-bash\"># 创建容器\ndocker create --name test-nginx --network test --publish 8080:80 nginx:latest\n\n# 链接容器到网络\ndocker network connect test test-nginx\n\n# 断开链接到容器\ndocker network disconnect test test-nginx\n</code></pre>\n<p>ip link add p1-name type veth peer name p2-name</p>\n<p><strong>network namespaces</strong></p>"
+        },
+        "_id": "blog/docker-network.md",
+        "_raw": {
+          "sourceFilePath": "blog/docker-network.md",
+          "sourceFileName": "docker-network.md",
+          "sourceFileDir": "blog",
+          "contentType": "markdown",
+          "flattenedPath": "blog/docker-network"
+        },
+        "type": "Blog",
+        "readingTime": {
+          "text": "2 min read",
+          "minutes": 1.62,
+          "time": 97200,
+          "words": 324
+        },
+        "slug": "docker-network",
+        "path": "blog/docker-network",
+        "filePath": "blog/docker-network.md",
+        "toc": [
+          {
+            "value": "daemon.json",
+            "url": "#daemonjson",
+            "depth": 1
+          },
+          {
+            "value": "桥接网络 Bridge network",
+            "url": "#桥接网络-bridge-network",
+            "depth": 3
+          },
+          {
+            "value": "发生了什么？",
+            "url": "#发生了什么",
+            "depth": 4
+          }
+        ],
+        "lang": "cn",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Docker网络",
+          "datePublished": "2022-10-28T00:00:00.000Z",
+          "dateModified": "2022-10-28T00:00:00.000Z",
+          "description": null,
+          "image": "/static/images/twitter-card.png",
+          "url": "https://www.jxdev.me/blog/docker-network"
+        }
+      },
+      "documentHash": "1719283364452",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "blog/dwm.md": {
+      "document": {
+        "title": "在WSL2中使用dwm",
+        "date": "2023-05-17T00:00:00.000Z",
+        "tags": [],
+        "draft": false,
+        "summary": "\r",
+        "body": {
+          "raw": "\r\n昨天本来是一个平静的晚上，直到看到左耳朵耗子老师突然离开的新闻。\r\n\r\n我不知道该说些什么，只是觉得很难过，也很无奈。\r\n\r\n想想自己的生活，也是一团糟，不知道该怎么办。\r\n\r\n不行！做人最重要的是开心，我要开心起来！于是就去B站上试图找乐子...\r\n\r\n[![dwm](https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/dwm.png)](https://www.bilibili.com/video/BV1Ef4y1Z7kA)\r\n\r\n哎，这个桌面看起来有点好看啊\r\n\r\n在Linux里面使用dwm这么爽吗！我也要用🤩\r\n\r\n可是笔者平时用的是WSL2，会不会遇到问题呢？🤔\r\n\r\n遇事不决莽一波，先试试看吧！\r\n\r\n### 开工\r\n\r\n如果想要修改dwm的配置，是需要修改编译文件的，所以为了扩展性，我们先把dwm的源码下载下来。\r\n\r\n1. 下载源码\r\n```zsh\r\ngit clone https://git.suckless.org/dwm\r\n```\r\n\r\n2. 安装编译所需依赖\r\n```zsh\r\nsudo apt install -y build-essential libdev xorg stterm suckless-tools libx11-dev libxinerama-dev libxft-dev\r\n```\r\n\r\n3. 编译安装\r\n```zsh\r\nsudo make clean install\r\n```\r\n\r\n如果不修改安装路径，dwm默认会安装在`/usr/local/bin`\r\n\r\n### 使用\r\n```zsh\r\ndwm\r\n```\r\n输入dwm后，dwm会在terminal的前台运行\r\n\r\n等待几秒后🤔，什么也没有发生（不要慌，一切都在我预料之中）\r\n\r\n在WSL2里，运行图形化程序，是要用X server的（废物，还要用这个）\r\n\r\n所以我们需要在windows也就是宿主机上安装一个X Server，wsl2作为客户端将图形化程序发送到server上，这里我用的是x410\r\n\r\n1. 安装x410(windows store)\r\n\r\n什么？你问这个程序怎么是付费的？那你可以用[VcXsrv](https://sourceforge.net/projects/vcxsrv/)，原理是一样的\r\n\r\n参考[配置x410](\r\nhttps://x410.dev/cookbook/wsl/enable-systemd-in-wsl2-and-have-the-best-ubuntu-gui-desktop-experience)\r\n\r\n配置DISPLAY环境变量\r\n```zsh\r\n# 使用zsh，发现.zshrc并不会在login的时候被加载\r\n# 修改/etc/zshenv 可以解决这个问题\r\necho export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0 >> /etc/zshenv\r\n```\r\n\r\n2. 运行x410，并打开WSL2选项\r\n3. 编写快速启动脚本\r\n参考[x410 cookbook | command line switches](https://x410.dev/cookbook/command-line-switches)\r\n```cmd\r\n@echo off\r\n\r\nREM ### Start X410 in Windowed Apps Mode. If X410 is already running in Desktop Mode, \r\nREM ### it'll be terminated first without any warning message box.\r\n\r\nREM ### x410的windowed app模式不能使用，因为dwm本身就是窗口管理器\r\nREM ### start /B x410.exe /wm\r\nstart /B x410.exe 0 /desktop\r\n\r\nREM ### Start dwm\r\n\r\nubuntu.exe run \"zsh --login -c 'nohup dwm > /dev/null 2>&1 & sleep 1'\"\r\n```\r\n4. 双击脚本，哇是dwm窗口哎!\r\n\r\n你可能会想，这个东西怎么会这么丑，空虚的界面，灰黑色的背景，就好像你的人生一样\r\n\r\n左上角1到9的数字就好像兜兜里的钱钱，每当要攒起来的时候，就有一股神秘力量阻止他进位\r\n\r\n我知道你很急，但你先别急！定制dwm就好像喝水一样简单🙂，且听下回分解！！！\r\n",
+          "html": "<p>昨天本来是一个平静的晚上，直到看到左耳朵耗子老师突然离开的新闻。</p>\n<p>我不知道该说些什么，只是觉得很难过，也很无奈。</p>\n<p>想想自己的生活，也是一团糟，不知道该怎么办。</p>\n<p>不行！做人最重要的是开心，我要开心起来！于是就去B站上试图找乐子...</p>\n<p><a href=\"https://www.bilibili.com/video/BV1Ef4y1Z7kA\"><img src=\"https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/dwm.png\" alt=\"dwm\"></a></p>\n<p>哎，这个桌面看起来有点好看啊</p>\n<p>在Linux里面使用dwm这么爽吗！我也要用🤩</p>\n<p>可是笔者平时用的是WSL2，会不会遇到问题呢？🤔</p>\n<p>遇事不决莽一波，先试试看吧！</p>\n<h3>开工</h3>\n<p>如果想要修改dwm的配置，是需要修改编译文件的，所以为了扩展性，我们先把dwm的源码下载下来。</p>\n<ol>\n<li>下载源码</li>\n</ol>\n<pre><code class=\"language-zsh\">git clone https://git.suckless.org/dwm\n</code></pre>\n<ol start=\"2\">\n<li>安装编译所需依赖</li>\n</ol>\n<pre><code class=\"language-zsh\">sudo apt install -y build-essential libdev xorg stterm suckless-tools libx11-dev libxinerama-dev libxft-dev\n</code></pre>\n<ol start=\"3\">\n<li>编译安装</li>\n</ol>\n<pre><code class=\"language-zsh\">sudo make clean install\n</code></pre>\n<p>如果不修改安装路径，dwm默认会安装在<code>/usr/local/bin</code></p>\n<h3>使用</h3>\n<pre><code class=\"language-zsh\">dwm\n</code></pre>\n<p>输入dwm后，dwm会在terminal的前台运行</p>\n<p>等待几秒后🤔，什么也没有发生（不要慌，一切都在我预料之中）</p>\n<p>在WSL2里，运行图形化程序，是要用X server的（废物，还要用这个）</p>\n<p>所以我们需要在windows也就是宿主机上安装一个X Server，wsl2作为客户端将图形化程序发送到server上，这里我用的是x410</p>\n<ol>\n<li>安装x410(windows store)</li>\n</ol>\n<p>什么？你问这个程序怎么是付费的？那你可以用<a href=\"https://sourceforge.net/projects/vcxsrv/\">VcXsrv</a>，原理是一样的</p>\n<p>参考<a href=\"https://x410.dev/cookbook/wsl/enable-systemd-in-wsl2-and-have-the-best-ubuntu-gui-desktop-experience\">配置x410</a></p>\n<p>配置DISPLAY环境变量</p>\n<pre><code class=\"language-zsh\"># 使用zsh，发现.zshrc并不会在login的时候被加载\r\n# 修改/etc/zshenv 可以解决这个问题\r\necho export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0 >> /etc/zshenv\n</code></pre>\n<ol start=\"2\">\n<li>运行x410，并打开WSL2选项</li>\n<li>编写快速启动脚本\r\n参考<a href=\"https://x410.dev/cookbook/command-line-switches\">x410 cookbook | command line switches</a></li>\n</ol>\n<pre><code class=\"language-cmd\">@echo off\r\n\r\nREM ### Start X410 in Windowed Apps Mode. If X410 is already running in Desktop Mode, \r\nREM ### it'll be terminated first without any warning message box.\r\n\r\nREM ### x410的windowed app模式不能使用，因为dwm本身就是窗口管理器\r\nREM ### start /B x410.exe /wm\r\nstart /B x410.exe 0 /desktop\r\n\r\nREM ### Start dwm\r\n\r\nubuntu.exe run \"zsh --login -c 'nohup dwm > /dev/null 2>&#x26;1 &#x26; sleep 1'\"\n</code></pre>\n<ol start=\"4\">\n<li>双击脚本，哇是dwm窗口哎!</li>\n</ol>\n<p>你可能会想，这个东西怎么会这么丑，空虚的界面，灰黑色的背景，就好像你的人生一样</p>\n<p>左上角1到9的数字就好像兜兜里的钱钱，每当要攒起来的时候，就有一股神秘力量阻止他进位</p>\n<p>我知道你很急，但你先别急！定制dwm就好像喝水一样简单🙂，且听下回分解！！！</p>"
+        },
+        "_id": "blog/dwm.md",
+        "_raw": {
+          "sourceFilePath": "blog/dwm.md",
+          "sourceFileName": "dwm.md",
+          "sourceFileDir": "blog",
+          "contentType": "markdown",
+          "flattenedPath": "blog/dwm"
+        },
+        "type": "Blog",
+        "readingTime": {
+          "text": "4 min read",
+          "minutes": 3.435,
+          "time": 206100,
+          "words": 687
+        },
+        "slug": "dwm",
+        "path": "blog/dwm",
+        "filePath": "blog/dwm.md",
+        "toc": [
+          {
+            "value": "开工",
+            "url": "#开工",
+            "depth": 3
+          },
+          {
+            "value": "使用",
+            "url": "#使用",
+            "depth": 3
+          }
+        ],
+        "lang": "cn",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "在WSL2中使用dwm",
+          "datePublished": "2023-05-17T00:00:00.000Z",
+          "dateModified": "2023-05-17T00:00:00.000Z",
+          "description": "\r",
+          "image": "/static/images/twitter-card.png",
+          "url": "https://www.jxdev.me/blog/dwm"
+        }
+      },
+      "documentHash": "1717607613086",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "blog/github-http2-error.md": {
+      "document": {
+        "title": "github http2 报错",
+        "date": "2024-03-06T00:00:00.000Z",
+        "tags": [],
+        "draft": false,
+        "summary": null,
+        "body": {
+          "raw": "\n前几天使用git pull命令一直失败，报错如下\n\n```bash\nHTTP/2 stream 1 was not closed cleanly before end of the underlying stream\n```\n\n稍微查了下，很快在网上找到了答案\n\n全局设置git使用HTTP/1.1就好了\n\n```bash\ngit config --global http.version HTTP/1.1\n```\n\n🤔可是这个报错到底代表了什么呢？\n",
+          "html": "<p>前几天使用git pull命令一直失败，报错如下</p>\n<pre><code class=\"language-bash\">HTTP/2 stream 1 was not closed cleanly before end of the underlying stream\n</code></pre>\n<p>稍微查了下，很快在网上找到了答案</p>\n<p>全局设置git使用HTTP/1.1就好了</p>\n<pre><code class=\"language-bash\">git config --global http.version HTTP/1.1\n</code></pre>\n<p>🤔可是这个报错到底代表了什么呢？</p>"
+        },
+        "_id": "blog/github-http2-error.md",
+        "_raw": {
+          "sourceFilePath": "blog/github-http2-error.md",
+          "sourceFileName": "github-http2-error.md",
+          "sourceFileDir": "blog",
+          "contentType": "markdown",
+          "flattenedPath": "blog/github-http2-error"
+        },
+        "type": "Blog",
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.4,
+          "time": 24000,
+          "words": 80
+        },
+        "slug": "github-http2-error",
+        "path": "blog/github-http2-error",
+        "filePath": "blog/github-http2-error.md",
+        "toc": [],
+        "lang": "cn",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "github http2 报错",
+          "datePublished": "2024-03-06T00:00:00.000Z",
+          "dateModified": "2024-03-06T00:00:00.000Z",
+          "description": null,
+          "image": "/static/images/twitter-card.png",
+          "url": "https://www.jxdev.me/blog/github-http2-error"
+        }
+      },
+      "documentHash": "1717052982914",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "blog/ids-101.md": {
+      "document": {
+        "title": "怎么挑选合适的主键",
+        "date": "2022-10-14T00:00:00.000Z",
+        "tags": [
+          "backend",
+          "database"
+        ],
+        "draft": false,
+        "summary": "\r",
+        "body": {
+          "raw": "\r\n设计数据实体时, 挑选合适的主键会影响后续开发和系统升级的难易程度.\r\n\r\n在实际设计之前，我们需要知道\r\n1. 业界常用的设计\r\n2. 设计适用的场景\r\n\r\n第一个问题\r\n\r\n我们应该使用代理键(Surrogate)还是自然键(Natural)?\r\n\r\n代理键由系统生成 并且和业务字段没有联系，例如一个由数据库生成的UUID\r\n\r\n自然键则刚好相反，是基于存在的业务字段生成或直接使用的键，例如用户的身份证ID\r\n\r\n代理键的优点\r\n\r\n\r\n自然键的优点\r\n\r\n\r\n\r\n\r\n数据类型和大小\r\n\r\n\r\n",
+          "html": "<p>设计数据实体时, 挑选合适的主键会影响后续开发和系统升级的难易程度.</p>\n<p>在实际设计之前，我们需要知道</p>\n<ol>\n<li>业界常用的设计</li>\n<li>设计适用的场景</li>\n</ol>\n<p>第一个问题</p>\n<p>我们应该使用代理键(Surrogate)还是自然键(Natural)?</p>\n<p>代理键由系统生成 并且和业务字段没有联系，例如一个由数据库生成的UUID</p>\n<p>自然键则刚好相反，是基于存在的业务字段生成或直接使用的键，例如用户的身份证ID</p>\n<p>代理键的优点</p>\n<p>自然键的优点</p>\n<p>数据类型和大小</p>"
+        },
+        "_id": "blog/ids-101.md",
+        "_raw": {
+          "sourceFilePath": "blog/ids-101.md",
+          "sourceFileName": "ids-101.md",
+          "sourceFileDir": "blog",
+          "contentType": "markdown",
+          "flattenedPath": "blog/ids-101"
+        },
+        "type": "Blog",
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.835,
+          "time": 50100,
+          "words": 167
+        },
+        "slug": "ids-101",
+        "path": "blog/ids-101",
+        "filePath": "blog/ids-101.md",
+        "toc": [],
+        "lang": "cn",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "怎么挑选合适的主键",
+          "datePublished": "2022-10-14T00:00:00.000Z",
+          "dateModified": "2022-10-14T00:00:00.000Z",
+          "description": "\r",
+          "image": "/static/images/twitter-card.png",
+          "url": "https://www.jxdev.me/blog/ids-101"
+        }
+      },
+      "documentHash": "1716610912075",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "blog/inspect-mvn-dep.md": {
+      "document": {
+        "title": "Maven依赖问题解决不完全指南",
+        "date": "2024-03-06T00:00:00.000Z",
+        "tags": [],
+        "draft": true,
+        "summary": null,
+        "body": {
+          "raw": "\nJAVA开发中，尤其是经常会遇到由于依赖引发的问题\n\n收集一些常见的解决方法\n\n1. ClassDefNotFound 依赖冲突\n使用mvn dependency:tree或者idea dependency analyze查看依赖树\n看是否有冲突的包没有被加载进来\n2. 其他报错 可能是自动装配的时候，版本不兼容，具体问题，具体分析\n3. 高危安全漏洞\nTODO：\n",
+          "html": "<p>JAVA开发中，尤其是经常会遇到由于依赖引发的问题</p>\n<p>收集一些常见的解决方法</p>\n<ol>\n<li>ClassDefNotFound 依赖冲突\n使用mvn dependency:tree或者idea dependency analyze查看依赖树\n看是否有冲突的包没有被加载进来</li>\n<li>其他报错 可能是自动装配的时候，版本不兼容，具体问题，具体分析</li>\n<li>高危安全漏洞\nTODO：</li>\n</ol>"
+        },
+        "_id": "blog/inspect-mvn-dep.md",
+        "_raw": {
+          "sourceFilePath": "blog/inspect-mvn-dep.md",
+          "sourceFileName": "inspect-mvn-dep.md",
+          "sourceFileDir": "blog",
+          "contentType": "markdown",
+          "flattenedPath": "blog/inspect-mvn-dep"
+        },
+        "type": "Blog",
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.515,
+          "time": 30900,
+          "words": 103
+        },
+        "slug": "inspect-mvn-dep",
+        "path": "blog/inspect-mvn-dep",
+        "filePath": "blog/inspect-mvn-dep.md",
+        "toc": [],
+        "lang": "cn",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Maven依赖问题解决不完全指南",
+          "datePublished": "2024-03-06T00:00:00.000Z",
+          "dateModified": "2024-03-06T00:00:00.000Z",
+          "description": null,
+          "image": "/static/images/twitter-card.png",
+          "url": "https://www.jxdev.me/blog/inspect-mvn-dep"
+        }
+      },
+      "documentHash": "1717053044661",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "blog/jdk9-reflect-policy-changed.md": {
+      "document": {
+        "title": "JDK9反射协议修改",
+        "date": "2024-03-06T00:00:00.000Z",
+        "tags": [
+          "JAVA"
+        ],
+        "draft": false,
+        "summary": null,
+        "body": {
+          "raw": "\njdk9以上使用了新的模块化系统\n\njdk9以上的JVM默认禁止使用对java内部类的reflect\n\n如果要使用需要添加\n\n```bash\nJDK_JAVA_OPTIONS=— add-opens java.base/java.util=ALL-UNNAMED\n```\n",
+          "html": "<p>jdk9以上使用了新的模块化系统</p>\n<p>jdk9以上的JVM默认禁止使用对java内部类的reflect</p>\n<p>如果要使用需要添加</p>\n<pre><code class=\"language-bash\">JDK_JAVA_OPTIONS=— add-opens java.base/java.util=ALL-UNNAMED\n</code></pre>"
+        },
+        "_id": "blog/jdk9-reflect-policy-changed.md",
+        "_raw": {
+          "sourceFilePath": "blog/jdk9-reflect-policy-changed.md",
+          "sourceFileName": "jdk9-reflect-policy-changed.md",
+          "sourceFileDir": "blog",
+          "contentType": "markdown",
+          "flattenedPath": "blog/jdk9-reflect-policy-changed"
+        },
+        "type": "Blog",
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.225,
+          "time": 13500,
+          "words": 45
+        },
+        "slug": "jdk9-reflect-policy-changed",
+        "path": "blog/jdk9-reflect-policy-changed",
+        "filePath": "blog/jdk9-reflect-policy-changed.md",
+        "toc": [],
+        "lang": "cn",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "JDK9反射协议修改",
+          "datePublished": "2024-03-06T00:00:00.000Z",
+          "dateModified": "2024-03-06T00:00:00.000Z",
+          "description": null,
+          "image": "/static/images/twitter-card.png",
+          "url": "https://www.jxdev.me/blog/jdk9-reflect-policy-changed"
+        }
+      },
+      "documentHash": "1717053099544",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "blog/learn-dockerfile-from-examples.md": {
+      "document": {
+        "title": "编写Dockerfile的注意点",
+        "date": "2022-11-09T00:00:00.000Z",
+        "tags": [
+          "docker"
+        ],
+        "draft": false,
+        "summary": "\r",
+        "body": {
+          "raw": "\r\n2022, 写[Dockerfile](https://docs.docker.com/engine/reference/builder)几乎是每个工程师的必修课了\r\n\r\n最近发现自己对平时使用镜像的Dockerfile知之甚少\r\n\r\n于是，就去翻翻大佬们写的Dockerfile，顺便学习一下\r\n\r\ndocker有两种镜像，base image和parent image\r\n## Base Image\r\n> 不依赖其他镜像，以FROM scratch开头\r\n\r\n[ubuntu:18.04 dockerfile](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/Dockerfile?h=refs/tags/dist-bionic-amd64-20221019&id=351306c6043bd360b94781a7db9fcb2ea1d2ff23)\r\n\r\n[ubuntu:18.04 oci rootfs下载地址](https://partner-images.canonical.com/oci/bionic/current/)\r\n```dockerfile\r\n# ubuntu:18.04\r\nFROM scratch\r\nADD ubuntu-bionic-oci-amd64-root.tar.gz /\r\nCMD [\"bash\"]\r\n```\r\n根据ubuntu基础镜像的dockerfile，我们可以自定义rootfs作为基础镜像\r\n\r\n+Q: oci的rootfs和完整的系统区别在哪里呢？\r\n\r\n## Parent Image\r\n> 依赖已存在的base image或parent image\r\n\r\n### mysql\r\n\r\n```dockerfile\r\nFROM debian:bullseye-slim\r\n\r\n# add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added\r\nRUN groupadd -r mysql && useradd -r -g mysql mysql\r\n\r\n# LABEL maintainer=\"NGINX Docker Maintainers <docker-maint@nginx.com>\"\r\n\r\n# 删除apt/lists\r\nRUN apt-get update && apt-get install -y --no-install-recommends gnupg dirmngr && rm -rf /var/lib/apt/lists/*\r\n\r\n# add gosu for easy step-down from root\r\n# https://github.com/tianon/gosu/releases\r\nENV GOSU_VERSION 1.14\r\nRUN set -eux; \\\r\n\tsavedAptMark=\"$(apt-mark showmanual)\"; \\\r\n\tapt-get update; \\\r\n\tapt-get install -y --no-install-recommends ca-certificates wget; \\\r\n\trm -rf /var/lib/apt/lists/*; \\\r\n\tdpkgArch=\"$(dpkg --print-architecture | awk -F- '{ print $NF }')\"; \\\r\n\twget -O /usr/local/bin/gosu \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch\"; \\\r\n\twget -O /usr/local/bin/gosu.asc \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc\"; \\\r\n\texport GNUPGHOME=\"$(mktemp -d)\"; \\\r\n\tgpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; \\\r\n\tgpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; \\\r\n\tgpgconf --kill all; \\\r\n\trm -rf \"$GNUPGHOME\" /usr/local/bin/gosu.asc; \\\r\n\tapt-mark auto '.*' > /dev/null; \\\r\n\t[ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark > /dev/null; \\\r\n\tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \\\r\n\tchmod +x /usr/local/bin/gosu; \\\r\n\tgosu --version; \\\r\n\tgosu nobody true\r\n\r\nRUN mkdir /docker-entrypoint-initdb.d\r\n\r\nRUN set -eux; \\\r\n\tapt-get update; \\\r\n\tapt-get install -y --no-install-recommends \\\r\n\t\tbzip2 \\\r\n\t\topenssl \\\r\n# FATAL ERROR: please install the following Perl modules before executing /usr/local/mysql/scripts/mysql_install_db:\r\n# File::Basename\r\n# File::Copy\r\n# Sys::Hostname\r\n# Data::Dumper\r\n\t\tperl \\\r\n\t\txz-utils \\\r\n\t\tzstd \\\r\n\t; \\\r\n\trm -rf /var/lib/apt/lists/*\r\n\r\nRUN set -eux; \\\r\n# gpg: key 3A79BD29: public key \"MySQL Release Engineering <mysql-build@oss.oracle.com>\" imported\r\n\tkey='859BE8D7C586F538430B19C2467B942D3A79BD29'; \\\r\n\texport GNUPGHOME=\"$(mktemp -d)\"; \\\r\n\tgpg --batch --keyserver keyserver.ubuntu.com --recv-keys \"$key\"; \\\r\n\tmkdir -p /etc/apt/keyrings; \\\r\n\tgpg --batch --export \"$key\" > /etc/apt/keyrings/mysql.gpg; \\\r\n\tgpgconf --kill all; \\\r\n\trm -rf \"$GNUPGHOME\"\r\n\r\nENV MYSQL_MAJOR 8.0\r\nENV MYSQL_VERSION 8.0.31-1debian11\r\n\r\nRUN echo 'deb [ signed-by=/etc/apt/keyrings/mysql.gpg ] http://repo.mysql.com/apt/debian/ bullseye mysql-8.0' > /etc/apt/sources.list.d/mysql.list\r\n\r\n# the \"/var/lib/mysql\" stuff here is because the mysql-server postinst doesn't have an explicit way to disable the mysql_install_db codepath besides having a database already \"configured\" (ie, stuff in /var/lib/mysql/mysql)\r\n# also, we set debconf keys to make APT a little quieter\r\nRUN { \\\r\n\t\techo mysql-community-server mysql-community-server/data-dir select ''; \\\r\n\t\techo mysql-community-server mysql-community-server/root-pass password ''; \\\r\n\t\techo mysql-community-server mysql-community-server/re-root-pass password ''; \\\r\n\t\techo mysql-community-server mysql-community-server/remove-test-db select false; \\\r\n\t} | debconf-set-selections \\\r\n\t&& apt-get update \\\r\n\t&& apt-get install -y \\\r\n\t\tmysql-community-client=\"${MYSQL_VERSION}\" \\\r\n\t\tmysql-community-server-core=\"${MYSQL_VERSION}\" \\\r\n\t&& rm -rf /var/lib/apt/lists/* \\\r\n\t&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld \\\r\n\t&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld \\\r\n# ensure that /var/run/mysqld (used for socket and lock files) is writable regardless of the UID our mysqld instance ends up having at runtime\r\n\t&& chmod 1777 /var/run/mysqld /var/lib/mysql\r\n\r\nVOLUME /var/lib/mysql\r\n\r\n# Config files\r\nCOPY config/ /etc/mysql/\r\nCOPY docker-entrypoint.sh /usr/local/bin/\r\nRUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat\r\nENTRYPOINT [\"docker-entrypoint.sh\"]\r\n\r\nEXPOSE 3306 33060\r\nCMD [\"mysqld\"]\r\n```",
+          "html": "<p>2022, 写<a href=\"https://docs.docker.com/engine/reference/builder\">Dockerfile</a>几乎是每个工程师的必修课了</p>\n<p>最近发现自己对平时使用镜像的Dockerfile知之甚少</p>\n<p>于是，就去翻翻大佬们写的Dockerfile，顺便学习一下</p>\n<p>docker有两种镜像，base image和parent image</p>\n<h2>Base Image</h2>\n<blockquote>\n<p>不依赖其他镜像，以FROM scratch开头</p>\n</blockquote>\n<p><a href=\"https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/Dockerfile?h=refs/tags/dist-bionic-amd64-20221019&#x26;id=351306c6043bd360b94781a7db9fcb2ea1d2ff23\">ubuntu:18.04 dockerfile</a></p>\n<p><a href=\"https://partner-images.canonical.com/oci/bionic/current/\">ubuntu:18.04 oci rootfs下载地址</a></p>\n<pre><code class=\"language-dockerfile\"># ubuntu:18.04\r\nFROM scratch\r\nADD ubuntu-bionic-oci-amd64-root.tar.gz /\r\nCMD [\"bash\"]\n</code></pre>\n<p>根据ubuntu基础镜像的dockerfile，我们可以自定义rootfs作为基础镜像</p>\n<p>+Q: oci的rootfs和完整的系统区别在哪里呢？</p>\n<h2>Parent Image</h2>\n<blockquote>\n<p>依赖已存在的base image或parent image</p>\n</blockquote>\n<h3>mysql</h3>\n<pre><code class=\"language-dockerfile\">FROM debian:bullseye-slim\r\n\r\n# add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added\r\nRUN groupadd -r mysql &#x26;&#x26; useradd -r -g mysql mysql\r\n\r\n# LABEL maintainer=\"NGINX Docker Maintainers &#x3C;docker-maint@nginx.com>\"\r\n\r\n# 删除apt/lists\r\nRUN apt-get update &#x26;&#x26; apt-get install -y --no-install-recommends gnupg dirmngr &#x26;&#x26; rm -rf /var/lib/apt/lists/*\r\n\r\n# add gosu for easy step-down from root\r\n# https://github.com/tianon/gosu/releases\r\nENV GOSU_VERSION 1.14\r\nRUN set -eux; \\\r\n\tsavedAptMark=\"$(apt-mark showmanual)\"; \\\r\n\tapt-get update; \\\r\n\tapt-get install -y --no-install-recommends ca-certificates wget; \\\r\n\trm -rf /var/lib/apt/lists/*; \\\r\n\tdpkgArch=\"$(dpkg --print-architecture | awk -F- '{ print $NF }')\"; \\\r\n\twget -O /usr/local/bin/gosu \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch\"; \\\r\n\twget -O /usr/local/bin/gosu.asc \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc\"; \\\r\n\texport GNUPGHOME=\"$(mktemp -d)\"; \\\r\n\tgpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; \\\r\n\tgpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; \\\r\n\tgpgconf --kill all; \\\r\n\trm -rf \"$GNUPGHOME\" /usr/local/bin/gosu.asc; \\\r\n\tapt-mark auto '.*' > /dev/null; \\\r\n\t[ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark > /dev/null; \\\r\n\tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \\\r\n\tchmod +x /usr/local/bin/gosu; \\\r\n\tgosu --version; \\\r\n\tgosu nobody true\r\n\r\nRUN mkdir /docker-entrypoint-initdb.d\r\n\r\nRUN set -eux; \\\r\n\tapt-get update; \\\r\n\tapt-get install -y --no-install-recommends \\\r\n\t\tbzip2 \\\r\n\t\topenssl \\\r\n# FATAL ERROR: please install the following Perl modules before executing /usr/local/mysql/scripts/mysql_install_db:\r\n# File::Basename\r\n# File::Copy\r\n# Sys::Hostname\r\n# Data::Dumper\r\n\t\tperl \\\r\n\t\txz-utils \\\r\n\t\tzstd \\\r\n\t; \\\r\n\trm -rf /var/lib/apt/lists/*\r\n\r\nRUN set -eux; \\\r\n# gpg: key 3A79BD29: public key \"MySQL Release Engineering &#x3C;mysql-build@oss.oracle.com>\" imported\r\n\tkey='859BE8D7C586F538430B19C2467B942D3A79BD29'; \\\r\n\texport GNUPGHOME=\"$(mktemp -d)\"; \\\r\n\tgpg --batch --keyserver keyserver.ubuntu.com --recv-keys \"$key\"; \\\r\n\tmkdir -p /etc/apt/keyrings; \\\r\n\tgpg --batch --export \"$key\" > /etc/apt/keyrings/mysql.gpg; \\\r\n\tgpgconf --kill all; \\\r\n\trm -rf \"$GNUPGHOME\"\r\n\r\nENV MYSQL_MAJOR 8.0\r\nENV MYSQL_VERSION 8.0.31-1debian11\r\n\r\nRUN echo 'deb [ signed-by=/etc/apt/keyrings/mysql.gpg ] http://repo.mysql.com/apt/debian/ bullseye mysql-8.0' > /etc/apt/sources.list.d/mysql.list\r\n\r\n# the \"/var/lib/mysql\" stuff here is because the mysql-server postinst doesn't have an explicit way to disable the mysql_install_db codepath besides having a database already \"configured\" (ie, stuff in /var/lib/mysql/mysql)\r\n# also, we set debconf keys to make APT a little quieter\r\nRUN { \\\r\n\t\techo mysql-community-server mysql-community-server/data-dir select ''; \\\r\n\t\techo mysql-community-server mysql-community-server/root-pass password ''; \\\r\n\t\techo mysql-community-server mysql-community-server/re-root-pass password ''; \\\r\n\t\techo mysql-community-server mysql-community-server/remove-test-db select false; \\\r\n\t} | debconf-set-selections \\\r\n\t&#x26;&#x26; apt-get update \\\r\n\t&#x26;&#x26; apt-get install -y \\\r\n\t\tmysql-community-client=\"${MYSQL_VERSION}\" \\\r\n\t\tmysql-community-server-core=\"${MYSQL_VERSION}\" \\\r\n\t&#x26;&#x26; rm -rf /var/lib/apt/lists/* \\\r\n\t&#x26;&#x26; rm -rf /var/lib/mysql &#x26;&#x26; mkdir -p /var/lib/mysql /var/run/mysqld \\\r\n\t&#x26;&#x26; chown -R mysql:mysql /var/lib/mysql /var/run/mysqld \\\r\n# ensure that /var/run/mysqld (used for socket and lock files) is writable regardless of the UID our mysqld instance ends up having at runtime\r\n\t&#x26;&#x26; chmod 1777 /var/run/mysqld /var/lib/mysql\r\n\r\nVOLUME /var/lib/mysql\r\n\r\n# Config files\r\nCOPY config/ /etc/mysql/\r\nCOPY docker-entrypoint.sh /usr/local/bin/\r\nRUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat\r\nENTRYPOINT [\"docker-entrypoint.sh\"]\r\n\r\nEXPOSE 3306 33060\r\nCMD [\"mysqld\"]\n</code></pre>"
+        },
+        "_id": "blog/learn-dockerfile-from-examples.md",
+        "_raw": {
+          "sourceFilePath": "blog/learn-dockerfile-from-examples.md",
+          "sourceFileName": "learn-dockerfile-from-examples.md",
+          "sourceFileDir": "blog",
+          "contentType": "markdown",
+          "flattenedPath": "blog/learn-dockerfile-from-examples"
+        },
+        "type": "Blog",
+        "readingTime": {
+          "text": "4 min read",
+          "minutes": 3.025,
+          "time": 181500,
+          "words": 605
+        },
+        "slug": "learn-dockerfile-from-examples",
+        "path": "blog/learn-dockerfile-from-examples",
+        "filePath": "blog/learn-dockerfile-from-examples.md",
+        "toc": [
+          {
+            "value": "Base Image",
+            "url": "#base-image",
+            "depth": 2
+          },
+          {
+            "value": "Parent Image",
+            "url": "#parent-image",
+            "depth": 2
+          },
+          {
+            "value": "mysql",
+            "url": "#mysql",
+            "depth": 3
+          }
+        ],
+        "lang": "cn",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "编写Dockerfile的注意点",
+          "datePublished": "2022-11-09T00:00:00.000Z",
+          "dateModified": "2022-11-09T00:00:00.000Z",
+          "description": "\r",
+          "image": "/static/images/twitter-card.png",
+          "url": "https://www.jxdev.me/blog/learn-dockerfile-from-examples"
+        }
+      },
+      "documentHash": "1717053134665",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "blog/lvm.md": {
+      "document": {
+        "title": "LVM —— 逻辑卷管理器",
+        "date": "2023-06-11T00:00:00.000Z",
+        "tags": [],
+        "draft": false,
+        "summary": "\r",
+        "body": {
+          "raw": "\r\n# LVM [Introduction From RedHat](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/logical_volume_manager_administration/lvm_definition)\r\n\r\n公司电脑用的windows系统，拜visual studio等软件所赐，\r\n\r\n时不时就要清理C盘空间，还要担心分配给wsl的虚拟内存会不会不够用。\r\n\r\n还不快用无敌的DiskGenius想想办法\r\n\r\n然后就进入PE，给C盘加了50G的空间。\r\n\r\n虽然解决了问题，可是这真的是一个好的解决方法吗？\r\n\r\n在Linux系统中，可以使用LVM来处理动态磁盘分区的问题。\r\n\r\n而在Windows中，也有类似的解决方案，那就是动态磁盘(Dynamic Disks)。\r\n\r\n在win10和server版本中，叫做Storage Spaces\r\n\r\nLVM是Logical Volume Manager的缩写，即逻辑卷管理器。\r\n\r\n在了解Windows的解决方案之前，先来看看LVM是怎么工作的。\r\n\r\n## 基本概念\r\n\r\n使用LVM前，必须了解LVM是怎么抽象磁盘空间的\r\n\r\nPE(Physical Extent)  \r\n最小的存储单元，通常是4MB\r\n\r\nPV(Physical Volume)\r\n实际挂载的物理卷，和物理磁盘一一对应，可以是硬盘，也可以是SSD\r\n\r\nVG(Volume Group)\r\n物理卷的集合，可以理解为一个虚拟的磁盘，可以由多个PV组合而成\r\n\r\nLV(Logical Volume)\r\n逻辑卷\r\n\r\n当我们创建PV时，存储空间会被自动划分成PE\r\n\r\nxxxxxxxxxx netsh int ipv4 set dynamic tcp start=49152 num=16384netsh int ipv6 set dynamic tcp start=49152 num=16384bash\r\n\r\n当然，一个VG也可以只有一个PV，一个LV也可以只有一个VG。\r\n\r\n逻辑卷(LV)可以像普通磁盘分区一样使用，但是它的大小和位置都是可以动态调整的。\r\n\r\n![lvm](https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/lvm.png)\r\n\r\n## 那真的泰裤辣，试试看\r\n\r\n正好在之前的PVE里，一台ubuntu18.04的虚拟机需要从20G扩容到40G\r\n\r\n### 1. 首先在PVE管理界面扩大虚拟机的磁盘大小\r\n![pve-resize-disk](https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/pve-resize-disk.png)\r\n\r\n### 2. 修改虚拟机配置\r\n```bash\r\ndf -h\r\n# Filesystem                         Size  Used Avail Use% Mounted on\r\n# udev                               1.9G     0  1.9G   0% /dev\r\n# tmpfs                              395M  984K  394M   1% /run\r\n# /dev/mapper/ubuntu--vg-ubuntu--lv   19G  8.9G  8.8G  51% /\r\n```\r\n```bash\r\nfdisk -l\r\n# GPT PMBR size mismatch (41943039 != 83886079) will be corrected by w(rite).\r\n# Disk /dev/sda: 40 GiB, 42949672960 bytes, 83886080 sectors\r\n# Units: sectors of 1 * 512 = 512 bytes\r\n# Sector size (logical/physical): 512 bytes / 512 bytes\r\n# I/O size (minimum/optimal): 512 bytes / 512 bytes\r\n# Disklabel type: gpt\r\n# Disk identifier: 1C599DDB-2617-4775-B6FA-1171B9271083\r\n\r\n# Device       Start      End  Sectors Size Type\r\n# /dev/sda1     2048     4095     2048   1M BIOS boot\r\n# /dev/sda2     4096  2101247  2097152   1G Linux filesystem\r\n# /dev/sda3  2101248 41940991 39839744  19G Linux filesystem\r\n```\r\n#### 使用fdisk和df查看后，发现磁盘大小已经变成了40G，但是分区大小还是19G\r\n#### 使用parted修正GPT PMBR size\r\n\r\n```bash\r\nparted /dev/sda\r\n# GNU Parted 3.2\r\n# Using /dev/sda\r\n# Welcome to GNU Parted! Type 'help' to view a list of commands.\r\n(parted) print\r\n# Warning: Not all of the space available to /dev/sda appears to be used, you can fix the GPT\r\n# to use all of the space (an extra 41943040 blocks) or continue with the current setting?\r\nFix/Ignore? Fix\r\n# Model: QEMU QEMU HARDDISK (scsi)\r\n# Disk /dev/sda: 42.9GB\r\n# Sector size (logical/physical): 512B/512B\r\n# Partition Table: gpt\r\n# Disk Flags:\r\n\r\n# Number  Start   End     Size    File system  Name  Flags\r\n#  1      1049kB  2097kB  1049kB                     bios_grub\r\n#  2      2097kB  1076MB  1074MB  ext4\r\n#  3      1076MB  21.5GB  20.4GB\r\n\r\n```\r\n\r\n#### 修复了GPT PMBR size, 就可以使用fdisk扩大分区了\r\n![fdisk](https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/fdisk.png)\r\n\r\n---\r\n\r\n> LVM 相关修改\r\n\r\n\r\n#### **更新PV**\r\n```bash\r\npvs  \r\n  # PV         VG        Fmt  Attr PSize   PFree\r\n  # /dev/sda3  ubuntu-vg lvm2 a--  <19.00g    0\r\n\r\npvresize /dev/sda3\r\n  # Physical volume \"/dev/sda3\" changed\r\n  # 1 physical volume(s) resized / 0 physical volume(s) not resized\r\n\r\npvs\r\n  # PV         VG        Fmt  Attr PSize   PFree\r\n  # /dev/sda3  ubuntu-vg lvm2 a--  <39.00g 20.00g\r\n```\r\n\r\n#### **查看VG大小**\r\n```bash\r\nvgs\r\n  # VG        #PV #LV #SN Attr   VSize   VFree\r\n  # ubuntu-vg   1   1   0 wz--n- <39.00g 20.00g\r\n```\r\n\r\n#### **扩大LV**\r\n```bash\r\nlvs\r\n  # LV        VG        Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert\r\n  # ubuntu-lv ubuntu-vg -wi-ao---- <19.00g\r\n\r\nlvresize -L+20g /dev/ubuntu-vg/ubuntu-lv\r\n  # Size of logical volume ubuntu-vg/ubuntu-lv changed from <19.00 GiB (4863 extents) to <39.00 GiB (9983 extents).\r\n  # Logical volume ubuntu-vg/ubuntu-lv successfully resized.\r\n\r\nlvs\r\n  # LV        VG        Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert\r\n  # ubuntu-lv ubuntu-vg -wi-ao---- <39.00g\r\n```\r\n\r\n#### ***同步到文件系统***\r\n```bash\r\ndf -h\r\n# Filesystem                         Size  Used Avail Use% Mounted on\r\n# udev                               1.9G     0  1.9G   0% /dev\r\n# tmpfs                              395M 1016K  394M   1% /run\r\n# /dev/mapper/ubuntu--vg-ubuntu--lv   19G  8.8G  8.9G  50% / \r\n\r\n# 文件系统挂载的lv大小不会自动同步\r\nresize2fs /dev/mapper/ubuntu--vg-ubuntu--lv\r\n# resize2fs 1.44.1 (24-Mar-2018)\r\n# Filesystem at /dev/mapper/ubuntu--vg-ubuntu--lv is mounted on /; on-line resizing required\r\n# old_desc_blocks = 3, new_desc_blocks = 5\r\n# The filesystem on /dev/mapper/ubuntu--vg-ubuntu--lv is now 10222592 (4k) blocks long.\r\n\r\ndf -h\r\n# Filesystem                         Size  Used Avail Use% Mounted on\r\n# udev                               1.9G     0  1.9G   0% /dev\r\n# tmpfs                              395M 1016K  394M   1% /run\r\n# /dev/mapper/ubuntu--vg-ubuntu--lv   39G  8.8G   28G  24% /\r\n```",
+          "html": "<h1>LVM <a href=\"https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/logical_volume_manager_administration/lvm_definition\">Introduction From RedHat</a></h1>\n<p>公司电脑用的windows系统，拜visual studio等软件所赐，</p>\n<p>时不时就要清理C盘空间，还要担心分配给wsl的虚拟内存会不会不够用。</p>\n<p>还不快用无敌的DiskGenius想想办法</p>\n<p>然后就进入PE，给C盘加了50G的空间。</p>\n<p>虽然解决了问题，可是这真的是一个好的解决方法吗？</p>\n<p>在Linux系统中，可以使用LVM来处理动态磁盘分区的问题。</p>\n<p>而在Windows中，也有类似的解决方案，那就是动态磁盘(Dynamic Disks)。</p>\n<p>在win10和server版本中，叫做Storage Spaces</p>\n<p>LVM是Logical Volume Manager的缩写，即逻辑卷管理器。</p>\n<p>在了解Windows的解决方案之前，先来看看LVM是怎么工作的。</p>\n<h2>基本概念</h2>\n<p>使用LVM前，必须了解LVM是怎么抽象磁盘空间的</p>\n<p>PE(Physical Extent)<br>\n最小的存储单元，通常是4MB</p>\n<p>PV(Physical Volume)\r\n实际挂载的物理卷，和物理磁盘一一对应，可以是硬盘，也可以是SSD</p>\n<p>VG(Volume Group)\r\n物理卷的集合，可以理解为一个虚拟的磁盘，可以由多个PV组合而成</p>\n<p>LV(Logical Volume)\r\n逻辑卷</p>\n<p>当我们创建PV时，存储空间会被自动划分成PE</p>\n<p>xxxxxxxxxx netsh int ipv4 set dynamic tcp start=49152 num=16384netsh int ipv6 set dynamic tcp start=49152 num=16384bash</p>\n<p>当然，一个VG也可以只有一个PV，一个LV也可以只有一个VG。</p>\n<p>逻辑卷(LV)可以像普通磁盘分区一样使用，但是它的大小和位置都是可以动态调整的。</p>\n<p><img src=\"https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/lvm.png\" alt=\"lvm\"></p>\n<h2>那真的泰裤辣，试试看</h2>\n<p>正好在之前的PVE里，一台ubuntu18.04的虚拟机需要从20G扩容到40G</p>\n<h3>1. 首先在PVE管理界面扩大虚拟机的磁盘大小</h3>\n<p><img src=\"https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/pve-resize-disk.png\" alt=\"pve-resize-disk\"></p>\n<h3>2. 修改虚拟机配置</h3>\n<pre><code class=\"language-bash\">df -h\r\n# Filesystem                         Size  Used Avail Use% Mounted on\r\n# udev                               1.9G     0  1.9G   0% /dev\r\n# tmpfs                              395M  984K  394M   1% /run\r\n# /dev/mapper/ubuntu--vg-ubuntu--lv   19G  8.9G  8.8G  51% /\n</code></pre>\n<pre><code class=\"language-bash\">fdisk -l\r\n# GPT PMBR size mismatch (41943039 != 83886079) will be corrected by w(rite).\r\n# Disk /dev/sda: 40 GiB, 42949672960 bytes, 83886080 sectors\r\n# Units: sectors of 1 * 512 = 512 bytes\r\n# Sector size (logical/physical): 512 bytes / 512 bytes\r\n# I/O size (minimum/optimal): 512 bytes / 512 bytes\r\n# Disklabel type: gpt\r\n# Disk identifier: 1C599DDB-2617-4775-B6FA-1171B9271083\r\n\r\n# Device       Start      End  Sectors Size Type\r\n# /dev/sda1     2048     4095     2048   1M BIOS boot\r\n# /dev/sda2     4096  2101247  2097152   1G Linux filesystem\r\n# /dev/sda3  2101248 41940991 39839744  19G Linux filesystem\n</code></pre>\n<h4>使用fdisk和df查看后，发现磁盘大小已经变成了40G，但是分区大小还是19G</h4>\n<h4>使用parted修正GPT PMBR size</h4>\n<pre><code class=\"language-bash\">parted /dev/sda\r\n# GNU Parted 3.2\r\n# Using /dev/sda\r\n# Welcome to GNU Parted! Type 'help' to view a list of commands.\r\n(parted) print\r\n# Warning: Not all of the space available to /dev/sda appears to be used, you can fix the GPT\r\n# to use all of the space (an extra 41943040 blocks) or continue with the current setting?\r\nFix/Ignore? Fix\r\n# Model: QEMU QEMU HARDDISK (scsi)\r\n# Disk /dev/sda: 42.9GB\r\n# Sector size (logical/physical): 512B/512B\r\n# Partition Table: gpt\r\n# Disk Flags:\r\n\r\n# Number  Start   End     Size    File system  Name  Flags\r\n#  1      1049kB  2097kB  1049kB                     bios_grub\r\n#  2      2097kB  1076MB  1074MB  ext4\r\n#  3      1076MB  21.5GB  20.4GB\r\n\n</code></pre>\n<h4>修复了GPT PMBR size, 就可以使用fdisk扩大分区了</h4>\n<p><img src=\"https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/fdisk.png\" alt=\"fdisk\"></p>\n<hr>\n<blockquote>\n<p>LVM 相关修改</p>\n</blockquote>\n<h4><strong>更新PV</strong></h4>\n<pre><code class=\"language-bash\">pvs  \r\n  # PV         VG        Fmt  Attr PSize   PFree\r\n  # /dev/sda3  ubuntu-vg lvm2 a--  &#x3C;19.00g    0\r\n\r\npvresize /dev/sda3\r\n  # Physical volume \"/dev/sda3\" changed\r\n  # 1 physical volume(s) resized / 0 physical volume(s) not resized\r\n\r\npvs\r\n  # PV         VG        Fmt  Attr PSize   PFree\r\n  # /dev/sda3  ubuntu-vg lvm2 a--  &#x3C;39.00g 20.00g\n</code></pre>\n<h4><strong>查看VG大小</strong></h4>\n<pre><code class=\"language-bash\">vgs\r\n  # VG        #PV #LV #SN Attr   VSize   VFree\r\n  # ubuntu-vg   1   1   0 wz--n- &#x3C;39.00g 20.00g\n</code></pre>\n<h4><strong>扩大LV</strong></h4>\n<pre><code class=\"language-bash\">lvs\r\n  # LV        VG        Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert\r\n  # ubuntu-lv ubuntu-vg -wi-ao---- &#x3C;19.00g\r\n\r\nlvresize -L+20g /dev/ubuntu-vg/ubuntu-lv\r\n  # Size of logical volume ubuntu-vg/ubuntu-lv changed from &#x3C;19.00 GiB (4863 extents) to &#x3C;39.00 GiB (9983 extents).\r\n  # Logical volume ubuntu-vg/ubuntu-lv successfully resized.\r\n\r\nlvs\r\n  # LV        VG        Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert\r\n  # ubuntu-lv ubuntu-vg -wi-ao---- &#x3C;39.00g\n</code></pre>\n<h4><em><strong>同步到文件系统</strong></em></h4>\n<pre><code class=\"language-bash\">df -h\r\n# Filesystem                         Size  Used Avail Use% Mounted on\r\n# udev                               1.9G     0  1.9G   0% /dev\r\n# tmpfs                              395M 1016K  394M   1% /run\r\n# /dev/mapper/ubuntu--vg-ubuntu--lv   19G  8.8G  8.9G  50% / \r\n\r\n# 文件系统挂载的lv大小不会自动同步\r\nresize2fs /dev/mapper/ubuntu--vg-ubuntu--lv\r\n# resize2fs 1.44.1 (24-Mar-2018)\r\n# Filesystem at /dev/mapper/ubuntu--vg-ubuntu--lv is mounted on /; on-line resizing required\r\n# old_desc_blocks = 3, new_desc_blocks = 5\r\n# The filesystem on /dev/mapper/ubuntu--vg-ubuntu--lv is now 10222592 (4k) blocks long.\r\n\r\ndf -h\r\n# Filesystem                         Size  Used Avail Use% Mounted on\r\n# udev                               1.9G     0  1.9G   0% /dev\r\n# tmpfs                              395M 1016K  394M   1% /run\r\n# /dev/mapper/ubuntu--vg-ubuntu--lv   39G  8.8G   28G  24% /\n</code></pre>"
+        },
+        "_id": "blog/lvm.md",
+        "_raw": {
+          "sourceFilePath": "blog/lvm.md",
+          "sourceFileName": "lvm.md",
+          "sourceFileDir": "blog",
+          "contentType": "markdown",
+          "flattenedPath": "blog/lvm"
+        },
+        "type": "Blog",
+        "readingTime": {
+          "text": "6 min read",
+          "minutes": 5.14,
+          "time": 308400,
+          "words": 1028
+        },
+        "slug": "lvm",
+        "path": "blog/lvm",
+        "filePath": "blog/lvm.md",
+        "toc": [
+          {
+            "value": "LVM Introduction From RedHat",
+            "url": "#lvm-introduction-from-redhat",
+            "depth": 1
+          },
+          {
+            "value": "基本概念",
+            "url": "#基本概念",
+            "depth": 2
+          },
+          {
+            "value": "那真的泰裤辣，试试看",
+            "url": "#那真的泰裤辣试试看",
+            "depth": 2
+          },
+          {
+            "value": "1. 首先在PVE管理界面扩大虚拟机的磁盘大小",
+            "url": "#1-首先在pve管理界面扩大虚拟机的磁盘大小",
+            "depth": 3
+          },
+          {
+            "value": "2. 修改虚拟机配置",
+            "url": "#2-修改虚拟机配置",
+            "depth": 3
+          },
+          {
+            "value": "使用fdisk和df查看后，发现磁盘大小已经变成了40G，但是分区大小还是19G",
+            "url": "#使用fdisk和df查看后发现磁盘大小已经变成了40g但是分区大小还是19g",
+            "depth": 4
+          },
+          {
+            "value": "使用parted修正GPT PMBR size",
+            "url": "#使用parted修正gpt-pmbr-size",
+            "depth": 4
+          },
+          {
+            "value": "修复了GPT PMBR size, 就可以使用fdisk扩大分区了",
+            "url": "#修复了gpt-pmbr-size-就可以使用fdisk扩大分区了",
+            "depth": 4
+          },
+          {
+            "value": "更新PV",
+            "url": "#更新pv",
+            "depth": 4
+          },
+          {
+            "value": "查看VG大小",
+            "url": "#查看vg大小",
+            "depth": 4
+          },
+          {
+            "value": "扩大LV",
+            "url": "#扩大lv",
+            "depth": 4
+          },
+          {
+            "value": "同步到文件系统",
+            "url": "#同步到文件系统",
+            "depth": 4
+          }
+        ],
+        "lang": "cn",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "LVM —— 逻辑卷管理器",
+          "datePublished": "2023-06-11T00:00:00.000Z",
+          "dateModified": "2023-06-11T00:00:00.000Z",
+          "description": "\r",
+          "image": "/static/images/twitter-card.png",
+          "url": "https://www.jxdev.me/blog/lvm"
+        }
+      },
+      "documentHash": "1717607383380",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "blog/mpls-vs-sdwan.md": {
+      "document": {
+        "title": "MPLS和SD-WAN",
+        "date": "2022-11-14T00:00:00.000Z",
+        "tags": [
+          "network"
+        ],
+        "draft": false,
+        "summary": "\r",
+        "body": {
+          "raw": "\r\n> 不重要的前言，笔者最近在折腾homelab的时候经常接触Zerotier和Tailscale，组网的同时也学到了非常多新鲜的🧀\r\n\r\n### MPLS是什么?\r\n> Multi-protocol Label Switching 多协议标签交换\r\n\r\n1. 使用超过20年\r\n2. 一种网络协议\r\n3. 数据传输路径 基于预定义的标签labels\r\n\r\npacket -> class of service(FEC) -> transfer based on labels\r\n\r\n优点：\r\n1. 流控高效\r\n\r\n缺点：\r\n1. 需要硬件，高昂的开销\r\n2. 修改配置困难\r\n\r\n\r\n### SD-WAN\r\n> software-defined wide area network 软件定义网络\r\n\r\n",
+          "html": "<blockquote>\n<p>不重要的前言，笔者最近在折腾homelab的时候经常接触Zerotier和Tailscale，组网的同时也学到了非常多新鲜的🧀</p>\n</blockquote>\n<h3>MPLS是什么?</h3>\n<blockquote>\n<p>Multi-protocol Label Switching 多协议标签交换</p>\n</blockquote>\n<ol>\n<li>使用超过20年</li>\n<li>一种网络协议</li>\n<li>数据传输路径 基于预定义的标签labels</li>\n</ol>\n<p>packet -> class of service(FEC) -> transfer based on labels</p>\n<p>优点：</p>\n<ol>\n<li>流控高效</li>\n</ol>\n<p>缺点：</p>\n<ol>\n<li>需要硬件，高昂的开销</li>\n<li>修改配置困难</li>\n</ol>\n<h3>SD-WAN</h3>\n<blockquote>\n<p>software-defined wide area network 软件定义网络</p>\n</blockquote>"
+        },
+        "_id": "blog/mpls-vs-sdwan.md",
+        "_raw": {
+          "sourceFilePath": "blog/mpls-vs-sdwan.md",
+          "sourceFileName": "mpls-vs-sdwan.md",
+          "sourceFileDir": "blog",
+          "contentType": "markdown",
+          "flattenedPath": "blog/mpls-vs-sdwan"
+        },
+        "type": "Blog",
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.67,
+          "time": 40200,
+          "words": 134
+        },
+        "slug": "mpls-vs-sdwan",
+        "path": "blog/mpls-vs-sdwan",
+        "filePath": "blog/mpls-vs-sdwan.md",
+        "toc": [
+          {
+            "value": "MPLS是什么?",
+            "url": "#mpls是什么",
+            "depth": 3
+          },
+          {
+            "value": "SD-WAN",
+            "url": "#sd-wan",
+            "depth": 3
+          }
+        ],
+        "lang": "cn",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "MPLS和SD-WAN",
+          "datePublished": "2022-11-14T00:00:00.000Z",
+          "dateModified": "2022-11-14T00:00:00.000Z",
+          "description": "\r",
+          "image": "/static/images/twitter-card.png",
+          "url": "https://www.jxdev.me/blog/mpls-vs-sdwan"
+        }
+      },
+      "documentHash": "1717056047842",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "blog/net-reset.md": {
+      "document": {
+        "title": "Windows下重置网络",
+        "date": "2024-03-06T00:00:00.000Z",
+        "tags": [],
+        "draft": false,
+        "summary": null,
+        "body": {
+          "raw": "\n# 问题\ndocker desktop在windows下运行经常会遇到端口被占用的情况\n\n### 原因\n这里有三种可能\n1. windows默认有一个动态TCP端口范围(TCP dynamic port range)， 保留给其他服务使用\n一般来说是49152 ~ 65536\n\n2. 其它应用占用的端口段, 例如hyper-v\n\n3. windows自动更新有些时候会把范围重置为1024 ~ 65536\nmd, 真是坑。重启\n\n### 如何解决\n\n先查看TCP dynamic port range\n\n```bash\nnetsh int ipv4 show dynamic tcp\n\n# Protocol tcp Dynamic Port Range\n# -------------------------------\n# Start Port      : 1024\n# Number of Ports : 13977\n```\n看到Start Port确实是1024, 我们重新设置一下动态TCP端口范围\n\n再查看再动态范围中，看我们想使用的端口是不是已经被占用了\n```bash\nnetsh int ipv4 show excludedportrange protocol=tcp\n\nStart Port    End Port\n----------    ----------\n3306          3306\n.             .\n.             .\n.             .\n```\n\n重设动态tcp范围\n```bash\nnetsh int ipv4 set dynamic tcp start=49152 num=16384\nnetsh int ipv6 set dynamic tcp start=49152 num=16384\n```\n",
+          "html": "<h1>问题</h1>\n<p>docker desktop在windows下运行经常会遇到端口被占用的情况</p>\n<h3>原因</h3>\n<p>这里有三种可能</p>\n<ol>\n<li>\n<p>windows默认有一个动态TCP端口范围(TCP dynamic port range)， 保留给其他服务使用\n一般来说是49152 ~ 65536</p>\n</li>\n<li>\n<p>其它应用占用的端口段, 例如hyper-v</p>\n</li>\n<li>\n<p>windows自动更新有些时候会把范围重置为1024 ~ 65536\nmd, 真是坑。重启</p>\n</li>\n</ol>\n<h3>如何解决</h3>\n<p>先查看TCP dynamic port range</p>\n<pre><code class=\"language-bash\">netsh int ipv4 show dynamic tcp\n\n# Protocol tcp Dynamic Port Range\n# -------------------------------\n# Start Port      : 1024\n# Number of Ports : 13977\n</code></pre>\n<p>看到Start Port确实是1024, 我们重新设置一下动态TCP端口范围</p>\n<p>再查看再动态范围中，看我们想使用的端口是不是已经被占用了</p>\n<pre><code class=\"language-bash\">netsh int ipv4 show excludedportrange protocol=tcp\n\nStart Port    End Port\n----------    ----------\n3306          3306\n.             .\n.             .\n.             .\n</code></pre>\n<p>重设动态tcp范围</p>\n<pre><code class=\"language-bash\">netsh int ipv4 set dynamic tcp start=49152 num=16384\nnetsh int ipv6 set dynamic tcp start=49152 num=16384\n</code></pre>"
+        },
+        "_id": "blog/net-reset.md",
+        "_raw": {
+          "sourceFilePath": "blog/net-reset.md",
+          "sourceFileName": "net-reset.md",
+          "sourceFileDir": "blog",
+          "contentType": "markdown",
+          "flattenedPath": "blog/net-reset"
+        },
+        "type": "Blog",
+        "readingTime": {
+          "text": "2 min read",
+          "minutes": 1.21,
+          "time": 72600,
+          "words": 242
+        },
+        "slug": "net-reset",
+        "path": "blog/net-reset",
+        "filePath": "blog/net-reset.md",
+        "toc": [
+          {
+            "value": "问题",
+            "url": "#问题",
+            "depth": 1
+          },
+          {
+            "value": "原因",
+            "url": "#原因",
+            "depth": 3
+          },
+          {
+            "value": "如何解决",
+            "url": "#如何解决",
+            "depth": 3
+          }
+        ],
+        "lang": "cn",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Windows下重置网络",
+          "datePublished": "2024-03-06T00:00:00.000Z",
+          "dateModified": "2024-03-06T00:00:00.000Z",
+          "description": null,
+          "image": "/static/images/twitter-card.png",
+          "url": "https://www.jxdev.me/blog/net-reset"
+        }
+      },
+      "documentHash": "1717056068767",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "blog/npm-package-gitlink-error.md": {
+      "document": {
+        "title": "解决npm依赖使用git协议",
+        "date": "2024-03-06T00:00:00.000Z",
+        "tags": [],
+        "draft": false,
+        "summary": null,
+        "body": {
+          "raw": "\n老node项目下载依赖的时候经常会遇到，postscript之类的需要去github上下载的情况\n\n然而git协议下载经常失败\n\nEx. git://github.com/org/example.git\n\n可以修改git全局配置来强制使用http协议\n\n```bash\ngit config --global url.\"https://\".insteadOf \"git://\"\n```\n\ngit工具在拉取的时候会把git://替换成https://\n\n🤔所以git协议大概是什么样的呢？报错有什么原因吗？\n",
+          "html": "<p>老node项目下载依赖的时候经常会遇到，postscript之类的需要去github上下载的情况</p>\n<p>然而git协议下载经常失败</p>\n<p>Ex. git://github.com/org/example.git</p>\n<p>可以修改git全局配置来强制使用http协议</p>\n<pre><code class=\"language-bash\">git config --global url.\"https://\".insteadOf \"git://\"\n</code></pre>\n<p>git工具在拉取的时候会把git://替换成https://</p>\n<p>🤔所以git协议大概是什么样的呢？报错有什么原因吗？</p>"
+        },
+        "_id": "blog/npm-package-gitlink-error.md",
+        "_raw": {
+          "sourceFilePath": "blog/npm-package-gitlink-error.md",
+          "sourceFileName": "npm-package-gitlink-error.md",
+          "sourceFileDir": "blog",
+          "contentType": "markdown",
+          "flattenedPath": "blog/npm-package-gitlink-error"
+        },
+        "type": "Blog",
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.525,
+          "time": 31500,
+          "words": 105
+        },
+        "slug": "npm-package-gitlink-error",
+        "path": "blog/npm-package-gitlink-error",
+        "filePath": "blog/npm-package-gitlink-error.md",
+        "toc": [],
+        "lang": "cn",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "解决npm依赖使用git协议",
+          "datePublished": "2024-03-06T00:00:00.000Z",
+          "dateModified": "2024-03-06T00:00:00.000Z",
+          "description": null,
+          "image": "/static/images/twitter-card.png",
+          "url": "https://www.jxdev.me/blog/npm-package-gitlink-error"
+        }
+      },
+      "documentHash": "1717056130055",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "blog/unocss-pitfall.md": {
+      "document": {
+        "title": "unocss踩坑记录",
+        "date": "2023-06-27T00:00:00.000Z",
+        "tags": [
+          "postcss"
+        ],
+        "draft": false,
+        "summary": null,
+        "body": {
+          "raw": "\n因为公司有用TinaCMS + NextJS搭建部分网页,\n作为headless CRM, 使用起来还是相对简单高效的，\n于是就想,干脆把博客也搭在上面,这样就可以用TinaCMS来管理博客了, 耶~~~\n\n自从习惯了utility class以后呢, 我已经被完全惯坏了  \n\n成为了一个没有utility class就只会在地上打滚的废人\n\n#### 那么选哪家的utility class呢?\n\n🤔作为一个叛逆的精神病(自豪), 不选择公司使用的tailwindcss, 用unocss也是非常合理的吧!\n\n---\n\n## 然后就发现, 用postcss方式集成unocss, NextJS在build的时候会卡在Create optimzed production build这一步\n\n有点气，但是生活还要继续\n\n### 出现问题的环境\n\n最小复现环境如下, \n\n```yml\nOperating System:\n  Platform: win32\n  Arch: x64\n  Version: Windows 10 Pro\nBinaries:\n  Node: 18.16.0\n  npm: N/A\n  Yarn: N/A\n  pnpm: N/A\nRelevant packages:\n  next: 13.4.7\n  eslint-config-next: 13.4.7\n  react: 18.2.0\n  react-dom: 18.2.0\n  typescript: 5.1.3\n  unocss: 0.53.3\n  @unocss/postcss: 0.53.3\n```\n\n```javascript\n// postcss.config.js\nmodule.exports={\n  plugins: [\n    require('@unocss/postcss')({\n      theme: {\n        extend: {\n          colors: {\n            primary: '#ff0000',\n          },\n        },\n      },\n    }),\n  ],\n}\n```\n\n虽然为了解决这个问题，我们可以在`next.config.js`通过webpack的方式来配置unocss, 但是这到底是为什么呢🤔\n\n假设next.js没有问题, 那么真相只有一个\n\n是@unocss/postcss偷偷给next.js下了毒\n\n那到底是什么毒呢🤔\n\n### 本地@unocss/postcss调试\n\n```bash\ngit clone https://github.com/unocss/unocss.git\n\ncd packages/postcss\n```\n\n要下班了, 下次再写\n\n---\n\n在使用unocss的过程中, 还发生了很奇怪的事情\n\n在公司的电脑上，一切正常。\n\n回到家里的电脑上, 安装同样unocss插件的vscode在其中一台电脑上报错了\n\n妈耶, 难道电脑想让我多休息会嘛！他果然是爱我的❤️\n\n虽然没有人问, 但是我还是要说一下, 他（电脑）叫小熊猫, 最喜欢的食物是竹子, 爱好睡觉, 他的梦想是成为一只大熊猫(虽然完全没可能🤫)\n\n```bash\n🛠 Resolving config for e:\\Projects\\Personal\\blog\n🛠 New configuration loaded from\n  - e:\\Projects\\Personal\\blog\\uno.config.ts\nℹ️ 4 presets, 984 rules, 1 shortcuts, 45 variants, 0 transformers loaded\n⚠️ Error on annotation\nTypeError: Cannot read properties of undefined (reading 'join')\n```\n\n看了下github上有人提了类似的[issue](https://github.com/unocss/unocss/issues/2722)\n\n然而并没有人解答\n\n### 环境\n\nvscode Version\n\nantfu.unocss-0.45.21\n\n#### 决定先碰碰运气 🙏K门\n\n在vscode extension文件夹下找到antfu.unocss插件的文件夹\n\n```bash\ncd dist\ncode index.js\n```\n\n直接在编译后的插件代码index.js里搜索Error on annotation, 运气很好的找到了\n\n谢谢你, 🙏K门\n\nBig胆, 好大的catch, 我们打印下错误信息  \n\n![unocss-print-error](https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/unocss-print-error.png)\n\n重新启动vscode打开之前使用unocss的项目, 在OUTPUT | UnoCSS中, 看到了如下报错\n\n![unocss-throw](https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/unocss-throw.png)\n\n点击Object.match的对应链接, 报错原因是ctx.generator.config.separators是undefined\n![unocss-src](https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/unocss-src.png)\n\n看了下源码和文档\n\nvariantImportant是preset-mini定义important样式语法的函数, \n\nctx.generator是unocss核心库(core)中的UnoGenerator对象, 负责生成css文件\n\nUnoGenerator中的setConfig函数会合并defaults(默认配置)和用户定义在uno.config.ts中的配置\n\n但是由于一些神秘力量, 它没有了\n\n#### 验证推论\n\n修改uno.config.ts\n\n```typescript\nexport default defineConfig({\n  // 加上separators配置\n  separators: [\":\", \"-\"],\n  presets: [\n    presetUno(),\n  ]\n})\n```\n\n![unocss-worked](https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/unocss-worked.png)\n**好了, 他终于可以工作了😭**\n\n***困死了, 虽然解决了问题但还是不明白原因（合并配置的代码有空再看）, 先睡大觉, 有时间我一定提PR🕊️***\n",
+          "html": "<p>因为公司有用TinaCMS + NextJS搭建部分网页,\n作为headless CRM, 使用起来还是相对简单高效的，\n于是就想,干脆把博客也搭在上面,这样就可以用TinaCMS来管理博客了, 耶~~~</p>\n<p>自从习惯了utility class以后呢, 我已经被完全惯坏了</p>\n<p>成为了一个没有utility class就只会在地上打滚的废人</p>\n<h4>那么选哪家的utility class呢?</h4>\n<p>🤔作为一个叛逆的精神病(自豪), 不选择公司使用的tailwindcss, 用unocss也是非常合理的吧!</p>\n<hr>\n<h2>然后就发现, 用postcss方式集成unocss, NextJS在build的时候会卡在Create optimzed production build这一步</h2>\n<p>有点气，但是生活还要继续</p>\n<h3>出现问题的环境</h3>\n<p>最小复现环境如下,</p>\n<pre><code class=\"language-yml\">Operating System:\n  Platform: win32\n  Arch: x64\n  Version: Windows 10 Pro\nBinaries:\n  Node: 18.16.0\n  npm: N/A\n  Yarn: N/A\n  pnpm: N/A\nRelevant packages:\n  next: 13.4.7\n  eslint-config-next: 13.4.7\n  react: 18.2.0\n  react-dom: 18.2.0\n  typescript: 5.1.3\n  unocss: 0.53.3\n  @unocss/postcss: 0.53.3\n</code></pre>\n<pre><code class=\"language-javascript\">// postcss.config.js\nmodule.exports={\n  plugins: [\n    require('@unocss/postcss')({\n      theme: {\n        extend: {\n          colors: {\n            primary: '#ff0000',\n          },\n        },\n      },\n    }),\n  ],\n}\n</code></pre>\n<p>虽然为了解决这个问题，我们可以在<code>next.config.js</code>通过webpack的方式来配置unocss, 但是这到底是为什么呢🤔</p>\n<p>假设next.js没有问题, 那么真相只有一个</p>\n<p>是@unocss/postcss偷偷给next.js下了毒</p>\n<p>那到底是什么毒呢🤔</p>\n<h3>本地@unocss/postcss调试</h3>\n<pre><code class=\"language-bash\">git clone https://github.com/unocss/unocss.git\n\ncd packages/postcss\n</code></pre>\n<p>要下班了, 下次再写</p>\n<hr>\n<p>在使用unocss的过程中, 还发生了很奇怪的事情</p>\n<p>在公司的电脑上，一切正常。</p>\n<p>回到家里的电脑上, 安装同样unocss插件的vscode在其中一台电脑上报错了</p>\n<p>妈耶, 难道电脑想让我多休息会嘛！他果然是爱我的❤️</p>\n<p>虽然没有人问, 但是我还是要说一下, 他（电脑）叫小熊猫, 最喜欢的食物是竹子, 爱好睡觉, 他的梦想是成为一只大熊猫(虽然完全没可能🤫)</p>\n<pre><code class=\"language-bash\">🛠 Resolving config for e:\\Projects\\Personal\\blog\n🛠 New configuration loaded from\n  - e:\\Projects\\Personal\\blog\\uno.config.ts\nℹ️ 4 presets, 984 rules, 1 shortcuts, 45 variants, 0 transformers loaded\n⚠️ Error on annotation\nTypeError: Cannot read properties of undefined (reading 'join')\n</code></pre>\n<p>看了下github上有人提了类似的<a href=\"https://github.com/unocss/unocss/issues/2722\">issue</a></p>\n<p>然而并没有人解答</p>\n<h3>环境</h3>\n<p>vscode Version</p>\n<p>antfu.unocss-0.45.21</p>\n<h4>决定先碰碰运气 🙏K门</h4>\n<p>在vscode extension文件夹下找到antfu.unocss插件的文件夹</p>\n<pre><code class=\"language-bash\">cd dist\ncode index.js\n</code></pre>\n<p>直接在编译后的插件代码index.js里搜索Error on annotation, 运气很好的找到了</p>\n<p>谢谢你, 🙏K门</p>\n<p>Big胆, 好大的catch, 我们打印下错误信息</p>\n<p><img src=\"https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/unocss-print-error.png\" alt=\"unocss-print-error\"></p>\n<p>重新启动vscode打开之前使用unocss的项目, 在OUTPUT | UnoCSS中, 看到了如下报错</p>\n<p><img src=\"https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/unocss-throw.png\" alt=\"unocss-throw\"></p>\n<p>点击Object.match的对应链接, 报错原因是ctx.generator.config.separators是undefined\n<img src=\"https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/unocss-src.png\" alt=\"unocss-src\"></p>\n<p>看了下源码和文档</p>\n<p>variantImportant是preset-mini定义important样式语法的函数,</p>\n<p>ctx.generator是unocss核心库(core)中的UnoGenerator对象, 负责生成css文件</p>\n<p>UnoGenerator中的setConfig函数会合并defaults(默认配置)和用户定义在uno.config.ts中的配置</p>\n<p>但是由于一些神秘力量, 它没有了</p>\n<h4>验证推论</h4>\n<p>修改uno.config.ts</p>\n<pre><code class=\"language-typescript\">export default defineConfig({\n  // 加上separators配置\n  separators: [\":\", \"-\"],\n  presets: [\n    presetUno(),\n  ]\n})\n</code></pre>\n<p><img src=\"https://jx-blog.oss-cn-hangzhou.aliyuncs.com/picgo/unocss-worked.png\" alt=\"unocss-worked\">\n<strong>好了, 他终于可以工作了😭</strong></p>\n<p><em><strong>困死了, 虽然解决了问题但还是不明白原因（合并配置的代码有空再看）, 先睡大觉, 有时间我一定提PR🕊️</strong></em></p>"
+        },
+        "_id": "blog/unocss-pitfall.md",
+        "_raw": {
+          "sourceFilePath": "blog/unocss-pitfall.md",
+          "sourceFileName": "unocss-pitfall.md",
+          "sourceFileDir": "blog",
+          "contentType": "markdown",
+          "flattenedPath": "blog/unocss-pitfall"
+        },
+        "type": "Blog",
+        "readingTime": {
+          "text": "5 min read",
+          "minutes": 4.13,
+          "time": 247800,
+          "words": 826
+        },
+        "slug": "unocss-pitfall",
+        "path": "blog/unocss-pitfall",
+        "filePath": "blog/unocss-pitfall.md",
+        "toc": [
+          {
+            "value": "那么选哪家的utility class呢?",
+            "url": "#那么选哪家的utility-class呢",
+            "depth": 4
+          },
+          {
+            "value": "然后就发现, 用postcss方式集成unocss, NextJS在build的时候会卡在Create optimzed production build这一步",
+            "url": "#然后就发现-用postcss方式集成unocss-nextjs在build的时候会卡在create-optimzed-production-build这一步",
+            "depth": 2
+          },
+          {
+            "value": "出现问题的环境",
+            "url": "#出现问题的环境",
+            "depth": 3
+          },
+          {
+            "value": "本地@unocss/postcss调试",
+            "url": "#本地unocsspostcss调试",
+            "depth": 3
+          },
+          {
+            "value": "环境",
+            "url": "#环境",
+            "depth": 3
+          },
+          {
+            "value": "决定先碰碰运气 🙏K门",
+            "url": "#决定先碰碰运气-k门",
+            "depth": 4
+          },
+          {
+            "value": "验证推论",
+            "url": "#验证推论",
+            "depth": 4
+          }
+        ],
+        "lang": "cn",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "unocss踩坑记录",
+          "datePublished": "2023-06-27T00:00:00.000Z",
+          "dateModified": "2023-06-27T00:00:00.000Z",
+          "description": null,
+          "image": "/static/images/twitter-card.png",
+          "url": "https://www.jxdev.me/blog/unocss-pitfall"
+        }
+      },
+      "documentHash": "1717607022164",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "blog/upstream.md": {
+      "document": {
+        "title": "nginx转发请求到ddns的服务器",
+        "date": "2022-12-14T06:20:14.000Z",
+        "tags": [
+          "nginx",
+          "homelab"
+        ],
+        "draft": false,
+        "summary": null,
+        "body": {
+          "raw": "\n我有一台云服务器，我有一个家用集群\n\n哈，我有云服务器家用集群啦!\n\n为了 443 和 80 端口，冲！！！\n\n---\n\n### 准备\n\n1. 家用集群使用 ddns 脚本绑定了域名和动态公网 ip\n  a. 域名：hello.example.com:8443\n  b. 子域名的服务若干：a.example.com:8443, b.example.com:8443\n2. 备案有固定 ip 的云服务器一台（服务甲）\n  a. 域名：*.example.com\n\n### 部署\n\n兴高采烈并且年轻的我，写下了如下 nginx 配置部署到了服务甲上！\n\n```nginx\nstream {\n  server {\n    listen 443;\n    proxy_pass hello.example.com:8443;\n  }\n}\n```\n\n在几周内工作的挺好的，不愧是我\n\n然后它炸了，nginx stream 时遇到域名，只会解析一次！\n\n这个域名缓存除非 nginx -s reload，是会被一直使用的！\n\nP.S. 这是个上古问题，nginx enterprise 有模块动态刷新 dns，所以他并不是个 bug，而是 feature（牛哇）！\n\n还好我们可以用变量来 hack nginx!\n\n修改 nginx 配置如下\n\n```nginx\nstream {\n  resolver 223.5.5.5 valid=1s;\n\n  map \"\" $server_us {\n    default hello.example.com:8443;\n  }\n\n  # server {\n  #   listen 80;\n  #   proxy_pass hello.example.com:8000;\n  # }\n  server {\n    listen 443;\n    proxy_pass $server_us;\n  }\n}\n```\n\n干完了这些就可以回家睡大觉了\n",
+          "html": "<p>我有一台云服务器，我有一个家用集群</p>\n<p>哈，我有云服务器家用集群啦!</p>\n<p>为了 443 和 80 端口，冲！！！</p>\n<hr>\n<h3>准备</h3>\n<ol>\n<li>家用集群使用 ddns 脚本绑定了域名和动态公网 ip\na. 域名：hello.example.com:8443\nb. 子域名的服务若干：a.example.com:8443, b.example.com:8443</li>\n<li>备案有固定 ip 的云服务器一台（服务甲）\na. 域名：*.example.com</li>\n</ol>\n<h3>部署</h3>\n<p>兴高采烈并且年轻的我，写下了如下 nginx 配置部署到了服务甲上！</p>\n<pre><code class=\"language-nginx\">stream {\n  server {\n    listen 443;\n    proxy_pass hello.example.com:8443;\n  }\n}\n</code></pre>\n<p>在几周内工作的挺好的，不愧是我</p>\n<p>然后它炸了，nginx stream 时遇到域名，只会解析一次！</p>\n<p>这个域名缓存除非 nginx -s reload，是会被一直使用的！</p>\n<p>P.S. 这是个上古问题，nginx enterprise 有模块动态刷新 dns，所以他并不是个 bug，而是 feature（牛哇）！</p>\n<p>还好我们可以用变量来 hack nginx!</p>\n<p>修改 nginx 配置如下</p>\n<pre><code class=\"language-nginx\">stream {\n  resolver 223.5.5.5 valid=1s;\n\n  map \"\" $server_us {\n    default hello.example.com:8443;\n  }\n\n  # server {\n  #   listen 80;\n  #   proxy_pass hello.example.com:8000;\n  # }\n  server {\n    listen 443;\n    proxy_pass $server_us;\n  }\n}\n</code></pre>\n<p>干完了这些就可以回家睡大觉了</p>"
+        },
+        "_id": "blog/upstream.md",
+        "_raw": {
+          "sourceFilePath": "blog/upstream.md",
+          "sourceFileName": "upstream.md",
+          "sourceFileDir": "blog",
+          "contentType": "markdown",
+          "flattenedPath": "blog/upstream"
+        },
+        "type": "Blog",
+        "readingTime": {
+          "text": "2 min read",
+          "minutes": 1.42,
+          "time": 85200,
+          "words": 284
+        },
+        "slug": "upstream",
+        "path": "blog/upstream",
+        "filePath": "blog/upstream.md",
+        "toc": [
+          {
+            "value": "准备",
+            "url": "#准备",
+            "depth": 3
+          },
+          {
+            "value": "部署",
+            "url": "#部署",
+            "depth": 3
+          }
+        ],
+        "lang": "cn",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "nginx转发请求到ddns的服务器",
+          "datePublished": "2022-12-14T06:20:14.000Z",
+          "dateModified": "2022-12-14T06:20:14.000Z",
+          "description": null,
+          "image": "/static/images/twitter-card.png",
+          "url": "https://www.jxdev.me/blog/upstream"
+        }
+      },
+      "documentHash": "1717607278058",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "blog/v8-mem.md": {
+      "document": {
+        "title": "V8内存模型",
+        "date": "2023-02-16T00:00:00.000Z",
+        "tags": [
+          "frontend",
+          "v8"
+        ],
+        "draft": true,
+        "summary": "\r",
+        "body": {
+          "raw": "# V8内存模型\r\n\r\n### Minor GC(Scavenger)\r\n\r\n从前，有一个HEAP\r\n\r\n里面有两块空间\r\n\r\nyoung generation 和 old generation\r\n\r\n创建新对象的时候，对象就被放进了young generation\r\n\r\nScavenger负责处理young generation的垃圾\r\n\r\nyoung generation至少有一半的空间是空余的\r\n\r\n大佬说，这叫semi-space design，听懂掌声\r\n\r\n不就是标记下还在使用的对象，丢到另一边\r\n\r\n删掉这边剩下的，一点都不高级\r\n\r\n大佬说，你这就不懂了\r\n\r\n丢到另一边的时候，顺便还能重新整理下\r\n\r\n内存上连续，减少了内存碎片\r\n\r\n最后再将原来对象的引用指向新的内存地址\r\n\r\n就大功告成啦！\r\n\r\n### 对象是怎么流转的？\r\n对象创建时保存在young generation\r\n\r\n在两次GC(这个标记包含major gc吗?)之后进入old generation\r\n\r\n### Major GC(Mark-Compact)\r\n\r\n那什么是Major GC呢？\r\n\r\nMarjor GC从root set(execution stack, global object)进行dps，标记被使用的对象\r\n\r\n未标记的对象会被放在free-list里，记录内存地址和区域\r\n\r\nfree-list还会根据内存大小拆分，为了后续使用能被更快的搜索到\r\n\r\n最后，Major GC还会整理内存碎片，通过移动存活的对象到free-list里\r\n\r\n### 遇到memory leak怎么办？\r\n\r\n1. 使用PM2等检测内存的软件，进行自动重启，保证服务可用\r\n\r\n2. 查看监控软件，定位时间，获取snapshot\r\n\r\n3. 比对snapshot，定位故障\r\n\r\n**常见问题**\r\n\r\n为什么我们要有Minor GC和Major GC?\r\n\r\n因为短期创建并立刻销毁的对象占多数, 用Minor GC可以减少资源的浪费\r\n",
+          "html": "<h1>V8内存模型</h1>\n<h3>Minor GC(Scavenger)</h3>\n<p>从前，有一个HEAP</p>\n<p>里面有两块空间</p>\n<p>young generation 和 old generation</p>\n<p>创建新对象的时候，对象就被放进了young generation</p>\n<p>Scavenger负责处理young generation的垃圾</p>\n<p>young generation至少有一半的空间是空余的</p>\n<p>大佬说，这叫semi-space design，听懂掌声</p>\n<p>不就是标记下还在使用的对象，丢到另一边</p>\n<p>删掉这边剩下的，一点都不高级</p>\n<p>大佬说，你这就不懂了</p>\n<p>丢到另一边的时候，顺便还能重新整理下</p>\n<p>内存上连续，减少了内存碎片</p>\n<p>最后再将原来对象的引用指向新的内存地址</p>\n<p>就大功告成啦！</p>\n<h3>对象是怎么流转的？</h3>\n<p>对象创建时保存在young generation</p>\n<p>在两次GC(这个标记包含major gc吗?)之后进入old generation</p>\n<h3>Major GC(Mark-Compact)</h3>\n<p>那什么是Major GC呢？</p>\n<p>Marjor GC从root set(execution stack, global object)进行dps，标记被使用的对象</p>\n<p>未标记的对象会被放在free-list里，记录内存地址和区域</p>\n<p>free-list还会根据内存大小拆分，为了后续使用能被更快的搜索到</p>\n<p>最后，Major GC还会整理内存碎片，通过移动存活的对象到free-list里</p>\n<h3>遇到memory leak怎么办？</h3>\n<ol>\n<li>\n<p>使用PM2等检测内存的软件，进行自动重启，保证服务可用</p>\n</li>\n<li>\n<p>查看监控软件，定位时间，获取snapshot</p>\n</li>\n<li>\n<p>比对snapshot，定位故障</p>\n</li>\n</ol>\n<p><strong>常见问题</strong></p>\n<p>为什么我们要有Minor GC和Major GC?</p>\n<p>因为短期创建并立刻销毁的对象占多数, 用Minor GC可以减少资源的浪费</p>"
+        },
+        "_id": "blog/v8-mem.md",
+        "_raw": {
+          "sourceFilePath": "blog/v8-mem.md",
+          "sourceFileName": "v8-mem.md",
+          "sourceFileDir": "blog",
+          "contentType": "markdown",
+          "flattenedPath": "blog/v8-mem"
+        },
+        "type": "Blog",
+        "readingTime": {
+          "text": "3 min read",
+          "minutes": 2.03,
+          "time": 121800,
+          "words": 406
+        },
+        "slug": "v8-mem",
+        "path": "blog/v8-mem",
+        "filePath": "blog/v8-mem.md",
+        "toc": [
+          {
+            "value": "V8内存模型",
+            "url": "#v8内存模型",
+            "depth": 1
+          },
+          {
+            "value": "Minor GC(Scavenger)",
+            "url": "#minor-gcscavenger",
+            "depth": 3
+          },
+          {
+            "value": "对象是怎么流转的？",
+            "url": "#对象是怎么流转的",
+            "depth": 3
+          },
+          {
+            "value": "Major GC(Mark-Compact)",
+            "url": "#major-gcmark-compact",
+            "depth": 3
+          },
+          {
+            "value": "遇到memory leak怎么办？",
+            "url": "#遇到memory-leak怎么办",
+            "depth": 3
+          }
+        ],
+        "lang": "cn",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "V8内存模型",
+          "datePublished": "2023-02-16T00:00:00.000Z",
+          "dateModified": "2023-02-16T00:00:00.000Z",
+          "description": "\r",
+          "image": "/static/images/twitter-card.png",
+          "url": "https://www.jxdev.me/blog/v8-mem"
+        }
+      },
+      "documentHash": "1717056204156",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "blog/vim-text-object.md": {
+      "document": {
+        "title": "Vim Text object",
+        "date": "2022-10-27T00:00:00.000Z",
+        "tags": [
+          "DevEx"
+        ],
+        "draft": false,
+        "summary": null,
+        "body": {
+          "raw": "\n### Text objects!!!\n\n在普通的编辑器中，我们通常以字符为单位编辑文本\n\n在vim中预先定义了word，sentence, paragraph等text objects\n\n可以帮助我们快速描述需要修改的区域，进行后续操作\n\n#### 例子1\n```javascript\nconst text = \"Who are bMISTYPExd you?\"\n\nconst text = \"Who are you?\"\n```\n\n光标在b一般会怎么删除呢？\n\ndw\n\n如果我们的光标不在b，在单词中间呢？\n\n1. bdw\n> 先使用b退回到单词开头，再删除单词\n2. daw\n> 使用aw选中单词，直接删除\n\n这里的aw就是text object 代表around word\n\niw代表inner word, 选中的就是不包括空格的单词了\n\n大部分情况下，使用daw的心智负担更小, 因为你不用再考虑光标在单词的哪个位置\n\n---\n\n可能现在你感觉text objects还没太大用, 再来看个例子!\n\n#### 例子2\n```javascript\nconst longText = \"This is super long text ahhhhh!\"\n\nconst longText = \"short\"\n```\n假如光标在第一个\"上怎么快速的把longText替换成\"short\"呢?\n1. dt\"Ashort\"\n> 删除到\", append在最后，输入short\"\n\n2. lct\"short\n> 右移，change到\"的内容为short\n\n3. ci\"short\n> change **双引号内的内容（text object）**为short\n\n---\n\n下面列出常用的text objects\n- at it | 标签\n- a} i}\n- a] i]\n- a) i)\n- i,w | camelCase\n- aa ia | argument\n- ai ii | indentation\n\n**通过vim script也可以定制自己想要的text objects, 有机会再介绍吧！**\n",
+          "html": "<h3>Text objects!!!</h3>\n<p>在普通的编辑器中，我们通常以字符为单位编辑文本</p>\n<p>在vim中预先定义了word，sentence, paragraph等text objects</p>\n<p>可以帮助我们快速描述需要修改的区域，进行后续操作</p>\n<h4>例子1</h4>\n<pre><code class=\"language-javascript\">const text = \"Who are bMISTYPExd you?\"\n\nconst text = \"Who are you?\"\n</code></pre>\n<p>光标在b一般会怎么删除呢？</p>\n<p>dw</p>\n<p>如果我们的光标不在b，在单词中间呢？</p>\n<ol>\n<li>bdw</li>\n</ol>\n<blockquote>\n<p>先使用b退回到单词开头，再删除单词</p>\n</blockquote>\n<ol start=\"2\">\n<li>daw</li>\n</ol>\n<blockquote>\n<p>使用aw选中单词，直接删除</p>\n</blockquote>\n<p>这里的aw就是text object 代表around word</p>\n<p>iw代表inner word, 选中的就是不包括空格的单词了</p>\n<p>大部分情况下，使用daw的心智负担更小, 因为你不用再考虑光标在单词的哪个位置</p>\n<hr>\n<p>可能现在你感觉text objects还没太大用, 再来看个例子!</p>\n<h4>例子2</h4>\n<pre><code class=\"language-javascript\">const longText = \"This is super long text ahhhhh!\"\n\nconst longText = \"short\"\n</code></pre>\n<p>假如光标在第一个\"上怎么快速的把longText替换成\"short\"呢?</p>\n<ol>\n<li>dt\"Ashort\"</li>\n</ol>\n<blockquote>\n<p>删除到\", append在最后，输入short\"</p>\n</blockquote>\n<ol start=\"2\">\n<li>lct\"short</li>\n</ol>\n<blockquote>\n<p>右移，change到\"的内容为short</p>\n</blockquote>\n<ol start=\"3\">\n<li>ci\"short</li>\n</ol>\n<blockquote>\n<p>change **双引号内的内容（text object）**为short</p>\n</blockquote>\n<hr>\n<p>下面列出常用的text objects</p>\n<ul>\n<li>at it | 标签</li>\n<li>a} i}</li>\n<li>a] i]</li>\n<li>a) i)</li>\n<li>i,w | camelCase</li>\n<li>aa ia | argument</li>\n<li>ai ii | indentation</li>\n</ul>\n<p><strong>通过vim script也可以定制自己想要的text objects, 有机会再介绍吧！</strong></p>"
+        },
+        "_id": "blog/vim-text-object.md",
+        "_raw": {
+          "sourceFilePath": "blog/vim-text-object.md",
+          "sourceFileName": "vim-text-object.md",
+          "sourceFileDir": "blog",
+          "contentType": "markdown",
+          "flattenedPath": "blog/vim-text-object"
+        },
+        "type": "Blog",
+        "readingTime": {
+          "text": "2 min read",
+          "minutes": 1.84,
+          "time": 110400,
+          "words": 368
+        },
+        "slug": "vim-text-object",
+        "path": "blog/vim-text-object",
+        "filePath": "blog/vim-text-object.md",
+        "toc": [
+          {
+            "value": "Text objects!!!",
+            "url": "#text-objects",
+            "depth": 3
+          },
+          {
+            "value": "例子1",
+            "url": "#例子1",
+            "depth": 4
+          },
+          {
+            "value": "例子2",
+            "url": "#例子2",
+            "depth": 4
+          }
+        ],
+        "lang": "cn",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Vim Text object",
+          "datePublished": "2022-10-27T00:00:00.000Z",
+          "dateModified": "2022-10-27T00:00:00.000Z",
+          "description": null,
+          "image": "/static/images/twitter-card.png",
+          "url": "https://www.jxdev.me/blog/vim-text-object"
+        }
+      },
+      "documentHash": "1717607269104",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "blog/zerotier.md": {
+      "document": {
+        "title": "使用Zerotier DNS服务器",
+        "date": "2022-12-08T00:00:00.000Z",
+        "tags": [
+          "network",
+          "maintenance"
+        ],
+        "draft": false,
+        "summary": "\r",
+        "body": {
+          "raw": "\r\n不会还有人没用过ZEROTIER吧！没用过的快去用，从此你的所有设备都在一个局域网内啦\r\n\r\n而且不像openvpn组网，实现A -> B，B -> A互联需要部署两组server - client\r\n\r\nZEROTIER使用P2P，大家都是节点共享同一个网络，可以快速的搭建分布式网络\r\n\r\n但是使用ZEROTIER后，由于使用的仍然是当前环境下的dns，就无法使用域名访问本地服务了\r\n\r\n为了用的更爽，必须解决这个问题！！！\r\n\r\n在github随便翻了翻, 看我发现了什么?!\r\n\r\n### [zerotier-dns](https://github.com/mje-nz/zerotier-dns)\r\n\r\n#### 准备\r\n1. 获得zerotier [API Access Token](https://my.zerotier.com/account)\r\n2. 路由器或者设备自身安装了docker\r\n3. 配置文件 (填写api, interface)\r\n4. 修改interface名称为zt0（optional）\r\nvim /var/lib/zerotier-one/devicemap\r\n网络ID=zt0\r\n\r\n#### 部署\r\ndocker run --rm -d \\\r\n  --name zerodns \\\r\n  -p 533:533/udp \\\r\n  --volume $(pwd)/zerotier-dns.yml:/app/zerotier-dns.yml \\\r\n  mjenz/zerotier-dns\r\n",
+          "html": "<p>不会还有人没用过ZEROTIER吧！没用过的快去用，从此你的所有设备都在一个局域网内啦</p>\n<p>而且不像openvpn组网，实现A -> B，B -> A互联需要部署两组server - client</p>\n<p>ZEROTIER使用P2P，大家都是节点共享同一个网络，可以快速的搭建分布式网络</p>\n<p>但是使用ZEROTIER后，由于使用的仍然是当前环境下的dns，就无法使用域名访问本地服务了</p>\n<p>为了用的更爽，必须解决这个问题！！！</p>\n<p>在github随便翻了翻, 看我发现了什么?!</p>\n<h3><a href=\"https://github.com/mje-nz/zerotier-dns\">zerotier-dns</a></h3>\n<h4>准备</h4>\n<ol>\n<li>获得zerotier <a href=\"https://my.zerotier.com/account\">API Access Token</a></li>\n<li>路由器或者设备自身安装了docker</li>\n<li>配置文件 (填写api, interface)</li>\n<li>修改interface名称为zt0（optional）\r\nvim /var/lib/zerotier-one/devicemap\r\n网络ID=zt0</li>\n</ol>\n<h4>部署</h4>\n<p>docker run --rm -d <br>\n--name zerodns <br>\n-p 533:533/udp <br>\n--volume $(pwd)/zerotier-dns.yml:/app/zerotier-dns.yml <br>\nmjenz/zerotier-dns</p>"
+        },
+        "_id": "blog/zerotier.md",
+        "_raw": {
+          "sourceFilePath": "blog/zerotier.md",
+          "sourceFileName": "zerotier.md",
+          "sourceFileDir": "blog",
+          "contentType": "markdown",
+          "flattenedPath": "blog/zerotier"
+        },
+        "type": "Blog",
+        "readingTime": {
+          "text": "2 min read",
+          "minutes": 1.08,
+          "time": 64800,
+          "words": 216
+        },
+        "slug": "zerotier",
+        "path": "blog/zerotier",
+        "filePath": "blog/zerotier.md",
+        "toc": [
+          {
+            "value": "zerotier-dns",
+            "url": "#zerotier-dns",
+            "depth": 3
+          },
+          {
+            "value": "准备",
+            "url": "#准备-1",
+            "depth": 4
+          },
+          {
+            "value": "部署",
+            "url": "#部署-1",
+            "depth": 4
+          }
+        ],
+        "lang": "cn",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "使用Zerotier DNS服务器",
+          "datePublished": "2022-12-08T00:00:00.000Z",
+          "dateModified": "2022-12-08T00:00:00.000Z",
+          "description": "\r",
+          "image": "/static/images/twitter-card.png",
+          "url": "https://www.jxdev.me/blog/zerotier"
+        }
+      },
+      "documentHash": "1717056232899",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "blog/en/aspnet-ef-migration.md": {
+      "document": {
+        "title": "AspNet EF migration",
+        "date": "2022-10-12T00:00:00.000Z",
+        "tags": [
+          "AspNet"
+        ],
+        "draft": false,
+        "summary": null,
+        "body": {
+          "raw": "\nWhen we develop a web application with AspNet, we do not need to initialize our database with sql command.\n\nWe can write code first and use migration command to generate a migration script provided by AspNet EF.\n\n1. Write code (entity, configuration)\n    ```csharp\n    // entity file\n    namespace WebApp.Domain.Entities;\n\n    public class FooBar\n    {\n      public int Id { get; set; }\n      public string name { get; set; }\n    }\n\n    // configuration file\n    using WebApp.Domain.Entities;\n    using Microsoft.EntityFrameworkCore;\n    using Microsoft.EntityFrameworkCore.Metadata.Builders;\n\n    namespace WebApp.Infrastructure.Persistence.Configurations\n\n    public class FooBarConfiguration : IEntityTypeConfiguration<FooBar>\n    {\n      public void Configure(EntityTypeBuilder<FooBar> builder)\n      {\n        builder.HasKey(p => p.Id);\n      }\n    }\n    ```\n2. Generate migration\n    ```cmd\n    dotnet ef migrations add [CustomizedMigrationName]\n    ```\n3. Apply migration to database\n    ```cmd\n    dotnet ef database update\n    ```",
+          "html": "<p>When we develop a web application with AspNet, we do not need to initialize our database with sql command.</p>\n<p>We can write code first and use migration command to generate a migration script provided by AspNet EF.</p>\n<ol>\n<li>Write code (entity, configuration)\n<pre><code class=\"language-csharp\">// entity file\nnamespace WebApp.Domain.Entities;\n\npublic class FooBar\n{\n  public int Id { get; set; }\n  public string name { get; set; }\n}\n\n// configuration file\nusing WebApp.Domain.Entities;\nusing Microsoft.EntityFrameworkCore;\nusing Microsoft.EntityFrameworkCore.Metadata.Builders;\n\nnamespace WebApp.Infrastructure.Persistence.Configurations\n\npublic class FooBarConfiguration : IEntityTypeConfiguration&#x3C;FooBar>\n{\n  public void Configure(EntityTypeBuilder&#x3C;FooBar> builder)\n  {\n    builder.HasKey(p => p.Id);\n  }\n}\n</code></pre>\n</li>\n<li>Generate migration\n<pre><code class=\"language-cmd\">dotnet ef migrations add [CustomizedMigrationName]\n</code></pre>\n</li>\n<li>Apply migration to database\n<pre><code class=\"language-cmd\">dotnet ef database update\n</code></pre>\n</li>\n</ol>"
+        },
+        "_id": "blog/en/aspnet-ef-migration.md",
+        "_raw": {
+          "sourceFilePath": "blog/en/aspnet-ef-migration.md",
+          "sourceFileName": "aspnet-ef-migration.md",
+          "sourceFileDir": "blog/en",
+          "contentType": "markdown",
+          "flattenedPath": "blog/en/aspnet-ef-migration"
+        },
+        "type": "Blog",
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.58,
+          "time": 34800,
+          "words": 116
+        },
+        "slug": "en/aspnet-ef-migration",
+        "path": "blog/en/aspnet-ef-migration",
+        "filePath": "blog/en/aspnet-ef-migration.md",
+        "toc": [],
+        "lang": "en",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "AspNet EF migration",
+          "datePublished": "2022-10-12T00:00:00.000Z",
+          "dateModified": "2022-10-12T00:00:00.000Z",
+          "description": null,
+          "image": "/static/images/twitter-card.png",
+          "url": "https://www.jxdev.me/blog/en/aspnet-ef-migration"
+        }
+      },
+      "documentHash": "1719283318988",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+FROM node:20-alpine AS base
+RUN corepack enable
+WORKDIR /repo
+
+FROM base AS deps
+COPY package.json yarn.lock* .yarnrc.yml ./
+COPY .yarn ./.yarn
+COPY apps apps
+COPY packages packages
+RUN yarn install --immutable
+
+FROM base AS builder
+COPY --from=deps /repo/node_modules ./node_modules
+COPY --from=deps /repo/apps ./apps
+COPY --from=deps /repo/packages ./packages
+COPY .yarnrc.yml ./
+COPY .yarn ./.yarn
+WORKDIR /repo/apps/cms
+RUN yarn build
+
+FROM base AS runner
+WORKDIR /app
+ENV NODE_ENV=production
+RUN addgroup -S nodejs && adduser -S cmsjs -G nodejs
+COPY --from=builder /repo/apps/cms/dist ./dist
+COPY --from=builder /repo/apps/cms/package.json ./package.json
+COPY --from=deps /repo/node_modules ./node_modules
+COPY --from=deps /repo/packages ./packages
+USER cmsjs
+EXPOSE 3001
+CMD ["node", "dist/server.js"]

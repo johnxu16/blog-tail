@@ -3,12 +3,21 @@ _docs
 .devcontainer
 .git
 .github
+.gitattributes
+.gitignore
 # .next
 .vscode
 .vs
 Dockerfile
+Dockerfile.web
+Dockerfile.cms
+Dockerfile.api
+docker-compose.yml
 node_modules
 README.md
+LICENSE
+AGENTS.md
+docs
 
 /.yarn/*
 !/.yarn/releases

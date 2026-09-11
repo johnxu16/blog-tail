@@ -1,0 +1,59 @@
+{
+  "title": "Vim Text object",
+  "date": "2022-10-27T00:00:00.000Z",
+  "tags": [
+    "DevEx"
+  ],
+  "draft": false,
+  "summary": null,
+  "body": {
+    "raw": "\n### Text objects!!!\n\n在普通的编辑器中，我们通常以字符为单位编辑文本\n\n在vim中预先定义了word，sentence, paragraph等text objects\n\n可以帮助我们快速描述需要修改的区域，进行后续操作\n\n#### 例子1\n```javascript\nconst text = \"Who are bMISTYPExd you?\"\n\nconst text = \"Who are you?\"\n```\n\n光标在b一般会怎么删除呢？\n\ndw\n\n如果我们的光标不在b，在单词中间呢？\n\n1. bdw\n> 先使用b退回到单词开头，再删除单词\n2. daw\n> 使用aw选中单词，直接删除\n\n这里的aw就是text object 代表around word\n\niw代表inner word, 选中的就是不包括空格的单词了\n\n大部分情况下，使用daw的心智负担更小, 因为你不用再考虑光标在单词的哪个位置\n\n---\n\n可能现在你感觉text objects还没太大用, 再来看个例子!\n\n#### 例子2\n```javascript\nconst longText = \"This is super long text ahhhhh!\"\n\nconst longText = \"short\"\n```\n假如光标在第一个\"上怎么快速的把longText替换成\"short\"呢?\n1. dt\"Ashort\"\n> 删除到\", append在最后，输入short\"\n\n2. lct\"short\n> 右移，change到\"的内容为short\n\n3. ci\"short\n> change **双引号内的内容（text object）**为short\n\n---\n\n下面列出常用的text objects\n- at it | 标签\n- a} i}\n- a] i]\n- a) i)\n- i,w | camelCase\n- aa ia | argument\n- ai ii | indentation\n\n**通过vim script也可以定制自己想要的text objects, 有机会再介绍吧！**\n",
+    "code": "var Component=(()=>{var p=Object.create;var c=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var g=Object.getOwnPropertyNames;var x=Object.getPrototypeOf,u=Object.prototype.hasOwnProperty;var w=(l,e)=>()=>(e||l((e={exports:{}}).exports,e),e.exports),N=(l,e)=>{for(var a in e)c(l,a,{get:e[a],enumerable:!0})},i=(l,e,a,t)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of g(e))!u.call(l,r)&&r!==a&&c(l,r,{get:()=>e[r],enumerable:!(t=m(e,r))||t.enumerable});return l};var k=(l,e,a)=>(a=l!=null?p(x(l)):{},i(e||!l||!l.__esModule?c(a,\"default\",{value:l,enumerable:!0}):a,l)),b=l=>i(c({},\"__esModule\",{value:!0}),l);var h=w((M,s)=>{s.exports=_jsx_runtime});var v={};N(v,{default:()=>o,frontmatter:()=>j});var n=k(h()),j={title:\"Vim Text object\",tags:[\"DevEx\"],date:\"2022-10-27\",draft:!1,summary:null};function d(l){let e={a:\"a\",blockquote:\"blockquote\",code:\"code\",h3:\"h3\",h4:\"h4\",hr:\"hr\",li:\"li\",ol:\"ol\",p:\"p\",path:\"path\",pre:\"pre\",span:\"span\",strong:\"strong\",svg:\"svg\",ul:\"ul\",...l.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsxs)(e.h3,{className:\"content-header\",id:\"text-objects\",children:[(0,n.jsx)(e.a,{\"aria-hidden\":\"true\",href:\"#text-objects\",tabIndex:\"-1\",children:(0,n.jsx)(n.Fragment,{children:(0,n.jsx)(e.span,{className:\"content-header-link\",children:(0,n.jsxs)(e.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,n.jsx)(e.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,n.jsx)(e.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"Text objects!!!\"]}),(0,n.jsx)(e.p,{children:\"\\u5728\\u666E\\u901A\\u7684\\u7F16\\u8F91\\u5668\\u4E2D\\uFF0C\\u6211\\u4EEC\\u901A\\u5E38\\u4EE5\\u5B57\\u7B26\\u4E3A\\u5355\\u4F4D\\u7F16\\u8F91\\u6587\\u672C\"}),(0,n.jsx)(e.p,{children:\"\\u5728vim\\u4E2D\\u9884\\u5148\\u5B9A\\u4E49\\u4E86word\\uFF0Csentence, paragraph\\u7B49text objects\"}),(0,n.jsx)(e.p,{children:\"\\u53EF\\u4EE5\\u5E2E\\u52A9\\u6211\\u4EEC\\u5FEB\\u901F\\u63CF\\u8FF0\\u9700\\u8981\\u4FEE\\u6539\\u7684\\u533A\\u57DF\\uFF0C\\u8FDB\\u884C\\u540E\\u7EED\\u64CD\\u4F5C\"}),(0,n.jsxs)(e.h4,{className:\"content-header\",id:\"\\u4F8B\\u5B501\",children:[(0,n.jsx)(e.a,{\"aria-hidden\":\"true\",href:\"#\\u4F8B\\u5B501\",tabIndex:\"-1\",children:(0,n.jsx)(n.Fragment,{children:(0,n.jsx)(e.span,{className:\"content-header-link\",children:(0,n.jsxs)(e.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,n.jsx)(e.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,n.jsx)(e.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"\\u4F8B\\u5B501\"]}),(0,n.jsx)(e.pre,{className:\"language-javascript\",children:(0,n.jsxs)(e.code,{className:\"language-javascript code-highlight\",children:[(0,n.jsxs)(e.span,{className:\"code-line\",children:[(0,n.jsx)(e.span,{className:\"token keyword\",children:\"const\"}),\" text \",(0,n.jsx)(e.span,{className:\"token operator\",children:\"=\"}),\" \",(0,n.jsx)(e.span,{className:\"token string\",children:'\"Who are bMISTYPExd you?\"'}),`\n`]}),(0,n.jsx)(e.span,{className:\"code-line\",children:`\n`}),(0,n.jsxs)(e.span,{className:\"code-line\",children:[(0,n.jsx)(e.span,{className:\"token keyword\",children:\"const\"}),\" text \",(0,n.jsx)(e.span,{className:\"token operator\",children:\"=\"}),\" \",(0,n.jsx)(e.span,{className:\"token string\",children:'\"Who are you?\"'}),`\n`]})]})}),(0,n.jsx)(e.p,{children:\"\\u5149\\u6807\\u5728b\\u4E00\\u822C\\u4F1A\\u600E\\u4E48\\u5220\\u9664\\u5462\\uFF1F\"}),(0,n.jsx)(e.p,{children:\"dw\"}),(0,n.jsx)(e.p,{children:\"\\u5982\\u679C\\u6211\\u4EEC\\u7684\\u5149\\u6807\\u4E0D\\u5728b\\uFF0C\\u5728\\u5355\\u8BCD\\u4E2D\\u95F4\\u5462\\uFF1F\"}),(0,n.jsx)(e.ol,{children:(0,n.jsx)(e.li,{children:\"bdw\"})}),(0,n.jsx)(e.blockquote,{children:(0,n.jsx)(e.p,{children:\"\\u5148\\u4F7F\\u7528b\\u9000\\u56DE\\u5230\\u5355\\u8BCD\\u5F00\\u5934\\uFF0C\\u518D\\u5220\\u9664\\u5355\\u8BCD\"})}),(0,n.jsx)(e.ol,{start:\"2\",children:(0,n.jsx)(e.li,{children:\"daw\"})}),(0,n.jsx)(e.blockquote,{children:(0,n.jsx)(e.p,{children:\"\\u4F7F\\u7528aw\\u9009\\u4E2D\\u5355\\u8BCD\\uFF0C\\u76F4\\u63A5\\u5220\\u9664\"})}),(0,n.jsx)(e.p,{children:\"\\u8FD9\\u91CC\\u7684aw\\u5C31\\u662Ftext object \\u4EE3\\u8868around word\"}),(0,n.jsx)(e.p,{children:\"iw\\u4EE3\\u8868inner word, \\u9009\\u4E2D\\u7684\\u5C31\\u662F\\u4E0D\\u5305\\u62EC\\u7A7A\\u683C\\u7684\\u5355\\u8BCD\\u4E86\"}),(0,n.jsx)(e.p,{children:\"\\u5927\\u90E8\\u5206\\u60C5\\u51B5\\u4E0B\\uFF0C\\u4F7F\\u7528daw\\u7684\\u5FC3\\u667A\\u8D1F\\u62C5\\u66F4\\u5C0F, \\u56E0\\u4E3A\\u4F60\\u4E0D\\u7528\\u518D\\u8003\\u8651\\u5149\\u6807\\u5728\\u5355\\u8BCD\\u7684\\u54EA\\u4E2A\\u4F4D\\u7F6E\"}),(0,n.jsx)(e.hr,{}),(0,n.jsx)(e.p,{children:\"\\u53EF\\u80FD\\u73B0\\u5728\\u4F60\\u611F\\u89C9text objects\\u8FD8\\u6CA1\\u592A\\u5927\\u7528, \\u518D\\u6765\\u770B\\u4E2A\\u4F8B\\u5B50!\"}),(0,n.jsxs)(e.h4,{className:\"content-header\",id:\"\\u4F8B\\u5B502\",children:[(0,n.jsx)(e.a,{\"aria-hidden\":\"true\",href:\"#\\u4F8B\\u5B502\",tabIndex:\"-1\",children:(0,n.jsx)(n.Fragment,{children:(0,n.jsx)(e.span,{className:\"content-header-link\",children:(0,n.jsxs)(e.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,n.jsx)(e.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,n.jsx)(e.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"\\u4F8B\\u5B502\"]}),(0,n.jsx)(e.pre,{className:\"language-javascript\",children:(0,n.jsxs)(e.code,{className:\"language-javascript code-highlight\",children:[(0,n.jsxs)(e.span,{className:\"code-line\",children:[(0,n.jsx)(e.span,{className:\"token keyword\",children:\"const\"}),\" longText \",(0,n.jsx)(e.span,{className:\"token operator\",children:\"=\"}),\" \",(0,n.jsx)(e.span,{className:\"token string\",children:'\"This is super long text ahhhhh!\"'}),`\n`]}),(0,n.jsx)(e.span,{className:\"code-line\",children:`\n`}),(0,n.jsxs)(e.span,{className:\"code-line\",children:[(0,n.jsx)(e.span,{className:\"token keyword\",children:\"const\"}),\" longText \",(0,n.jsx)(e.span,{className:\"token operator\",children:\"=\"}),\" \",(0,n.jsx)(e.span,{className:\"token string\",children:'\"short\"'}),`\n`]})]})}),(0,n.jsx)(e.p,{children:'\\u5047\\u5982\\u5149\\u6807\\u5728\\u7B2C\\u4E00\\u4E2A\"\\u4E0A\\u600E\\u4E48\\u5FEB\\u901F\\u7684\\u628AlongText\\u66FF\\u6362\\u6210\"short\"\\u5462?'}),(0,n.jsx)(e.ol,{children:(0,n.jsx)(e.li,{children:'dt\"Ashort\"'})}),(0,n.jsx)(e.blockquote,{children:(0,n.jsx)(e.p,{children:'\\u5220\\u9664\\u5230\", append\\u5728\\u6700\\u540E\\uFF0C\\u8F93\\u5165short\"'})}),(0,n.jsx)(e.ol,{start:\"2\",children:(0,n.jsx)(e.li,{children:'lct\"short'})}),(0,n.jsx)(e.blockquote,{children:(0,n.jsx)(e.p,{children:'\\u53F3\\u79FB\\uFF0Cchange\\u5230\"\\u7684\\u5185\\u5BB9\\u4E3Ashort'})}),(0,n.jsx)(e.ol,{start:\"3\",children:(0,n.jsx)(e.li,{children:'ci\"short'})}),(0,n.jsx)(e.blockquote,{children:(0,n.jsx)(e.p,{children:\"change **\\u53CC\\u5F15\\u53F7\\u5185\\u7684\\u5185\\u5BB9\\uFF08text object\\uFF09**\\u4E3Ashort\"})}),(0,n.jsx)(e.hr,{}),(0,n.jsx)(e.p,{children:\"\\u4E0B\\u9762\\u5217\\u51FA\\u5E38\\u7528\\u7684text objects\"}),(0,n.jsxs)(e.ul,{children:[(0,n.jsx)(e.li,{children:\"at it | \\u6807\\u7B7E\"}),(0,n.jsx)(e.li,{children:\"a} i}\"}),(0,n.jsx)(e.li,{children:\"a] i]\"}),(0,n.jsx)(e.li,{children:\"a) i)\"}),(0,n.jsx)(e.li,{children:\"i,w | camelCase\"}),(0,n.jsx)(e.li,{children:\"aa ia | argument\"}),(0,n.jsx)(e.li,{children:\"ai ii | indentation\"})]}),(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:\"\\u901A\\u8FC7vim script\\u4E5F\\u53EF\\u4EE5\\u5B9A\\u5236\\u81EA\\u5DF1\\u60F3\\u8981\\u7684text objects, \\u6709\\u673A\\u4F1A\\u518D\\u4ECB\\u7ECD\\u5427\\uFF01\"})})]})}function o(l={}){let{wrapper:e}=l.components||{};return e?(0,n.jsx)(e,{...l,children:(0,n.jsx)(d,{...l})}):d(l)}return b(v);})();\n;return Component;"
+  },
+  "_id": "blog/vim-text-object.md",
+  "_raw": {
+    "sourceFilePath": "blog/vim-text-object.md",
+    "sourceFileName": "vim-text-object.md",
+    "sourceFileDir": "blog",
+    "contentType": "markdown",
+    "flattenedPath": "blog/vim-text-object"
+  },
+  "type": "Blog",
+  "readingTime": {
+    "text": "2 min read",
+    "minutes": 1.84,
+    "time": 110400,
+    "words": 368
+  },
+  "slug": "vim-text-object",
+  "path": "blog/vim-text-object",
+  "filePath": "blog/vim-text-object.md",
+  "toc": [
+    {
+      "value": "Text objects!!!",
+      "url": "#text-objects",
+      "depth": 3
+    },
+    {
+      "value": "例子1",
+      "url": "#例子1",
+      "depth": 4
+    },
+    {
+      "value": "例子2",
+      "url": "#例子2",
+      "depth": 4
+    }
+  ],
+  "lang": "cn",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Vim Text object",
+    "datePublished": "2022-10-27T00:00:00.000Z",
+    "dateModified": "2022-10-27T00:00:00.000Z",
+    "description": null,
+    "image": "/static/images/twitter-card.png",
+    "url": "https://www.jxdev.me/blog/vim-text-object"
+  }
+}

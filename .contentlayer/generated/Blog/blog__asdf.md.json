@@ -1,0 +1,43 @@
+{
+  "title": "包管理软件asdf",
+  "date": "2023-06-27T00:00:00.000Z",
+  "tags": [
+    "tool"
+  ],
+  "draft": false,
+  "summary": "\r",
+  "body": {
+    "raw": "\r\n你知道如何使用一个支持多个软件的版本管理器吗？\r\n\r\n管理软件版本可能是一个复杂且耗时的任务，尤其是当你处理多个跨平台应用程序时。\r\n\r\n在当今快节奏的数字环境中，拥有一个支持多个软件包的统一解决方案非常宝贵。想象一下，一个单一的版本管理器可以简化流程，确保您的软件轻松保持最新。\r\n让我们探讨使用能够处理多个软件应用程序的版本管理器的优点和可能性，简化您的工作流程并提高您的软件管理体验。\r\n\r\n每种编程语言或框架都有其自己的版本管理器，例如Node.js的NVM，Ruby的RVM和Python的Pyenv。\r\n\r\n然而，使用不同的版本管理器来管理不同的软件并不是一个好主意。最好使用一个支持多种软件的版本管理器。\r\n\r\n选项A：asdf\r\n\r\nasdf是一个命令行工具\r\n\r\n`youtube: https://www.youtube.com/embed/RTaqWRj-6Lg`  \r\n**Video: Use asdf to manage versions of Python, NodeJS, GoLang and more! (8 min)**\r\n\r\n✅ 易于使用\r\n✅ 轻量级 & 快速\r\n✅ 非侵入性\r\n✅ ~700个注册插件，涵盖大多数用例，包括node，dotnet，dotnet-core\r\n\r\n❌ 仅限Linux/Mac/WSL\r\n\r\n选项B：nix\r\n\r\nnix-shell - 一种使用Nix包管理器和声明性配置文件创建和管理软件项目的孤立、可重复的开发环境的工具。\r\n\r\n`youtube: https://www.youtube.com/embed/5Dd7rQPNDT8`  \r\n**Video: How to use Nix on Ubuntu or any Linux Distro (18 min)**\r\n\r\n✅ 可重复性 - 相同的软件安装过程产生相同的输出\r\n✅ 声明性配置 - Nix使用声明性配置格式描述软件及其依赖关系\r\n✅ 可扩展性 - 开发人员可以通过插件和自定义构建者扩展其功能\r\n\r\n❌ 陡峭的学习曲线\r\n❌ 侵入性\r\n❌ 仅限Linux/Mac/WSL",
+    "code": "var Component=(()=>{var u=Object.create;var d=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var x=Object.getPrototypeOf,b=Object.prototype.hasOwnProperty;var f=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),y=(t,e)=>{for(var o in e)d(t,o,{get:e[o],enumerable:!0})},c=(t,e,o,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of m(e))!b.call(t,r)&&r!==o&&d(t,r,{get:()=>e[r],enumerable:!(i=p(e,r))||i.enumerable});return t};var g=(t,e,o)=>(o=t!=null?u(x(t)):{},c(e||!t||!t.__esModule?d(o,\"default\",{value:t,enumerable:!0}):o,t)),w=t=>c(d({},\"__esModule\",{value:!0}),t);var l=f((N,s)=>{s.exports=_jsx_runtime});var j={};y(j,{default:()=>h,frontmatter:()=>L});var n=g(l()),L={title:\"\\u5305\\u7BA1\\u7406\\u8F6F\\u4EF6asdf\",date:\"2023-06-27\",tags:[\"tool\"],draft:!1,summary:null};function a(t){let e={br:\"br\",code:\"code\",p:\"p\",strong:\"strong\",...t.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.p,{children:\"\\u4F60\\u77E5\\u9053\\u5982\\u4F55\\u4F7F\\u7528\\u4E00\\u4E2A\\u652F\\u6301\\u591A\\u4E2A\\u8F6F\\u4EF6\\u7684\\u7248\\u672C\\u7BA1\\u7406\\u5668\\u5417\\uFF1F\"}),(0,n.jsx)(e.p,{children:\"\\u7BA1\\u7406\\u8F6F\\u4EF6\\u7248\\u672C\\u53EF\\u80FD\\u662F\\u4E00\\u4E2A\\u590D\\u6742\\u4E14\\u8017\\u65F6\\u7684\\u4EFB\\u52A1\\uFF0C\\u5C24\\u5176\\u662F\\u5F53\\u4F60\\u5904\\u7406\\u591A\\u4E2A\\u8DE8\\u5E73\\u53F0\\u5E94\\u7528\\u7A0B\\u5E8F\\u65F6\\u3002\"}),(0,n.jsx)(e.p,{children:\"\\u5728\\u5F53\\u4ECA\\u5FEB\\u8282\\u594F\\u7684\\u6570\\u5B57\\u73AF\\u5883\\u4E2D\\uFF0C\\u62E5\\u6709\\u4E00\\u4E2A\\u652F\\u6301\\u591A\\u4E2A\\u8F6F\\u4EF6\\u5305\\u7684\\u7EDF\\u4E00\\u89E3\\u51B3\\u65B9\\u6848\\u975E\\u5E38\\u5B9D\\u8D35\\u3002\\u60F3\\u8C61\\u4E00\\u4E0B\\uFF0C\\u4E00\\u4E2A\\u5355\\u4E00\\u7684\\u7248\\u672C\\u7BA1\\u7406\\u5668\\u53EF\\u4EE5\\u7B80\\u5316\\u6D41\\u7A0B\\uFF0C\\u786E\\u4FDD\\u60A8\\u7684\\u8F6F\\u4EF6\\u8F7B\\u677E\\u4FDD\\u6301\\u6700\\u65B0\\u3002 \\u8BA9\\u6211\\u4EEC\\u63A2\\u8BA8\\u4F7F\\u7528\\u80FD\\u591F\\u5904\\u7406\\u591A\\u4E2A\\u8F6F\\u4EF6\\u5E94\\u7528\\u7A0B\\u5E8F\\u7684\\u7248\\u672C\\u7BA1\\u7406\\u5668\\u7684\\u4F18\\u70B9\\u548C\\u53EF\\u80FD\\u6027\\uFF0C\\u7B80\\u5316\\u60A8\\u7684\\u5DE5\\u4F5C\\u6D41\\u7A0B\\u5E76\\u63D0\\u9AD8\\u60A8\\u7684\\u8F6F\\u4EF6\\u7BA1\\u7406\\u4F53\\u9A8C\\u3002\"}),(0,n.jsx)(e.p,{children:\"\\u6BCF\\u79CD\\u7F16\\u7A0B\\u8BED\\u8A00\\u6216\\u6846\\u67B6\\u90FD\\u6709\\u5176\\u81EA\\u5DF1\\u7684\\u7248\\u672C\\u7BA1\\u7406\\u5668\\uFF0C\\u4F8B\\u5982Node.js\\u7684NVM\\uFF0CRuby\\u7684RVM\\u548CPython\\u7684Pyenv\\u3002\"}),(0,n.jsx)(e.p,{children:\"\\u7136\\u800C\\uFF0C\\u4F7F\\u7528\\u4E0D\\u540C\\u7684\\u7248\\u672C\\u7BA1\\u7406\\u5668\\u6765\\u7BA1\\u7406\\u4E0D\\u540C\\u7684\\u8F6F\\u4EF6\\u5E76\\u4E0D\\u662F\\u4E00\\u4E2A\\u597D\\u4E3B\\u610F\\u3002\\u6700\\u597D\\u4F7F\\u7528\\u4E00\\u4E2A\\u652F\\u6301\\u591A\\u79CD\\u8F6F\\u4EF6\\u7684\\u7248\\u672C\\u7BA1\\u7406\\u5668\\u3002\"}),(0,n.jsx)(e.p,{children:\"\\u9009\\u9879A\\uFF1Aasdf\"}),(0,n.jsx)(e.p,{children:\"asdf\\u662F\\u4E00\\u4E2A\\u547D\\u4EE4\\u884C\\u5DE5\\u5177\"}),(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.code,{children:\"youtube: https://www.youtube.com/embed/RTaqWRj-6Lg\"}),(0,n.jsx)(e.br,{}),(0,n.jsx)(e.strong,{children:\"Video: Use asdf to manage versions of Python, NodeJS, GoLang and more! (8 min)\"})]}),(0,n.jsx)(e.p,{children:\"\\u2705 \\u6613\\u4E8E\\u4F7F\\u7528 \\u2705 \\u8F7B\\u91CF\\u7EA7 & \\u5FEB\\u901F \\u2705 \\u975E\\u4FB5\\u5165\\u6027 \\u2705 ~700\\u4E2A\\u6CE8\\u518C\\u63D2\\u4EF6\\uFF0C\\u6DB5\\u76D6\\u5927\\u591A\\u6570\\u7528\\u4F8B\\uFF0C\\u5305\\u62ECnode\\uFF0Cdotnet\\uFF0Cdotnet-core\"}),(0,n.jsx)(e.p,{children:\"\\u274C \\u4EC5\\u9650Linux/Mac/WSL\"}),(0,n.jsx)(e.p,{children:\"\\u9009\\u9879B\\uFF1Anix\"}),(0,n.jsx)(e.p,{children:\"nix-shell - \\u4E00\\u79CD\\u4F7F\\u7528Nix\\u5305\\u7BA1\\u7406\\u5668\\u548C\\u58F0\\u660E\\u6027\\u914D\\u7F6E\\u6587\\u4EF6\\u521B\\u5EFA\\u548C\\u7BA1\\u7406\\u8F6F\\u4EF6\\u9879\\u76EE\\u7684\\u5B64\\u7ACB\\u3001\\u53EF\\u91CD\\u590D\\u7684\\u5F00\\u53D1\\u73AF\\u5883\\u7684\\u5DE5\\u5177\\u3002\"}),(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.code,{children:\"youtube: https://www.youtube.com/embed/5Dd7rQPNDT8\"}),(0,n.jsx)(e.br,{}),(0,n.jsx)(e.strong,{children:\"Video: How to use Nix on Ubuntu or any Linux Distro (18 min)\"})]}),(0,n.jsx)(e.p,{children:\"\\u2705 \\u53EF\\u91CD\\u590D\\u6027 - \\u76F8\\u540C\\u7684\\u8F6F\\u4EF6\\u5B89\\u88C5\\u8FC7\\u7A0B\\u4EA7\\u751F\\u76F8\\u540C\\u7684\\u8F93\\u51FA \\u2705 \\u58F0\\u660E\\u6027\\u914D\\u7F6E - Nix\\u4F7F\\u7528\\u58F0\\u660E\\u6027\\u914D\\u7F6E\\u683C\\u5F0F\\u63CF\\u8FF0\\u8F6F\\u4EF6\\u53CA\\u5176\\u4F9D\\u8D56\\u5173\\u7CFB \\u2705 \\u53EF\\u6269\\u5C55\\u6027 - \\u5F00\\u53D1\\u4EBA\\u5458\\u53EF\\u4EE5\\u901A\\u8FC7\\u63D2\\u4EF6\\u548C\\u81EA\\u5B9A\\u4E49\\u6784\\u5EFA\\u8005\\u6269\\u5C55\\u5176\\u529F\\u80FD\"}),(0,n.jsx)(e.p,{children:\"\\u274C \\u9661\\u5CED\\u7684\\u5B66\\u4E60\\u66F2\\u7EBF \\u274C \\u4FB5\\u5165\\u6027 \\u274C \\u4EC5\\u9650Linux/Mac/WSL\"})]})}function h(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,{...t,children:(0,n.jsx)(a,{...t})}):a(t)}return w(j);})();\n;return Component;"
+  },
+  "_id": "blog/asdf.md",
+  "_raw": {
+    "sourceFilePath": "blog/asdf.md",
+    "sourceFileName": "asdf.md",
+    "sourceFileDir": "blog",
+    "contentType": "markdown",
+    "flattenedPath": "blog/asdf"
+  },
+  "type": "Blog",
+  "readingTime": {
+    "text": "3 min read",
+    "minutes": 2.335,
+    "time": 140100,
+    "words": 467
+  },
+  "slug": "asdf",
+  "path": "blog/asdf",
+  "filePath": "blog/asdf.md",
+  "toc": [],
+  "lang": "cn",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "包管理软件asdf",
+    "datePublished": "2023-06-27T00:00:00.000Z",
+    "dateModified": "2023-06-27T00:00:00.000Z",
+    "description": "\r",
+    "image": "/static/images/twitter-card.png",
+    "url": "https://www.jxdev.me/blog/asdf"
+  }
+}

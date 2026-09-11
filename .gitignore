@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+**/node_modules
 /.pnp
 .pnp.js
 /.yarn/*
@@ -13,20 +13,19 @@
 /coverage
 
 # next.js
-/.next/
-/out/
-public/sitemap.xml
-.vercel
+**/.next/
+**/out/
+**/.vercel
 
 # production
-/build
-*.xml
+**/build
+**/dist
 
-# rss feed
-/public/feed.xml
+# generated api cache
+apps/api/.cache/
 
-# search
-/public/search.json
+# generated CMS migration map
+data/migration-map.json
 
 # misc
 .DS_Store
@@ -42,6 +41,3 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
-
-# Contentlayer
-.contentlayer

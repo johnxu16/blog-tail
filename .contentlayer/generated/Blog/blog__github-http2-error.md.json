@@ -1,0 +1,41 @@
+{
+  "title": "github http2 报错",
+  "date": "2024-03-06T00:00:00.000Z",
+  "tags": [],
+  "draft": false,
+  "summary": null,
+  "body": {
+    "raw": "\n前几天使用git pull命令一直失败，报错如下\n\n```bash\nHTTP/2 stream 1 was not closed cleanly before end of the underlying stream\n```\n\n稍微查了下，很快在网上找到了答案\n\n全局设置git使用HTTP/1.1就好了\n\n```bash\ngit config --global http.version HTTP/1.1\n```\n\n🤔可是这个报错到底代表了什么呢？\n",
+    "code": "var Component=(()=>{var m=Object.create;var l=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var g=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var b=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),x=(n,e)=>{for(var s in e)l(n,s,{get:e[s],enumerable:!0})},r=(n,e,s,c)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let t of g(e))!f.call(n,t)&&t!==s&&l(n,t,{get:()=>e[t],enumerable:!(c=p(e,t))||c.enumerable});return n};var N=(n,e,s)=>(s=n!=null?m(u(n)):{},r(e||!n||!n.__esModule?l(s,\"default\",{value:n,enumerable:!0}):s,n)),_=n=>r(l({},\"__esModule\",{value:!0}),n);var i=b((k,o)=>{o.exports=_jsx_runtime});var j={};x(j,{default:()=>h,frontmatter:()=>T});var a=N(i()),T={title:\"github http2 \\u62A5\\u9519\",date:\"2024-03-06\",tags:[],draft:!1,summary:null};function d(n){let e={code:\"code\",p:\"p\",pre:\"pre\",span:\"span\",...n.components};return(0,a.jsxs)(a.Fragment,{children:[(0,a.jsx)(e.p,{children:\"\\u524D\\u51E0\\u5929\\u4F7F\\u7528git pull\\u547D\\u4EE4\\u4E00\\u76F4\\u5931\\u8D25\\uFF0C\\u62A5\\u9519\\u5982\\u4E0B\"}),(0,a.jsx)(e.pre,{className:\"language-bash\",children:(0,a.jsx)(e.code,{className:\"language-bash code-highlight\",children:(0,a.jsxs)(e.span,{className:\"code-line\",children:[\"HTTP/2 stream \",(0,a.jsx)(e.span,{className:\"token number\",children:\"1\"}),` was not closed cleanly before end of the underlying stream\n`]})})}),(0,a.jsx)(e.p,{children:\"\\u7A0D\\u5FAE\\u67E5\\u4E86\\u4E0B\\uFF0C\\u5F88\\u5FEB\\u5728\\u7F51\\u4E0A\\u627E\\u5230\\u4E86\\u7B54\\u6848\"}),(0,a.jsx)(e.p,{children:\"\\u5168\\u5C40\\u8BBE\\u7F6Egit\\u4F7F\\u7528HTTP/1.1\\u5C31\\u597D\\u4E86\"}),(0,a.jsx)(e.pre,{className:\"language-bash\",children:(0,a.jsx)(e.code,{className:\"language-bash code-highlight\",children:(0,a.jsxs)(e.span,{className:\"code-line\",children:[(0,a.jsx)(e.span,{className:\"token function\",children:\"git\"}),\" config \",(0,a.jsx)(e.span,{className:\"token parameter variable\",children:\"--global\"}),` http.version HTTP/1.1\n`]})})}),(0,a.jsx)(e.p,{children:\"\\u{1F914}\\u53EF\\u662F\\u8FD9\\u4E2A\\u62A5\\u9519\\u5230\\u5E95\\u4EE3\\u8868\\u4E86\\u4EC0\\u4E48\\u5462\\uFF1F\"})]})}function h(n={}){let{wrapper:e}=n.components||{};return e?(0,a.jsx)(e,{...n,children:(0,a.jsx)(d,{...n})}):d(n)}return _(j);})();\n;return Component;"
+  },
+  "_id": "blog/github-http2-error.md",
+  "_raw": {
+    "sourceFilePath": "blog/github-http2-error.md",
+    "sourceFileName": "github-http2-error.md",
+    "sourceFileDir": "blog",
+    "contentType": "markdown",
+    "flattenedPath": "blog/github-http2-error"
+  },
+  "type": "Blog",
+  "readingTime": {
+    "text": "1 min read",
+    "minutes": 0.4,
+    "time": 24000,
+    "words": 80
+  },
+  "slug": "github-http2-error",
+  "path": "blog/github-http2-error",
+  "filePath": "blog/github-http2-error.md",
+  "toc": [],
+  "lang": "cn",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "github http2 报错",
+    "datePublished": "2024-03-06T00:00:00.000Z",
+    "dateModified": "2024-03-06T00:00:00.000Z",
+    "description": null,
+    "image": "/static/images/twitter-card.png",
+    "url": "https://www.jxdev.me/blog/github-http2-error"
+  }
+}

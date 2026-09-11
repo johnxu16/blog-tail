@@ -1,0 +1,43 @@
+{
+  "title": "2023 Retro",
+  "date": "2024-03-06T00:00:00.000Z",
+  "tags": [
+    "retro"
+  ],
+  "draft": false,
+  "summary": null,
+  "body": {
+    "raw": "",
+    "code": "var Component=(()=>{var i=Object.create;var a=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var d=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var j=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),p=(t,e)=>{for(var r in e)a(t,r,{get:e[r],enumerable:!0})},m=(t,e,r,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of d(e))!g.call(t,o)&&o!==r&&a(t,o,{get:()=>e[o],enumerable:!(s=l(e,o))||s.enumerable});return t};var M=(t,e,r)=>(r=t!=null?i(_(t)):{},m(e||!t||!t.__esModule?a(r,\"default\",{value:t,enumerable:!0}):r,t)),y=t=>m(a({},\"__esModule\",{value:!0}),t);var c=j((X,u)=>{u.exports=_jsx_runtime});var D={};p(D,{default:()=>x,frontmatter:()=>C});var n=M(c()),C={title:\"2023 Retro\",date:\"2024-03-06\",tags:[\"retro\"],draft:!1,summary:null};function f(t){return(0,n.jsx)(n.Fragment,{})}function x(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,{...t,children:(0,n.jsx)(f,{...t})}):f(t)}return y(D);})();\n;return Component;"
+  },
+  "_id": "blog/2023-retro.md",
+  "_raw": {
+    "sourceFilePath": "blog/2023-retro.md",
+    "sourceFileName": "2023-retro.md",
+    "sourceFileDir": "blog",
+    "contentType": "markdown",
+    "flattenedPath": "blog/2023-retro"
+  },
+  "type": "Blog",
+  "readingTime": {
+    "text": "0 min read",
+    "minutes": 0,
+    "time": 0,
+    "words": 0
+  },
+  "slug": "2023-retro",
+  "path": "blog/2023-retro",
+  "filePath": "blog/2023-retro.md",
+  "toc": [],
+  "lang": "cn",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "2023 Retro",
+    "datePublished": "2024-03-06T00:00:00.000Z",
+    "dateModified": "2024-03-06T00:00:00.000Z",
+    "description": null,
+    "image": "/static/images/twitter-card.png",
+    "url": "https://www.jxdev.me/blog/2023-retro"
+  }
+}

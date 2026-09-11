@@ -1,0 +1,41 @@
+{
+  "cacheItemsMap": {
+    "authors/default.mdx": {
+      "document": {
+        "name": "John Xu",
+        "avatar": "/static/images/avatar.jpg",
+        "occupation": "Senior Software Engineer",
+        "company": "Self-Employed",
+        "email": "bringerxu@tom.com",
+        "twitter": "https://x.com/john_wreck16",
+        "github": "https://github.com/johnxu16",
+        "body": {
+          "raw": "\nAs a professional senior software engineer based in Hangzhou, I bring over five years of industry experience to the table.\n\nMy expertise lies in **NextJs**, **React**, **Spring**, and **Clean Architecture with .NET**, which I've honed through dedicated practice and real-world projects.\n\nSpecializing in crafting robust, practical, and sustainable software solutions across diverse platforms, I continuously refine my skills to deliver top-tier services adhering to industry best practices.\n\n",
+          "code": "var Component=(()=>{var p=Object.create;var i=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var g=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var x=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),b=(t,e)=>{for(var r in e)i(t,r,{get:e[r],enumerable:!0})},a=(t,e,r,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of g(e))!f.call(t,o)&&o!==r&&i(t,o,{get:()=>e[o],enumerable:!(s=u(e,o))||s.enumerable});return t};var j=(t,e,r)=>(r=t!=null?p(m(t)):{},a(e||!t||!t.__esModule?i(r,\"default\",{value:t,enumerable:!0}):r,t)),w=t=>a(i({},\"__esModule\",{value:!0}),t);var l=x((S,c)=>{c.exports=_jsx_runtime});var v={};b(v,{default:()=>h,frontmatter:()=>y});var n=j(l()),y={name:\"John Xu\",avatar:\"/static/images/avatar.jpg\",occupation:\"Senior Software Engineer\",company:\"Self-Employed\",email:\"bringerxu@tom.com\",twitter:\"https://x.com/john_wreck16\",github:\"https://github.com/johnxu16\"};function d(t){let e={p:\"p\",strong:\"strong\",...t.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.p,{children:\"As a professional senior software engineer based in Hangzhou, I bring over five years of industry experience to the table.\"}),(0,n.jsxs)(e.p,{children:[\"My expertise lies in \",(0,n.jsx)(e.strong,{children:\"NextJs\"}),\", \",(0,n.jsx)(e.strong,{children:\"React\"}),\", \",(0,n.jsx)(e.strong,{children:\"Spring\"}),\", and \",(0,n.jsx)(e.strong,{children:\"Clean Architecture with .NET\"}),\", which I've honed through dedicated practice and real-world projects.\"]}),(0,n.jsx)(e.p,{children:\"Specializing in crafting robust, practical, and sustainable software solutions across diverse platforms, I continuously refine my skills to deliver top-tier services adhering to industry best practices.\"})]})}function h(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,{...t,children:(0,n.jsx)(d,{...t})}):d(t)}return w(v);})();\n;return Component;"
+        },
+        "_id": "authors/default.mdx",
+        "_raw": {
+          "sourceFilePath": "authors/default.mdx",
+          "sourceFileName": "default.mdx",
+          "sourceFileDir": "authors",
+          "contentType": "mdx",
+          "flattenedPath": "authors/default"
+        },
+        "type": "Authors",
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.335,
+          "time": 20100,
+          "words": 67
+        },
+        "slug": "default",
+        "path": "authors/default",
+        "filePath": "authors/default.mdx",
+        "toc": []
+      },
+      "documentHash": "1716882664555",
+      "hasWarnings": false,
+      "documentTypeName": "Authors"
+    }
+  }
+}
