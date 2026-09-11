@@ -118,6 +118,7 @@ const apiProc = spawn('npx', ['--no-install', 'tsx', 'apps/api/src/index.ts'], {
   stdio: ['ignore', 'pipe', 'pipe'],
   env: { ...process.env },
   shell: process.platform === 'win32',
+  detached: !process.platform.startsWith('win'), // POSIX: own process group
 })
 
 let apiLog = ''
@@ -143,9 +144,19 @@ try {
     biomesOk = bRes.status === 200 && Array.isArray(parsed?.biomes) && parsed.biomes.length === 6
   }
 } finally {
-  apiProc.kill('SIGTERM')
-  await sleep(500)
-  if (!apiProc.killed) apiProc.kill('SIGKILL')
+  // Force-kill the entire tree. SIGTERM alone leaves the npx/tsx child
+  // running on Windows, which keeps port 3002 bound and the parent waiting.
+  if (process.platform === 'win32') {
+    try {
+      spawnSync('taskkill', ['/pid', String(apiProc.pid), '/T', '/F'], { stdio: 'ignore' })
+    } catch {}
+  } else {
+    try {
+      process.kill(-apiProc.pid, 'SIGKILL')
+    } catch {}
+    if (!apiProc.killed) apiProc.kill('SIGKILL')
+  }
+  await sleep(300)
 }
 
 record('api /healthz returns 200 {ok:true}', apiOk, healthBody ? `body=${healthBody.slice(0, 64)}` : 'no response')
@@ -166,4 +177,13 @@ console.log('\n=== summary ===')
 const passed = checks.filter((c) => c.ok).length
 const failed = checks.filter((c) => !c.ok).length
 console.log(`${passed} passed, ${failed} failed of ${checks.length}`)
-process.exit(failed === 0 ? 0 : 1)
+
+// Hard overall deadline: if anything is still alive after this, force exit.
+// Prevents the script from hanging when an orphaned child keeps the event
+// loop alive (Windows: orphaned npx/tsx grand-children).
+const HARD_DEADLINE_MS = 5_000
+const hardTimer = setTimeout(() => {
+  console.error(`hard deadline ${HARD_DEADLINE_MS}ms exceeded; forcing exit`)
+  process.exit(failed === 0 ? 0 : 1)
+}, HARD_DEADLINE_MS)
+hardTimer.unref()
