@@ -12,6 +12,7 @@
     "serve": "yarn workspace web start",
     "analyze": "yarn workspace web analyze",
     "lint": "yarn workspace web lint",
+    "smoke": "node scripts/smoke.mjs",
     "prepare": "husky"
   },
   "devDependencies": {

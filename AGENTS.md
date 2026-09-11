@@ -93,3 +93,7 @@ Husky runs `lint-staged` (eslint + prettier) on staged `*.{js,jsx,ts,tsx,json,cs
 - `docs/agents/issue-tracker.md`
 - `docs/agents/triage-labels.md`
 - `docs/agents/domain.md`
+
+## Stable checkpoints
+
+- `blog-v2-mvp1` — structural monorepo + Payload CMS + Hono API + AI assist + glass/parallax + R3F globe scaffolding. `yarn smoke` returns 15/15. Operational work (real Postgres run, sprite authoring) deferred to user machine.
