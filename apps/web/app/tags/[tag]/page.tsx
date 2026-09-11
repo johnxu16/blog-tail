@@ -5,6 +5,8 @@ import site from '@blog/config/site'
 import ListLayout from '@/layouts/ListLayoutWithTags'
 import { genPageMetadata } from 'app/seo'
 import type { Metadata } from 'next'
+import { Parallax } from '@/components/Parallax'
+import { Glass } from '@/components/Glass'
 
 export const dynamic = 'force-dynamic'
 

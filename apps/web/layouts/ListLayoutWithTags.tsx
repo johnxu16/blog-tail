@@ -6,6 +6,8 @@ import { slug } from 'github-slugger'
 import { formatDate } from '@/lib/formatDate'
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
+import { Glass } from '@/components/Glass'
+import { Parallax } from '@/components/Parallax'
 import site from '@blog/config/site'
 import type { PostSummary } from '@/lib/api'
 
@@ -81,11 +83,13 @@ export default function ListLayoutWithTags({
   return (
     <>
       <div>
-        <div className="pb-6 pt-6">
-          <h1 className="md:leading-14 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:hidden sm:text-4xl sm:leading-10 md:text-6xl dark:text-gray-100">
-            {title}
-          </h1>
-        </div>
+        <Parallax offset={20}>
+          <Glass className="mx-auto mb-8 max-w-3xl px-6 py-4">
+            <h1 className="md:leading-14 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl dark:text-gray-100">
+              {title}
+            </h1>
+          </Glass>
+        </Parallax>
         <div className="flex sm:space-x-24">
           <div className="hidden h-full max-h-screen min-w-[280px] max-w-[280px] flex-wrap overflow-auto rounded bg-gray-50 pt-5 shadow-md sm:flex dark:bg-gray-900/70 dark:shadow-gray-800/40">
             <div className="px-6 py-4">

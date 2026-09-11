@@ -4,6 +4,8 @@ import Comments from '@/components/Comments'
 import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
+import { Glass } from '@/components/Glass'
+import { Parallax } from '@/components/Parallax'
 import site from '@blog/config/site'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 
@@ -28,19 +30,21 @@ export default function PostSimple({ content, next, prev, children }: LayoutProp
       <article>
         <div>
           <header>
-            <div className="space-y-1 border-b border-gray-200 pb-10 text-center dark:border-gray-700">
-              <dl>
-                <div>
-                  <dt className="sr-only">Published on</dt>
-                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                    <time dateTime={date}>{formatDate(date, site.locale)}</time>
-                  </dd>
+            <Parallax offset={30}>
+              <Glass className="mx-auto mb-6 max-w-3xl px-6 py-8 text-center">
+                <dl>
+                  <div>
+                    <dt className="sr-only">Published on</dt>
+                    <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                      <time dateTime={date}>{formatDate(date, site.locale)}</time>
+                    </dd>
+                  </div>
+                </dl>
+                <div className="mt-2">
+                  <PageTitle>{title}</PageTitle>
                 </div>
-              </dl>
-              <div>
-                <PageTitle>{title}</PageTitle>
-              </div>
-            </div>
+              </Glass>
+            </Parallax>
           </header>
           <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 xl:divide-y-0 dark:divide-gray-700">
             <div className="divide-y divide-gray-200 xl:col-span-3 xl:row-span-2 xl:pb-0 dark:divide-gray-700">
