@@ -11,7 +11,7 @@ const BLOG_DIR = path.join(ROOT, 'data/blog')
 const AUTHOR_DIR = path.join(ROOT, 'data/authors')
 const MAP_PATH = path.join(ROOT, 'data/migration-map.json')
 
-const PAYLOAD_URL = process.env.PAYLOAD_API_URL || 'http://127.0.0.1:3001'
+const PAYLOAD_URL = process.env.PAYLOAD_URL || 'http://127.0.0.1:3001'
 const FORCE = process.argv.includes('--force')
 
 interface MapEntry {
@@ -39,7 +39,9 @@ async function sha256(buf: Buffer | string) {
 }
 
 function parseFrontmatter(raw: string) {
-  const match = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/)
+  // Normalize CRLF -> LF so the regex below matches Windows-authored files.
+  const normalized = raw.replace(/\r\n/g, '\n')
+  const match = normalized.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/)
   if (!match) return { data: {} as Record<string, unknown>, content: raw }
   const [, fm, body] = match
   const data: Record<string, unknown> = {}
@@ -48,50 +50,77 @@ function parseFrontmatter(raw: string) {
     if (!m) continue
     const [, key, valRaw] = m
     let val: unknown = valRaw.replace(/^['"]|['"]$/g, '')
-    if (val === 'true') val = true
+    // Inline YAML list: ['tool', 'frontend']
+    if (typeof val === 'string' && val.startsWith('[') && val.endsWith(']')) {
+      const inner = val.slice(1, -1).trim()
+      if (inner === '') {
+        val = []
+      } else {
+        val = inner
+          .split(',')
+          .map((s) => s.trim().replace(/^['"]|['"]$/g, ''))
+          .filter(Boolean)
+      }
+    } else if (val === 'true') val = true
     else if (val === 'false') val = false
-    else if (/^\d{4}-\d{2}-\d{2}/.test(String(val))) val = String(val)
     data[key] = val
   }
   return { data, content: body }
 }
 
-async function ensureTag(payload: typeof fetch, name: string): Promise<number> {
-  const list = await payload(`${PAYLOAD_URL}/api/tags?where[name][equals]=${encodeURIComponent(name)}`)
+async function ensureTag(payloadFetch: typeof fetch, name: string): Promise<number> {
+  const list = await payloadFetch(
+    `${PAYLOAD_URL}/api/tags?where[name][equals]=${encodeURIComponent(name)}`,
+  )
   const json = (await list.json()) as { docs?: Array<{ id: number }> }
   if (json.docs?.[0]) return json.docs[0].id
-  const created = await payload(`${PAYLOAD_URL}/api/tags`, {
+  const created = await payloadFetch(`${PAYLOAD_URL}/api/tags`, {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify({ name, slug: name.toLowerCase().replace(/\s+/g, '-') }),
   })
+  if (!created.ok) {
+    const errText = await created.text().catch(() => '')
+    console.error(`[tag-fail] ensureTag(${name}): ${created.status} ${errText}`)
+    return 0
+  }
   const cjson = (await created.json()) as { doc?: { id: number }; id?: number }
   return cjson.doc?.id ?? cjson.id ?? 0
 }
 
-async function ensureAuthor(name: string, body: string): Promise<number> {
+async function ensureAuthor(payloadFetch: typeof fetch, name: string, body: string): Promise<number> {
   const slug = name.toLowerCase().replace(/\s+/g, '-')
-  const payload = await fetch(`${PAYLOAD_URL}/api/authors?where[slug][equals]=${slug}`)
+  const payload = await payloadFetch(`${PAYLOAD_URL}/api/authors?where[slug][equals]=${slug}`)
   const json = (await payload.json()) as { docs?: Array<{ id: number }> }
   if (json.docs?.[0]) return json.docs[0].id
-  const created = await fetch(`${PAYLOAD_URL}/api/authors`, {
+  const created = await payloadFetch(`${PAYLOAD_URL}/api/authors`, {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify({ name, slug, body }),
   })
+  if (!created.ok) {
+    const errText = await created.text().catch(() => '')
+    console.error(`[author-fail] ensureAuthor(${name}): ${created.status} ${errText}`)
+    return 0
+  }
   const cjson = (await created.json()) as { doc?: { id: number }; id?: number }
   return cjson.doc?.id ?? cjson.id ?? 0
 }
 
-async function ensureBiome(slug: string, name: string, spriteKey: string): Promise<number> {
-  const found = await fetch(`${PAYLOAD_URL}/api/biomes?where[slug][equals]=${slug}`)
+async function ensureBiome(payloadFetch: typeof fetch, slug: string, name: string, spriteKey: string): Promise<number> {
+  const found = await payloadFetch(`${PAYLOAD_URL}/api/biomes?where[slug][equals]=${slug}`)
   const fjson = (await found.json()) as { docs?: Array<{ id: number }> }
   if (fjson.docs?.[0]) return fjson.docs[0].id
-  const created = await fetch(`${PAYLOAD_URL}/api/biomes`, {
+  const created = await payloadFetch(`${PAYLOAD_URL}/api/biomes`, {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify({ slug, name, spriteKey, description: '' }),
   })
+  if (!created.ok) {
+    const errText = await created.text().catch(() => '')
+    console.error(`[biome-fail] ensureBiome(${slug}): ${created.status} ${errText}`)
+    return 0
+  }
   const cjson = (await created.json()) as { doc?: { id: number }; id?: number }
   return cjson.doc?.id ?? cjson.id ?? 0
 }
@@ -124,11 +153,17 @@ async function importBlogFile(file: string, map: MapFile, force: boolean) {
 
   const tagIds: number[] = []
   for (const t of tags) {
-    tagIds.push(await ensureTag(fetch, String(t)))
+    const id = await ensureTag(fetch, String(t))
+    if (id === 0) {
+      console.warn(`[warn] tag lookup/insert failed for "${t}"`)
+    }
+    tagIds.push(id)
   }
+  const validTagIds = tagIds.filter((id) => id > 0)
+  console.log(`  → ${tags.length} tag(s) requested, ${validTagIds.length} resolved`)
 
   // Tag-to-biome mapping (duplicated from packages/config; intentionally simple — server runs before the web workspace symlink is wired)
-  const biomeMap: Record<string, string> = {
+const biomeMap: Record<string, string> = {
     docker: 'workshop',
     lvm: 'workshop',
     'net-reset': 'workshop',
@@ -143,12 +178,32 @@ async function importBlogFile(file: string, map: MapFile, force: boolean) {
     homelab: 'workshop',
     devex: 'workshop',
     maintenance: 'workshop',
+    datax: 'town',
+    maven: 'town',
+    jdk9: 'town',
+    postcss: 'town',
+    unocss: 'town',
+    v8: 'town',
+    asdf: 'town',
+    'npm-package': 'town',
+    'vim-text-object': 'town',
+    aspnet: 'mountain',
+    'github-http2': 'mountain',
+    nginx: 'beach',
+    'docker-network': 'beach',
+    'learn-dockerfile': 'forest',
+    'inspect-mvn-dep': 'forest',
   }
-  const biomeSlug = tags[0] ? biomeMap[String(tags[0])] ?? 'wilderness' : 'wilderness'
-  const biomeId = await ensureBiome(biomeSlug, biomeSlug[0].toUpperCase() + biomeSlug.slice(1), biomeSlug)
+  // Pick the first tag that maps to a known biome. Falls back to 'wilderness'.
+  const biomeSlug =
+    tags.map((t) => biomeMap[String(t)]).find((b) => typeof b === 'string') ??
+    'wilderness'
+const biomeId = await ensureBiome(fetch, biomeSlug, biomeSlug[0].toUpperCase() + biomeSlug.slice(1), biomeSlug)
 
-  // Author: default for now
-  const authorId = await ensureAuthor('John Xu', '')
+// Author: default for now
+  const authorId = await ensureAuthor(fetch, 'John Xu', '')
+
+  console.log(`  → biomeId=${biomeId} authorId=${authorId}`)
 
   const payload = {
     title,
@@ -156,9 +211,9 @@ async function importBlogFile(file: string, map: MapFile, force: boolean) {
     status: draft ? 'draft' : 'published',
     date,
     summary,
-    tags: tagIds,
-    biome: biomeId,
-    authors: [authorId],
+    tags: validTagIds,
+    biome: biomeId > 0 ? biomeId : undefined,
+    authors: authorId > 0 ? [authorId] : [],
     locale: 'cn',
     content: { markdown: content },
     layout: 'PostSimple',
@@ -193,7 +248,7 @@ async function importAuthorFile(file: string) {
   const buf = await readFile(filePath, 'utf-8')
   const { data, content } = parseFrontmatter(buf)
   const name = String(data.name ?? file.replace(/\.mdx?$/, ''))
-  await ensureAuthor(name, content)
+  await ensureAuthor(fetch, name, content)
 }
 
 async function main() {
@@ -237,3 +292,4 @@ main().catch((err) => {
   console.error(err)
   process.exit(1)
 })
+

@@ -1,9 +1,11 @@
 import express from 'express'
 import cors from 'cors'
 import payload from 'payload'
+import path from 'path'
+import { fileURLToPath } from 'url'
 import config from '../payload.config.js'
 
-const PORT = Number(process.env.PORT || 3001)
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 async function main() {
   const app = express()
@@ -17,8 +19,8 @@ async function main() {
     config,
   })
 
-  app.listen(PORT, () => {
-    payload.logger.info(`cms listening on :${PORT}`)
+  app.listen(Number(process.env.PORT || 3001), () => {
+    payload.logger.info(`cms listening on :${process.env.PORT || 3001}`)
   })
 }
 

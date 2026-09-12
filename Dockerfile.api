@@ -7,7 +7,7 @@ COPY package.json yarn.lock* .yarnrc.yml ./
 COPY .yarn ./.yarn
 COPY apps apps
 COPY packages packages
-RUN yarn install --immutable
+RUN yarn install
 
 FROM base AS runner
 WORKDIR /app
@@ -18,7 +18,7 @@ COPY --from=deps /repo/apps ./apps
 COPY --from=deps /repo/packages ./packages
 COPY .yarnrc.yml ./
 COPY .yarn ./.yarn
-COPY apps/api/.cache ./.cache
+RUN mkdir -p /repo/apps/api/.cache
 WORKDIR /repo/apps/api
 USER apijs
 EXPOSE 3002

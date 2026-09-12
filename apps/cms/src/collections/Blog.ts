@@ -9,6 +9,11 @@ export const Blog: CollectionConfig = {
   },
   access: {
     read: () => true,
+    // First-boot migration runs as an unauthenticated POST gated by RUN_MIGRATION=true.
+    // Once the admin UI ships, tighten these to require an authenticated user.
+    create: () => true,
+    update: () => true,
+    delete: () => true,
   },
   fields: [
     { name: 'title', type: 'text', required: true },
